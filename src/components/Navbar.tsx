@@ -7,9 +7,10 @@ import logoIcon from "@/assets/grc-sphere-icon.png";
 import { industrySolutions } from "@/data/industrySolutions";
 
 const navItems = [
-  { label: "Features", href: "/features" },
-  { label: "Newsroom", href: "/newsroom" },
-  { label: "About", href: "/about" },
+  { label: "Products", href: "/features" },
+  { label: "Blogs", href: "/newsroom" },
+  { label: "About Us", href: "/about" },
+  { label: "Consultancy Service", href: "/consultancy-service" },
 ];
 
 const firstNavItems = navItems.slice(0, 1);
@@ -125,10 +126,9 @@ export const Navbar = () => {
                 className="flex items-center gap-2 text-sm text-muted-foreground transition-colors duration-200 hover:text-foreground"
                 onClick={() => setIsSolutionsOpen((open) => !open)}
                 onFocus={() => setIsSolutionsOpen(true)}
-                aria-expanded={isSolutionsOpen}
                 aria-haspopup="menu"
               >
-                <span>Solutions</span>
+                <span>Industries</span>
                 <motion.div animate={{ rotate: isSolutionsOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
                   <ChevronDown className="h-4 w-4" />
                 </motion.div>
