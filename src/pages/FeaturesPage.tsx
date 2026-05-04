@@ -78,9 +78,7 @@ const FeaturesPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                Observeri maps platform depth to how buyers search: integrated risk management software, IT risk management
-                software, policy management software, incident management GRC, third party risk management software, business
-                continuity planning software, and continuous compliance monitoring software in one enterprise GRC solution.
+               Observeri is an AI-powered platform that transforms fragmented risk, compliance, and security data into real-time, quantified risk intelligence—enabling organizations to prioritize, predict, and reduce risk exposure with precision.
               </motion.p>
               <motion.p
                 className="mt-4 max-w-3xl text-base leading-7 text-muted-foreground md:text-lg"
@@ -88,8 +86,7 @@ const FeaturesPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.25 }}
               >
-                This feature page follows the MATAR proposal deck—modules, outcomes, controls, and deployment model—while
-                reinforcing intelligent risk scoring platform language for teams comparing top cybersecurity GRC platforms.
+                Observeri replaces static GRC systems with an AI-driven risk intelligence engine that continuously analyzes threats, vulnerabilities, assets, and controls to quantify real-world risk exposure and prioritize actions that deliver maximum risk reduction.
               </motion.p>
 
               <motion.div
@@ -117,7 +114,7 @@ const FeaturesPage = () => {
                     <ShieldCheck className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <p className="text-sm uppercase tracking-[0.2em] text-primary">Observeri GRC v1.0</p>
+                    <p className="text-sm uppercase tracking-[0.2em] text-primary">Observeri GRC v3.0</p>
                     <h2 className="text-2xl font-display font-semibold">Intelligence Engine</h2>
                   </div>
                 </div>
