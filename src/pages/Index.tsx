@@ -246,44 +246,7 @@ const Index = () => {
       <Navbar />
       <Hero />
 
-      <section id="consultancy-service" className="relative overflow-hidden border-y border-border/30 py-24">
-        <div className="absolute inset-0 bg-gradient-radial opacity-50" />
-        <div className="container relative z-10 mx-auto px-6">
-          <div className="mb-12 max-w-4xl">
-            <FadeUp>
-              <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-primary">
-                Consultancy Service
-              </p>
-            </FadeUp>
-            <FadeUp delay={0.08}>
-              <h2 className="text-3xl font-display font-bold md:text-5xl">
-                Bespoke consulting services aligned to your cybersecurity priorities.
-              </h2>
-            </FadeUp>
-            <FadeUp delay={0.16}>
-              <p className="mt-5 text-lg leading-8 text-muted-foreground">
-                Based on the consulting layout you shared, this section highlights the same strategic and operational
-                service pillars while preserving the current Observeri visual theme.
-              </p>
-            </FadeUp>
-          </div>
-
-          <StaggerContainer className="grid gap-5 md:grid-cols-2 xl:grid-cols-3" staggerDelay={0.06}>
-            {consultancyServices.map((service) => (
-              <StaggerItem key={service}>
-                <div className="h-full rounded-3xl border-gradient bg-gradient-card p-6">
-                  <p className="text-lg font-display font-semibold text-foreground">{service}</p>
-                  <p className="mt-3 text-sm leading-6 text-muted-foreground">
-                    Delivered through executive-focused advisory, measurable outcomes, and implementation-ready
-                    cybersecurity guidance.
-                  </p>
-                </div>
-              </StaggerItem>
-            ))}
-          </StaggerContainer>
-        </div>
-      </section>
-
+     
       <section className="border-y border-border/30 bg-card/20">
         <div className="container mx-auto grid gap-6 px-6 py-10 md:grid-cols-4">
           {executiveMetrics.map((metric, index) => (
