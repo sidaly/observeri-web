@@ -19,6 +19,7 @@ import {
   StaggerItem,
 } from "@/components/ScrollAnimations";
 import { industrySolutions, industrySolutionsBySlug } from "@/data/industrySolutions";
+import { industrySeoContext } from "@/data/seoContent";
 
 const IndustrySolution = () => {
   const { slug } = useParams();
@@ -65,6 +66,11 @@ const IndustrySolution = () => {
                 <h1 className="text-4xl font-display font-bold md:text-5xl lg:text-6xl">{industry.label}</h1>
                 <p className="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">{industry.headline}</p>
                 <p className="mt-5 max-w-3xl text-base leading-7 text-muted-foreground">{industry.summary}</p>
+                {industrySeoContext[industry.slug] ? (
+                  <p className="mt-5 max-w-3xl border-l-2 border-primary/35 pl-5 text-sm leading-7 text-muted-foreground">
+                    {industrySeoContext[industry.slug]}
+                  </p>
+                ) : null}
 
                 <div className="mt-8 flex flex-wrap gap-3">
                   {industry.keyRegulations.map((regulation) => (

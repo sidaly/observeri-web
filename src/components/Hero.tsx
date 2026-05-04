@@ -65,12 +65,14 @@ export const Hero = () => {
 
           {/* Subheadline */}
           <motion.p 
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10"
+            className="text-lg md:text-xl text-muted-foreground max-w-3xl mb-10"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            The AI-powered GRC platform that turns automated cyber risk exposure into board-ready decisions—cost-effective AI cybersecurity GRC for teams outgrowing spreadsheets and legacy suites.
+            Observeri is a cybersecurity GRC platform and enterprise GRC solution: AI-powered governance with integrated
+            risk management software, cyber risk management platform telemetry, and IT risk management software workflows
+            that compress audit cycles—without another shelf-ware risk and compliance system.
           </motion.p>
 
           {/* CTA Buttons */}

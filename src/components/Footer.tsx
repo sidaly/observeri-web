@@ -50,7 +50,9 @@ export const Footer = () => {
               <span className="text-xl font-bold text-white font-display">Observeri Technologies</span>
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed max-w-md mb-8">
-              The all-in-one GRC platform that transforms how enterprises manage governance, risk, and compliance with integrated solutions for modern organizations.
+              Observeri Technologies delivers a cybersecurity GRC platform and enterprise GRC solution—governance risk and
+              compliance software with AI risk management software, risk quantification software, audit workflow automation,
+              third party risk management software, and UAE / Middle East programs for regulated enterprises.
             </p>
             
             {/* Social Icons */}

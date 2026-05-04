@@ -156,9 +156,11 @@ const About = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Observeri GRC turns cyber risk into measurable business value. The platform combines AI,
-              automation, and real-time intelligence so leadership teams can predict, prevent, protect,
-              and profit from stronger governance.
+              Observeri GRC is an AI GRC platform and cybersecurity risk management software layer for leadership teams.
+              It combines governance risk and compliance software depth with cyber risk dashboard software clarity—so
+              executives see an integrated risk management software picture, not a pile of tickets. Teams evaluating an
+              enterprise GRC solution or operational risk management platform use Observeri to unify security compliance
+              management software cadence with quantified cyber exposure.
             </motion.p>
           </div>
         </div>

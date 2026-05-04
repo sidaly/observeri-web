@@ -35,6 +35,7 @@ import {
   StaggerContainer,
   StaggerItem,
 } from "@/components/ScrollAnimations";
+import { enterpriseGrcTopicSections } from "@/data/seoContent";
 
 const executiveMetrics = [
   { value: "1,656%", label: "Year 1 ROI" },
@@ -251,7 +252,11 @@ const Index = () => {
       <Navbar />
       <Hero />
 
-      <section className="border-b border-border/30 bg-card/10 py-20" aria-label="What you can use Observerifor">
+      <section
+        id="features"
+        className="border-b border-border/30 bg-card/10 py-20"
+        aria-label="What you can use Observeri for"
+      >
         <div className="container mx-auto px-6">
           <div className="mx-auto max-w-4xl text-center">
             <FadeUp>
@@ -266,7 +271,7 @@ const Index = () => {
             </FadeUp>
             <FadeUp delay={0.12}>
               <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-muted-foreground">
-                Oserveri is built as a modern, cost-effective AI cybersecurity GRC solution—continuously mapping controls
+                Observeri is built as a modern, cost-effective AI cybersecurity GRC solution—continuously mapping controls
                 and evidence to how regulators and investors actually read risk, not just how tickets get closed.
               </p>
             </FadeUp>
@@ -297,8 +302,11 @@ const Index = () => {
               <div className="h-full rounded-3xl border-gradient bg-gradient-card p-7 text-left">
                 <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">Regulation-ready</p>
                 <p className="mt-4 text-sm leading-7 text-muted-foreground">
-                  A MiCA compliance tool and broader GRC software coverage for programs that must line up to NESA, SAMA,
-                  DORA, and other high-expectation frameworks—without bolting on five more point products.
+                  Map ISO 27001 compliance software, NIST CSF risk management tool, SOC 2 compliance platform, GDPR
+                  compliance software, HIPAA compliance management system, and PCI DSS compliance solution work into one
+                  regulatory compliance management software spine—plus MiCA, NESA, SAMA, and DORA programs—with audit
+                  management software GRC workflows, compliance tracking platform views, and internal audit software
+                  tasks tied to live tests.
                 </p>
               </div>
             </StaggerItem>
@@ -306,8 +314,10 @@ const Index = () => {
               <div className="h-full rounded-3xl border-gradient bg-gradient-card p-7 text-left">
                 <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">Replacing legacy GRC</p>
                 <p className="mt-4 text-sm leading-7 text-muted-foreground">
-                  Teams compare us as a CyberArrow alternative, MetricStream alternative, Archer alternative, or Vanta
-                  alternative when they want automation, quantified risk, and faster assurance cycles in one platform.
+                  Teams compare Observeri as a MetricStream alternative, ServiceNow GRC alternative, RSA Archer
+                  alternative, LogicGate alternative, OneTrust GRC alternative, CyberArrow alternative, or Vanta
+                  alternative when they need automation, quantified risk, and faster assurance cycles in one integrated
+                  cybersecurity GRC platform.
                 </p>
               </div>
             </StaggerItem>
@@ -318,17 +328,39 @@ const Index = () => {
               <h3 className="text-lg font-display font-semibold text-foreground">How buyers use Observeri</h3>
               <dl className="mt-5 space-y-5 text-sm leading-7 text-muted-foreground">
                 <div>
-                  <dt className="font-semibold text-foreground">How to prioritize vulnerabilities</dt>
+                  <dt className="font-semibold text-foreground">How to prioritize cyber risk and vulnerabilities</dt>
                   <dd className="mt-1">
-                    Rank by business impact and exploitability tied to assets and controls, so fixes follow dollars and
-                    obligations—not whoever shouts loudest in the channel.
+                    Use vulnerability risk prioritization and business context so fixes follow dollars, exploitability,
+                    and control gaps—not noise in the queue.
                   </dd>
                 </div>
                 <div>
                   <dt className="font-semibold text-foreground">How to quantify cyber risk</dt>
                   <dd className="mt-1">
-                    Express exposure as expected loss and trend lines leadership can budget against, instead of
-                    red-yellow-green charts that stall approvals.
+                    Express exposure with risk quantification software and FAIR-style views—annual loss expectancy
+                    software metrics and financial cyber risk assessment narratives leadership can budget against.
+                  </dd>
+                </div>
+                <div>
+                  <dt className="font-semibold text-foreground">How to implement a GRC framework</dt>
+                  <dd className="mt-1">
+                    Start with scope, control baseline, and evidence automation; keep owners, tests, and policies in one
+                    governance risk and compliance software system so implementation survives the first audit.
+                  </dd>
+                </div>
+                <div>
+                  <dt className="font-semibold text-foreground">Risk vs compliance difference</dt>
+                  <dd className="mt-1">
+                    Compliance proves you meet obligations; risk management prioritizes what could still hurt the
+                    business. Observeri links both so security compliance management software and cyber risk management
+                    platform data tell the same story.
+                  </dd>
+                </div>
+                <div>
+                  <dt className="font-semibold text-foreground">GRC software comparison and demo requests</dt>
+                  <dd className="mt-1">
+                    Evaluate best GRC software for enterprises on a GRC demo request: time-to-value, AI depth, continuous
+                    monitoring, and whether the operational risk management platform actually reduces manual hours.
                   </dd>
                 </div>
               </dl>
@@ -836,6 +868,45 @@ const Index = () => {
               </div>
             </div>
           </ScaleUp>
+        </div>
+      </section>
+
+      <section
+        id="enterprise-grc-topics"
+        className="border-t border-border/30 bg-background py-24"
+        aria-label="Enterprise GRC software topics and search phrases"
+      >
+        <div className="container mx-auto px-6">
+          <div className="mx-auto mb-14 max-w-3xl text-center">
+            <FadeUp>
+              <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-primary">
+                Enterprise GRC &amp; AI risk topics
+              </p>
+            </FadeUp>
+            <FadeUp delay={0.06}>
+              <h2 className="text-3xl font-display font-bold md:text-5xl">
+                How teams discover an integrated risk management and compliance platform
+              </h2>
+            </FadeUp>
+            <FadeUp delay={0.12}>
+              <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
+                Natural-language search—on Google, ChatGPT, Claude, Gemini, or Perplexity—often starts with problems, not
+                product names. These topics map Observeri to the cybersecurity GRC platform, AI GRC platform, and
+                operational risk management platform vocabulary enterprises already use.
+              </p>
+            </FadeUp>
+          </div>
+
+          <StaggerContainer className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2" staggerDelay={0.05}>
+            {enterpriseGrcTopicSections.map((topic) => (
+              <StaggerItem key={topic.id}>
+                <div className="h-full rounded-3xl border-gradient bg-gradient-card p-7 md:p-8">
+                  <h3 className="text-lg font-display font-semibold text-foreground md:text-xl">{topic.title}</h3>
+                  <p className="mt-4 text-sm leading-7 text-muted-foreground">{topic.body}</p>
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerContainer>
         </div>
       </section>
 

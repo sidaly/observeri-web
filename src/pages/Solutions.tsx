@@ -44,8 +44,11 @@ const Solutions = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              The new solutions experience is driven by the Observeri industry deck. Each industry now has its own
-              page with sector regulations, platform capabilities, workflows, and quantified outcomes.
+              Industry pages connect GRC software for banks, healthcare compliance software, industrial cybersecurity GRC,
+              public sector GRC platform work, and fintech compliance platform rollouts to the same AI governance core.
+              Regional teams often discover Observeri through GRC software UAE, cybersecurity GRC Dubai, Abu Dhabi compliance
+              software, fintech GRC UAE, and broader risk management platform Middle East searches—then validate against a
+              global GRC software comparison checklist.
             </motion.p>
           </div>
         </div>

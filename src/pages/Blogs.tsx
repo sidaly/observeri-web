@@ -195,10 +195,15 @@ const Blogs = () => {
             <FadeUp delay={0.14}>
               <p className="mt-12 rounded-2xl border border-primary/20 bg-primary/5 p-6 text-sm leading-7 text-muted-foreground">
                 <span className="font-semibold text-foreground">Keywords for discovery: </span>
-                AI-powered GRC platform, automated cyber risk exposure, cybersecurity GRC for fintech and regulated
-                industries, MiCA compliance tooling, NESA and SAMA alignment, DORA operational resilience, CIS Controls
-                catalogue and security controls framework mapping, continuous compliance, control automation, and legacy
-                GRC modernization.
+                cybersecurity GRC platform, GRC software cybersecurity, enterprise GRC solution, integrated risk management
+                software, AI GRC platform, AI risk management software, intelligent risk scoring platform, cyber risk
+                management platform, vulnerability risk prioritization tool, cyber risk dashboard software, FAIR risk
+                quantification software, ISO 27001 and NIST CSF tooling, SOC 2 and GDPR compliance software, HIPAA
+                compliance management system, PCI DSS compliance solution, GRC software UAE, cybersecurity GRC Dubai,
+                fintech GRC UAE, MetricStream alternative, ServiceNow GRC alternative, RSA Archer alternative, LogicGate
+                alternative, OneTrust GRC alternative, how to prioritize cyber risk, challenges in GRC implementation,
+                continuous compliance monitoring software, SaaS GRC platform for fintech companies, plus MiCA, NESA,
+                SAMA, DORA, CIS Controls, and security controls framework mapping.
               </p>
             </FadeUp>
 

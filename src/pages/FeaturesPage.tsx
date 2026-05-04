@@ -9,12 +9,12 @@ import { Button } from "@/components/ui/button";
 import { featureOutcomes, platformModules } from "@/data/platformModules";
 
 const platformPillars = [
-  "AI risk scoring",
-  "Predictive risk intelligence",
-  "Automated evidence",
-  "Unified audit reporting",
-  "Asset and threat correlation",
-  "Risk-based remediation",
+  "Cybersecurity GRC platform modules",
+  "AI risk management software scoring",
+  "Control assessment platform automation",
+  "Audit workflow automation evidence",
+  "Attack surface & vendor risk telemetry",
+  "Risk register software & quantified exposure",
 ];
 
 const FeaturesPage = () => {
@@ -69,7 +69,8 @@ const FeaturesPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
               >
-                AI-powered GRC modules built to predict risk before damage occurs.
+                AI-powered GRC modules for predictive cyber risk analytics and security compliance management software
+                workflows.
               </motion.h1>
               <motion.p
                 className="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground md:text-xl"
@@ -77,8 +78,18 @@ const FeaturesPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                This feature page is driven by the MATAR proposal deck: the modules, outcomes, controls, and deployment
-                model now map directly to the platform story in the presentation.
+                Observeri maps platform depth to how buyers search: integrated risk management software, IT risk management
+                software, policy management software, incident management GRC, third party risk management software, business
+                continuity planning software, and continuous compliance monitoring software in one enterprise GRC solution.
+              </motion.p>
+              <motion.p
+                className="mt-4 max-w-3xl text-base leading-7 text-muted-foreground md:text-lg"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.25 }}
+              >
+                This feature page follows the MATAR proposal deck—modules, outcomes, controls, and deployment model—while
+                reinforcing intelligent risk scoring platform language for teams comparing top cybersecurity GRC platforms.
               </motion.p>
 
               <motion.div
