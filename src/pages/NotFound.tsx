@@ -15,8 +15,8 @@ const NotFound = () => {
     <div className="min-h-screen bg-background bg-gradient-main flex items-center justify-center">
       <div className="text-center px-6">
         <div className="inline-flex items-center gap-2 mb-8">
-          <img src={logoIcon} alt="GRC Sphere" className="w-10 h-10" />
-          <span className="text-2xl font-display font-bold">GRC Sphere</span>
+          <img src={logoIcon} alt="Observeri GRC" className="w-10 h-10" />
+          <span className="text-2xl font-display font-bold">Observeri GRC</span>
         </div>
         
         <h1 className="text-6xl md:text-8xl font-display font-bold text-foreground mb-4">

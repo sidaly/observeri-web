@@ -36,7 +36,7 @@ const Solutions = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              GRC Sphere for regulated industries with very different risk realities.
+              Observeri GRC for regulated industries with very different risk realities.
             </motion.h1>
             <motion.p
               className="mx-auto max-w-3xl text-lg text-muted-foreground md:text-xl"

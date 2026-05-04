@@ -37,7 +37,7 @@ const pillars = [
     icon: BrainCircuit,
     title: "Predict Before Damage",
     description:
-      "GRC Sphere uses AI-powered exposure scoring, threat correlation, and exploit probability analysis to forecast incidents before they escalate.",
+      "Observeri GRC uses AI-powered exposure scoring, threat correlation, and exploit probability analysis to forecast incidents before they escalate.",
   },
   {
     icon: ChartNoAxesCombined,
@@ -138,7 +138,7 @@ const About = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              About GRC Sphere
+              About Observeri GRC
             </motion.p>
             <motion.h1
               className="mb-6 text-4xl font-display font-bold md:text-5xl lg:text-6xl"
@@ -156,7 +156,7 @@ const About = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              GRC Sphere turns cyber risk into measurable business value. The platform combines AI,
+              Observeri GRC turns cyber risk into measurable business value. The platform combines AI,
               automation, and real-time intelligence so leadership teams can predict, prevent, protect,
               and profit from stronger governance.
             </motion.p>
@@ -197,7 +197,7 @@ const About = () => {
                     continuously.
                   </p>
                   <p>
-                    GRC Sphere was shaped around that need. We bring together asset visibility, threat
+                    Observeri GRC was shaped around that need. We bring together asset visibility, threat
                     intelligence, predictive scoring, workflow automation, and board-ready reporting in
                     a single operating model.
                   </p>
@@ -213,7 +213,7 @@ const About = () => {
               <div className="rounded-[2rem] border-gradient bg-gradient-card p-8 md:p-10">
                 <div className="flex items-center gap-4 border-b border-border/30 pb-6">
                   <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 p-2">
-                    <img src={logoIcon} alt="GRC Sphere" className="h-full w-full object-contain" />
+                    <img src={logoIcon} alt="Observeri GRC" className="h-full w-full object-contain" />
                   </div>
                   <div>
                     <p className="text-sm uppercase tracking-[0.2em] text-primary">Platform Core</p>
@@ -292,7 +292,7 @@ const About = () => {
                     Strategic Outcomes
                   </p>
                   <h2 className="text-3xl font-display font-bold md:text-5xl">
-                    Why enterprises adopt GRC Sphere.
+                    Why enterprises adopt Observeri GRC.
                   </h2>
                   <p className="mt-6 text-lg leading-8 text-muted-foreground">
                     The story across the decks is consistent: stronger governance is not just about
@@ -451,7 +451,7 @@ const About = () => {
                 Bring strategic cyber risk management into the operating model.
               </h2>
               <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">
-                GRC Sphere is built for organizations that want more than audit readiness. It is for
+                Observeri GRC is built for organizations that want more than audit readiness. It is for
                 teams that need predictive intelligence, disciplined execution, and executive assurance
                 in one platform.
               </p>

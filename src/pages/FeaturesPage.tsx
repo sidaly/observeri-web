@@ -106,7 +106,7 @@ const FeaturesPage = () => {
                     <ShieldCheck className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <p className="text-sm uppercase tracking-[0.2em] text-primary">GRC Sphere v1.0</p>
+                    <p className="text-sm uppercase tracking-[0.2em] text-primary">Observeri GRC v1.0</p>
                     <h2 className="text-2xl font-display font-semibold">Intelligence Engine</h2>
                   </div>
                 </div>
@@ -208,7 +208,7 @@ const FeaturesPage = () => {
                   One platform for prevention, audit readiness, and board-level assurance.
                 </h2>
                 <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-muted-foreground">
-                  GRC Sphere shifts teams from reactive checklists to continuous risk prevention with quantified
+                  Observeri shifts teams from reactive checklists to continuous risk prevention with quantified
                   exposure, automated workflows, and executive-ready dashboards.
                 </p>
                 <div className="mt-9">

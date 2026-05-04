@@ -46,7 +46,7 @@ export const Hero = () => {
             whileHover={{ scale: 1.05 }}
           >
             <span className="text-sm text-muted-foreground">
-              Introducing GRC Sphere
+              AI-powered GRC platform · Observeri GRC
             </span>
             <ArrowRight className="w-4 h-4 text-primary group-hover:translate-x-1 transition-transform" />
           </motion.a>
@@ -70,7 +70,7 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            The all-in-one GRC platform that transforms how enterprises manage governance, risk, and compliance. Built for modern security teams.
+            The AI-powered GRC platform that turns automated cyber risk exposure into board-ready decisions—cost-effective AI cybersecurity GRC for teams outgrowing spreadsheets and legacy suites.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -132,7 +132,7 @@ export const Hero = () => {
                   {/* Sidebar */}
                   <div className="hidden md:block space-y-4">
                     <div className="flex items-center gap-3 p-3 rounded-lg bg-primary/10">
-                      <img src={logoIcon} alt="GRC Sphere" className="w-5 h-5" />
+                      <img src={logoIcon} alt="Observeri" className="w-5 h-5" />
                       <div className="h-3 w-20 bg-muted rounded" />
                     </div>
                     {[1, 2, 3, 4].map((i) => (

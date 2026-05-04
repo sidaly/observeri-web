@@ -8,7 +8,7 @@ import { industrySolutions } from "@/data/industrySolutions";
 
 const navItems = [
   { label: "Products", href: "/features" },
-  { label: "Blogs", href: "/newsroom" },
+  { label: "Blogs", href: "/blogs" },
   { label: "About Us", href: "/about" },
   { label: "Consultancy Service", href: "/consultancy-service" },
 ];
@@ -67,7 +67,7 @@ export const Navbar = () => {
             <Link to="/" className="group flex items-center gap-2">
               <img
                 src={logoIcon}
-                alt="GRC Sphere"
+                alt="Observeri"
                 className="h-9 w-9 transition-transform duration-300 group-hover:scale-110"
               />
               <span className="text-xl font-display font-bold text-foreground">Observeri</span>

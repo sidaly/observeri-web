@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
@@ -202,6 +202,12 @@ const differentiators = [
   },
 ];
 
+const industryKeywordLinks = [
+  { label: "Cybersecurity GRC for fintech", to: "/solutions/banking-financial-services" },
+  { label: "Cybersecurity GRC for healthcare", to: "/solutions/healthcare-life-sciences" },
+  { label: "Cybersecurity GRC for energy", to: "/solutions/energy-utilities" },
+] as const;
+
 const roadmap = [
   {
     title: "Days 1 - 30",
@@ -224,7 +230,6 @@ const roadmap = [
 ];
 
 const Index = () => {
-  const navigate = useNavigate();
   const [searchParams] = useSearchParams();
 
   const scrollToContact = () => {
@@ -246,81 +251,89 @@ const Index = () => {
       <Navbar />
       <Hero />
 
-     
-      <section className="border-y border-border/30 bg-card/20">
-        <div className="container mx-auto grid gap-6 px-6 py-10 md:grid-cols-4">
-          {executiveMetrics.map((metric, index) => (
-            <FadeUp key={metric.label} delay={index * 0.08}>
-              <div className="rounded-2xl border-gradient bg-gradient-card p-6 text-center">
-                <p className="mb-2 text-3xl font-display font-bold text-primary">{metric.value}</p>
-                <p className="text-sm text-muted-foreground">{metric.label}</p>
-              </div>
+      <section className="border-b border-border/30 bg-card/10 py-20" aria-label="What you can use Observerifor">
+        <div className="container mx-auto px-6">
+          <div className="mx-auto max-w-4xl text-center">
+            <FadeUp>
+              <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-primary">
+                Search what teams ask for
+              </p>
             </FadeUp>
-          ))}
-        </div>
-      </section>
-
-      <section id="features" className="relative overflow-hidden py-24">
-        <div className="absolute inset-0 bg-gradient-radial opacity-60" />
-        <div className="container relative z-10 mx-auto px-6">
-          <div className="grid gap-14 lg:grid-cols-[1.15fr_0.85fr]">
-            <SlideInLeft>
-              <div>
-                <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-primary">
-                  The Business Case
-                </p>
-                <h2 className="mb-6 text-3xl font-display font-bold md:text-5xl">
-                  Why now: the cost of waiting is already on the balance sheet.
-                </h2>
-                <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground">
-                  The deck frames cyber risk as a strategic business issue, not just a security program issue.
-                  This redesign keeps that same theme and puts executive urgency front and center.
-                </p>
-
-                <div className="mt-10 grid gap-5 md:grid-cols-3">
-                  {marketPressures.map((item, index) => (
-                    <FadeUp key={item.label} delay={0.1 + index * 0.08}>
-                      <div className="flex h-full min-h-[220px] flex-col rounded-2xl border-gradient bg-gradient-card p-6">
-                        <p className="text-3xl font-display font-bold text-foreground">{item.value}</p>
-                        <p className="mt-2 font-medium text-foreground">{item.label}</p>
-                        <p className="mt-3 text-sm leading-6 text-muted-foreground">{item.description}</p>
-                      </div>
-                    </FadeUp>
-                  ))}
-                </div>
-              </div>
-            </SlideInLeft>
-
-            <SlideInRight>
-              <div className="rounded-3xl border-gradient bg-gradient-card p-8 shadow-2xl shadow-primary/10">
-                <div className="mb-8 flex items-center gap-3">
-                  <div className="rounded-xl bg-primary/10 p-3">
-                    <ShieldAlert className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-sm uppercase tracking-[0.2em] text-primary">Traditional GRC Failures</p>
-                    <h3 className="text-2xl font-display font-semibold">What executives are trying to escape</h3>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  {grcFailures.map((item) => (
-                    <div key={item.title} className="rounded-2xl border border-border/40 bg-background/30 p-5">
-                      <p className="font-semibold text-foreground">{item.title}</p>
-                      <p className="mt-2 text-sm leading-6 text-muted-foreground">{item.description}</p>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="mt-8 rounded-2xl border border-primary/20 bg-primary/10 p-5">
-                  <p className="text-sm uppercase tracking-[0.2em] text-primary">Executive Question</p>
-                  <p className="mt-3 text-lg font-medium leading-8 text-foreground">
-                    How do we transform cyber risk from a cost center into a strategic business enabler?
-                  </p>
-                </div>
-              </div>
-            </SlideInRight>
+            <FadeUp delay={0.06}>
+              <h2 className="text-3xl font-display font-bold md:text-4xl">
+                AI-powered GRC with automated cyber risk exposure you can defend in the boardroom.
+              </h2>
+            </FadeUp>
+            <FadeUp delay={0.12}>
+              <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-muted-foreground">
+                Oserveri is built as a modern, cost-effective AI cybersecurity GRC solution—continuously mapping controls
+                and evidence to how regulators and investors actually read risk, not just how tickets get closed.
+              </p>
+            </FadeUp>
           </div>
+
+          <StaggerContainer className="mt-12 grid gap-6 md:grid-cols-3" staggerDelay={0.06}>
+            <StaggerItem>
+              <div className="h-full rounded-3xl border-gradient bg-gradient-card p-7 text-left">
+                <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">Industries</p>
+                <p className="mt-4 text-sm leading-7 text-muted-foreground">
+                  Vertical programs when you need cybersecurity GRC tailored to operating reality—not generic templates.
+                </p>
+                <ul className="mt-5 space-y-3">
+                  {industryKeywordLinks.map((item) => (
+                    <li key={item.to}>
+                      <Link
+                        to={item.to}
+                        className="text-sm font-medium text-primary underline-offset-4 hover:underline"
+                      >
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="h-full rounded-3xl border-gradient bg-gradient-card p-7 text-left">
+                <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">Regulation-ready</p>
+                <p className="mt-4 text-sm leading-7 text-muted-foreground">
+                  A MiCA compliance tool and broader GRC software coverage for programs that must line up to NESA, SAMA,
+                  DORA, and other high-expectation frameworks—without bolting on five more point products.
+                </p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="h-full rounded-3xl border-gradient bg-gradient-card p-7 text-left">
+                <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">Replacing legacy GRC</p>
+                <p className="mt-4 text-sm leading-7 text-muted-foreground">
+                  Teams compare us as a CyberArrow alternative, MetricStream alternative, Archer alternative, or Vanta
+                  alternative when they want automation, quantified risk, and faster assurance cycles in one platform.
+                </p>
+              </div>
+            </StaggerItem>
+          </StaggerContainer>
+
+          <FadeUp delay={0.14}>
+            <div className="mx-auto mt-10 max-w-3xl rounded-3xl border border-border/40 bg-background/40 p-8 text-left">
+              <h3 className="text-lg font-display font-semibold text-foreground">How buyers use Observeri</h3>
+              <dl className="mt-5 space-y-5 text-sm leading-7 text-muted-foreground">
+                <div>
+                  <dt className="font-semibold text-foreground">How to prioritize vulnerabilities</dt>
+                  <dd className="mt-1">
+                    Rank by business impact and exploitability tied to assets and controls, so fixes follow dollars and
+                    obligations—not whoever shouts loudest in the channel.
+                  </dd>
+                </div>
+                <div>
+                  <dt className="font-semibold text-foreground">How to quantify cyber risk</dt>
+                  <dd className="mt-1">
+                    Express exposure as expected loss and trend lines leadership can budget against, instead of
+                    red-yellow-green charts that stall approvals.
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </FadeUp>
         </div>
       </section>
 
@@ -571,7 +584,7 @@ const Index = () => {
                   </div>
 
                   <div className="rounded-2xl border border-primary/20 bg-primary/10 p-5">
-                    <p className="text-sm uppercase tracking-[0.2em] text-primary">After GRC Sphere</p>
+                    <p className="text-sm uppercase tracking-[0.2em] text-primary">After Observeri</p>
                     <div className="mt-4 space-y-3 text-sm text-muted-foreground">
                       <div className="flex justify-between gap-4"><span>Asset value</span><span className="font-semibold text-foreground">$12.0M</span></div>
                       <div className="flex justify-between gap-4"><span>Threat probability</span><span className="font-semibold text-foreground">8%</span></div>
@@ -657,7 +670,7 @@ const Index = () => {
             </FadeUp>
             <FadeUp delay={0.08}>
               <h2 className="text-3xl font-display font-bold md:text-5xl">
-                Why GRC Sphere feels different from legacy GRC.
+                Why Observeri feels different from legacy GRC.
               </h2>
             </FadeUp>
           </div>
@@ -672,7 +685,7 @@ const Index = () => {
                   <h3 className="text-2xl font-display font-semibold">{item.title}</h3>
                   <div className="mt-5 space-y-4 text-sm leading-6 text-muted-foreground">
                     <p><span className="font-semibold text-foreground">Traditional:</span> {item.legacy}</p>
-                    <p><span className="font-semibold text-foreground">GRC Sphere:</span> {item.modern}</p>
+                    <p><span className="font-semibold text-foreground">Observeri:</span> {item.modern}</p>
                   </div>
                   <div className="mt-6 rounded-2xl border border-primary/20 bg-primary/10 p-4 text-sm leading-6 text-foreground">
                     {item.value}

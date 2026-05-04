@@ -120,7 +120,7 @@ const IndustrySolution = () => {
             </FadeUp>
             <FadeUp delay={0.08}>
               <h2 className="text-3xl font-display font-bold md:text-5xl">
-                How GRC Sphere is applied in {industry.shortLabel.toLowerCase()} environments.
+                How Observeri GRC is applied in {industry.shortLabel.toLowerCase()} environments.
               </h2>
             </FadeUp>
           </div>

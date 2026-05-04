@@ -143,7 +143,7 @@ const Career = () => {
         <div className="container mx-auto px-6">
           <FadeUp className="text-center mb-16">
             <p className="text-primary font-medium mb-4 uppercase tracking-wider text-sm">
-              Why Join GRC Sphere
+              Why Join Observeri
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
               Exceptional Opportunities Await

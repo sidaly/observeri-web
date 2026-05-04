@@ -11,25 +11,25 @@ const newsItems = [
     source: "Vertigo",
     sourceColor: "text-white",
     icon: RotateCcw,
-    title: "Empowering Enterprises: GRC Sphere's Role in Digital Governance Transformation",
+    title: "Empowering Enterprises: Observeri GRC's Role in Digital Governance Transformation",
   },
   {
     source: "Proline",
     sourceColor: "text-blue-400",
     icon: Zap,
-    title: "How GRC Sphere Is Making Compliance Management a Breeze",
+    title: "How Observeri GRC Is Making Compliance Management a Breeze",
   },
   {
     source: "Penta",
     sourceColor: "text-yellow-400",
     icon: Sparkles,
-    title: "Turning the Tides of Risk Management: A Look into GRC Sphere",
+    title: "Turning the Tides of Risk Management: A Look into Observeri GRC",
   },
   {
     source: "Proline",
     sourceColor: "text-red-400",
     icon: Zap,
-    title: "GRC Sphere: Revolutionizing Enterprise Governance with intelligent automation",
+    title: "Observeri GRC: Revolutionizing Enterprise Governance with intelligent automation",
   },
 ];
 
@@ -43,11 +43,11 @@ const Newsroom = () => {
   const handleDownloadMediaKit = () => {
     // Create a simple media kit file or link
     const mediaKitContent = `
-GRC Sphere - Media Kit
+Observeri GRC - Media Kit
 ====================
 
-About GRC Sphere
-GRC Sphere is the all-in-one platform for governance, risk, and compliance management. 
+About Observeri GRC
+Observeri is the all-in-one platform for governance, risk, and compliance management. 
 We help enterprises streamline their GRC processes with AI-powered automation and intelligent workflows.
 
 Key Statistics:
@@ -56,13 +56,13 @@ Key Statistics:
 - 99.9% Uptime SLA
 - 24/7 Expert Support
 
-Contact: media@grcsphere.com
+Contact: contact@observeri.com
     `;
     
     const element = document.createElement("a");
     const file = new Blob([mediaKitContent], { type: "text/plain" });
     element.href = URL.createObjectURL(file);
-    element.download = "GRC_Sphere_Media_Kit.txt";
+    element.download = "Observeri_GRC_Media_Kit.txt";
     document.body.appendChild(element);
     element.click();
     document.body.removeChild(element);
@@ -97,7 +97,7 @@ Contact: media@grcsphere.com
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              See what others are saying about GRC Sphere and download our official media kit.
+              See what others are saying about Observeri GRC and download our official media kit.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
@@ -200,7 +200,7 @@ Contact: media@grcsphere.com
               Industry Recognition
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              GRC Sphere has been featured in leading industry publications and platforms.
+              Observeri GRC has been featured in leading industry publications and platforms.
             </p>
           </FadeUp>
 
@@ -270,13 +270,13 @@ Contact: media@grcsphere.com
             >
               <FadeUp>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-                  Get started with GRC Sphere
+                  Get started with Observeri GRC
                 </h2>
               </FadeUp>
 
               <FadeUp delay={0.1}>
                 <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-                  Join hundreds of enterprises already managing their governance, risk, and compliance with GRC Sphere.
+                  Join hundreds of enterprises already managing their governance, risk, and compliance with Observeri GRC.
                 </p>
               </FadeUp>
 
@@ -305,7 +305,7 @@ Contact: media@grcsphere.com
                     className="group"
                     onClick={handleBuyClick}
                   >
-                    Buy GRC Sphere
+                    Buy Observeri GRC
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </motion.div>
