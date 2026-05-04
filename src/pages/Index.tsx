@@ -890,9 +890,8 @@ const Index = () => {
             </FadeUp>
             <FadeUp delay={0.12}>
               <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-                Natural-language search—on Google, ChatGPT, Claude, Gemini, or Perplexity—often starts with problems, not
-                product names. These topics map Observeri to the cybersecurity GRC platform, AI GRC platform, and
-                operational risk management platform vocabulary enterprises already use.
+              “Organizations don’t suffer from lack of data—they suffer from lack of clarity.”
+
               </p>
             </FadeUp>
           </div>
