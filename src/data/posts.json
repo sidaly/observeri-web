@@ -1,0 +1,352 @@
+[
+  {
+    "id": 157,
+    "title": "Why Everyone Is Talking About EPSS and LEV (And How They Change Your Vulnerability Prioritization Strategy)",
+    "excerpt": "For years, cybersecurity teams have been trapped in a reactive \"patch everything\" loop. Driven by the Common Vulnerability Scoring System (CVSS), enterprises in the UAE and beyond have focused on fixing every \"Critical\" or \"High\" vulnerability, regardless of whether that vulnerability posed a real-world threat. The result? Overworked teams, massive backlogs, and no measurable reduction ...",
+    "link": "https://grcsphere.net/2026/05/11/why-everyone-is-talking-about-epss-and-lev-and-how-they-change-your-vulnerability-prioritization-strategy/",
+    "date": "2026-05-11T15:58:06",
+    "alt_text": ""
+  },
+  {
+    "id": 156,
+    "title": "How to Choose the Best GRC Platform for UAE Enterprises (2026 Comparison)",
+    "excerpt": "For enterprise leaders in the UAE, 2026 marks a turning point. The regulatory landscape has shifted from \"periodic checks\" to \"continuous enforcement.\" Between the maturing UAE Data Protection Law (PDPL), the rigorous Information Assurance (IA) standards of NESA, and the sector-specific mandates like ADHICS in healthcare and Dubai ISR, the cost of non-compliance is no ...",
+    "link": "https://grcsphere.net/2026/05/08/how-to-choose-the-best-grc-platform-for-uae-enterprises-2026-comparison/",
+    "date": "2026-05-08T10:48:22",
+    "alt_text": ""
+  },
+  {
+    "id": 155,
+    "title": "Behind the Scenes: How Observeri’s Forensic Experts Manage Crisis with Total Confidentiality",
+    "excerpt": "For an enterprise executive, there are few moments more gut-wrenching than the 2:00 AM phone call reporting a breach. In that high-pressure instant, the difference between a controlled recovery and a total organizational collapse isn&#39;t just technical talent: it’s the structure of your response. Most organizations treat a cyber incident as a localized IT problem. ...",
+    "link": "https://grcsphere.net/2026/05/07/behind-the-scenes-how-observeris-forensic-experts-manage-crisis-with-total-confidentiality/",
+    "date": "2026-05-07T01:41:12",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/05/ie_0OXTO66s.webp",
+    "alt_text": ""
+  },
+  {
+    "id": 150,
+    "title": "7 Mistakes You’re Making with Vulnerability Prioritization (And How to Fix Them for the Board)",
+    "excerpt": "Most vulnerability programs aren’t failing because teams don’t scan. They’re failing because teams can’t decide. You end up with 10,000 findings, 200 “critical” CVEs, and exactly zero clarity for the board. Meanwhile, real risk creeps up quietly through exposed assets, weak compensating controls, and business-critical systems that don’t show up at the top of a ...",
+    "link": "https://grcsphere.net/2026/05/06/7-mistakes-youre-making-with-vulnerability-prioritization-and-how-to-fix-them-for-the-board/",
+    "date": "2026-05-06T11:32:18",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/05/sh9sKmEl3D5.webp",
+    "alt_text": ""
+  },
+  {
+    "id": 148,
+    "title": "Why Predictive Cyber Risk Analytics Will Change the Way You Manage Enterprise Vulnerabilities",
+    "excerpt": "The traditional approach to vulnerability management is a game of \"whack-a-mole\" that your security team is destined to lose. In the time it takes to scan, triage, and patch a single CVE, three more have emerged, and two have been weaponized. For the C-suite, this cycle isn&#39;t just a technical burden; it’s a massive financial ...",
+    "link": "https://grcsphere.net/2026/05/05/why-predictive-cyber-risk-analytics-will-change-the-way-you-manage-enterprise-vulnerabilities/",
+    "date": "2026-05-05T02:14:52",
+    "alt_text": ""
+  },
+  {
+    "id": 144,
+    "title": "Why Cyber Risk Quantification Will Change the Way You Present to the Board",
+    "excerpt": "For years, the relationship between the CISO and the Board of Directors has been defined by a fundamental language barrier. Security leaders speak in technical debt, vulnerabilities, and &#8220;High/Medium/Low&#8221; heatmaps. Boards speak in capital allocation, ROI, and financial exposure. This disconnect is more than an administrative hurdle; it is a strategic liability. When risk is ...",
+    "link": "https://grcsphere.net/2026/05/05/why-cyber-risk-quantification-will-change-the-way-you-present-to-the-board/",
+    "date": "2026-05-05T00:32:17",
+    "alt_text": ""
+  },
+  {
+    "id": 133,
+    "title": "How AI-Driven GRC Improves Decision-Making by Prioritizing Risk Exposure",
+    "excerpt": "n today’s hyper-connected digital economy, organizations are no longer constrained by a lack of data—they are overwhelmed by it. Cyber risks, regulatory obligations, third-party dependencies, and operational vulnerabilities generate a constant stream of signals. Yet most Governance, Risk, and Compliance (GRC) programs still rely on static scoring models, manual assessments, and fragmented insights. The result? ...",
+    "link": "https://grcsphere.net/2026/05/04/how-ai-driven-grc-improves-decision-making-by-prioritizing-risk-exposure/",
+    "date": "2026-05-04T19:17:22",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/04/featured-image-1775019606.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 118,
+    "title": "AI-Powered Cybersecurity GRC: Smarter Governance and Risk Decisions, Faster",
+    "excerpt": "AI-powered cybersecurity GRC automates risk scoring, control mapping, and compliance monitoring, enabling faster, data-driven decisions, real-time compliance, efficient incident response, and enhanced security posture management.",
+    "link": "https://grcsphere.net/2026/04/13/ai-powered-cybersecurity-grc-smarter-governance-and-risk-decisions-faster/",
+    "date": "2026-04-13T09:00:47",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/04/featured-image-1776056442.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 116,
+    "title": "How to Improve Cyber Risk Prioritization Across Multiple Regulatory Frameworks",
+    "excerpt": "Implement a unified, risk-based model harmonizing ISO 27001, PCI DSS, GDPR, and HIPAA to streamline compliance. Leverage AI risk scoring, continuous monitoring, and controls crosswalks for efficient, proactive cyber risk prioritization.",
+    "link": "https://grcsphere.net/2026/04/12/how-to-improve-cyber-risk-prioritization-across-multiple-regulatory-frameworks/",
+    "date": "2026-04-12T09:00:27",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/04/featured-image-1775970022.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 114,
+    "title": "Real-Time Monitoring in Cybersecurity: Why Visibility Changes Everything",
+    "excerpt": "Real-time monitoring is essential for cybersecurity, reducing detection and response times, ensuring audit readiness, and enhancing risk management. GRC Sphere integrates AI, SIEM, and compliance tools to boost visibility and proactive threat response.",
+    "link": "https://grcsphere.net/2026/04/10/real-time-monitoring-in-cybersecurity-why-visibility-changes-everything/",
+    "date": "2026-04-10T09:00:19",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/04/featured-image-1775797213.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 112,
+    "title": "From Noise to Action: AI-Powered Risk Prioritization for Modern Cybersecurity Programs",
+    "excerpt": "AI-powered risk prioritization enhances cybersecurity by scoring threats with business context, streamlining compliance, reducing operational drag, and focusing on critical risks to strengthen security posture.",
+    "link": "https://grcsphere.net/2026/04/09/from-noise-to-action-ai-powered-risk-prioritization-for-modern-cybersecurity-programs/",
+    "date": "2026-04-09T14:00:20",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/04/featured-image-1775728815.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 107,
+    "title": "Unify ISO 27001, SOC 2, PCI DSS, HIPAA, and GDPR: A Practical Path to Multi-Framework Compliance",
+    "excerpt": "Unify ISO 27001, SOC 2, PCI DSS, HIPAA, and GDPR compliance with an AI-powered GRC platform to streamline controls, automate evidence, reduce audit fatigue, accelerate certification, and enhance risk management.",
+    "link": "https://grcsphere.net/2026/04/08/unify-iso-27001-soc-2-pci-dss-hipaa-and-gdpr-a-practical-path-to-multi-framework-compliance/",
+    "date": "2026-04-08T14:00:23",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/04/featured-image-1775642417.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 102,
+    "title": "Adaptive Cybersecurity Governance: A Framework That Keeps Pace with Change",
+    "excerpt": "Adaptive cybersecurity governance uses AI-driven continuous compliance, risk management, and real-time monitoring to evolve with regulatory shifts and threats, ensuring resilient, audit-ready security.",
+    "link": "https://grcsphere.net/2026/04/07/adaptive-cybersecurity-governance-a-framework-that-keeps-pace-with-change/",
+    "date": "2026-04-07T14:00:32",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/04/featured-image-1775556027.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 97,
+    "title": "From Manual to Modern: How to Reduce Work in Cybersecurity GRC Operations",
+    "excerpt": "AI-driven automation in cybersecurity GRC reduces manual work by up to 60%, enhances accuracy, enables continuous monitoring, streamlines workflows, improves third-party risk and policy management, and ensures audit readiness.",
+    "link": "https://grcsphere.net/2026/04/06/from-manual-to-modern-how-to-reduce-work-in-cybersecurity-grc-operations/",
+    "date": "2026-04-06T09:01:02",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/04/featured-image-1775451658.png",
+    "alt_text": ""
+  },
+  {
+    "id": 95,
+    "title": "Continuous Compliance Explained: How Enterprises Stay Audit-Ready Year-Round",
+    "excerpt": "Continuous compliance uses real-time monitoring, automated evidence, and AI risk scoring to keep enterprises audit-ready year-round, reducing risk, manual effort, and ensuring constant adherence to standards.",
+    "link": "https://grcsphere.net/2026/04/05/continuous-compliance-explained-how-enterprises-stay-audit-ready-year-round/",
+    "date": "2026-04-05T09:00:36",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/04/featured-image-1775365231.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 93,
+    "title": "From NIS2 to DORA: How 2026 Regulatory Shifts Redefine Cyber Risk Management",
+    "excerpt": "2026 regulations like NIS2, DORA, PCI DSS 4.0, and SEC rules demand stronger cyber risk management, continuous monitoring, automation, third-party oversight, and board accountability for operational resilience and compliance.",
+    "link": "https://grcsphere.net/2026/04/04/from-nis2-to-dora-how-2026-regulatory-shifts-redefine-cyber-risk-management/",
+    "date": "2026-04-04T09:00:12",
+    "alt_text": ""
+  },
+  {
+    "id": 92,
+    "title": "Implementing AI-Driven Cybersecurity Governance in the Enterprise: A Comprehensive Guide",
+    "excerpt": "This guide details implementing AI-driven cybersecurity governance using GRC Sphere to automate risk management, compliance, continuous monitoring, incident response, third-party risk, and audit readiness for enhanced enterprise security.",
+    "link": "https://grcsphere.net/2026/04/03/implementing-ai-driven-cybersecurity-governance-in-the-enterprise-a-comprehensive-guide/",
+    "date": "2026-04-03T14:00:17",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/04/featured-image-1775210412.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 90,
+    "title": "The Future of Cybersecurity Compliance: Integrating AI with Expert Insight",
+    "excerpt": "GRC Sphere integrates AI with expert insight to automate compliance, enhance risk scoring, enable continuous monitoring, and align governance with business goals, streamlining audit readiness and security.",
+    "link": "https://grcsphere.net/2026/04/02/the-future-of-cybersecurity-compliance-integrating-ai-with-expert-insight/",
+    "date": "2026-04-02T14:00:28",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/04/featured-image-1775124023.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 88,
+    "title": "From Detection to Decision: Automate Vulnerability Tracking and Prioritize Remediation with Risk-Based Intelligence",
+    "excerpt": "Automate vulnerability management by centralizing data, integrating threat intelligence, and using AI-driven risk scoring to prioritize remediation. Streamline patching with SOAR, enforce SLAs, and ensure continuous monitoring for compliance and risk reduction.",
+    "link": "https://grcsphere.net/2026/04/01/from-detection-to-decision-automate-vulnerability-tracking-and-prioritize-remediation-with-risk-based-intelligence/",
+    "date": "2026-04-01T09:00:11",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/04/featured-image-1775019606.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 83,
+    "title": "Continuous Compliance Across Frameworks: Best Practices That Scale",
+    "excerpt": "Continuous compliance monitoring unifies multiple frameworks like ISO, SOC 2, and GDPR, reducing audit fatigue via automation, AI-driven risk insights, real-time dashboards, and unified control frameworks for efficient, scalable compliance.",
+    "link": "https://grcsphere.net/2026/03/31/continuous-compliance-across-frameworks-best-practices-that-scale/",
+    "date": "2026-03-31T14:00:19",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/03/featured-image-1774951214.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 81,
+    "title": "AI-Powered Incident Response: 9 Strategies to Cut MTTR and Strengthen Compliance",
+    "excerpt": "AI-powered incident response automates alert triage, prioritizes risks, integrates EDR/XDR, and uses SOAR platforms to cut MTTR, enhance compliance, and improve defense against phishing, ransomware, and breaches.",
+    "link": "https://grcsphere.net/2026/03/30/ai-powered-incident-response-9-strategies-to-cut-mttr-and-strengthen-compliance/",
+    "date": "2026-03-30T14:00:28",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/03/featured-image-1774864823.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 63,
+    "title": "Centralized GRC Platforms: 12 Enterprise Benefits You Can’t Afford to Miss",
+    "excerpt": "Centralized GRC platforms like GRC Sphere streamline enterprise risk, compliance, and audit processes via AI risk scoring, real-time monitoring, and automated control mapping, enhancing security and regulatory adherence.",
+    "link": "https://grcsphere.net/2026/03/29/centralized-grc-platforms-12-enterprise-benefits-you-can-t-afford-to-miss/",
+    "date": "2026-03-29T09:00:21",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/03/featured-image-1774760415.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 61,
+    "title": "Regulatory Compliance Management in 2026: A Comprehensive Guide for Enterprise Security Leaders",
+    "excerpt": "In 2026, enterprise security leaders must navigate evolving standards like ISO 27001:2022 and NIST CSF 2.0 by implementing continuous control monitoring, AI-driven automation, and tools like GRC Sphere to enhance compliance, risk management, and audit readiness.",
+    "link": "https://grcsphere.net/2026/03/28/regulatory-compliance-management-in-2026-a-comprehensive-guide-for-enterprise-security-leaders/",
+    "date": "2026-03-28T09:00:17",
+    "alt_text": ""
+  },
+  {
+    "id": 60,
+    "title": "The 2026 Regulatory Compliance Playbook: A Comprehensive Guide for Security Leaders",
+    "excerpt": "The 2026 Regulatory Compliance Playbook guides security leaders through new mandates like the EU AI Act, emphasizing strategic, scalable compliance via GRC platforms, automation, AI risk scoring, and continuous monitoring to enhance audit readiness.",
+    "link": "https://grcsphere.net/2026/03/27/the-2026-regulatory-compliance-playbook-a-comprehensive-guide-for-security-leaders/",
+    "date": "2026-03-27T09:00:18",
+    "alt_text": ""
+  },
+  {
+    "id": 59,
+    "title": "Automation + Expert Insight: The Next Era of Cybersecurity Governance",
+    "excerpt": "Integrate GRC automation with expert insight for faster compliance, smarter risk management, and stronger cybersecurity. Use continuous monitoring, AI risk scoring, and tailored tools like GRC Sphere.",
+    "link": "https://grcsphere.net/2026/03/26/automation-expert-insight-the-next-era-of-cybersecurity-governance/",
+    "date": "2026-03-26T14:00:35",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/03/featured-image-1774519231.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 55,
+    "title": "Advanced AI Techniques for Dynamic Cyber Risk Assessment",
+    "excerpt": "Advanced AI techniques like real-time risk scoring, graph analytics, anomaly detection, and NLP enhance dynamic cyber risk assessment and compliance. GRC Sphere integrates these for proactive, automated cybersecurity and audit readiness.",
+    "link": "https://grcsphere.net/2026/03/25/advanced-ai-techniques-for-dynamic-cyber-risk-assessment/",
+    "date": "2026-03-25T14:01:23",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/03/featured-image-1774432878.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 52,
+    "title": "AI-Powered Cyber Risk Management: Key Enterprise Trends Redefining GRC in 2026",
+    "excerpt": "AI-powered cybersecurity in 2026 revolutionizes GRC with real-time risk quantification, continuous control monitoring, automated incident response, predictive analytics, and enhanced third-party risk management for proactive, efficient enterprise protection.",
+    "link": "https://grcsphere.net/2026/03/24/ai-powered-cyber-risk-management-key-enterprise-trends-redefining-grc-in-2026/",
+    "date": "2026-03-24T16:46:34",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/03/featured-image-1774356389.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 50,
+    "title": "How to Achieve a Robust Security Posture with an Integrated GRC Platform",
+    "excerpt": "An integrated GRC platform unifies risk, compliance, and governance with AI risk scoring and continuous monitoring, enhancing cyber resilience, audit readiness, and third-party risk management.",
+    "link": "https://grcsphere.net/2026/03/24/how-to-achieve-a-robust-security-posture-with-an-integrated-grc-platform/",
+    "date": "2026-03-24T16:41:40",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/03/featured-image-1774356095.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 48,
+    "title": "Key Cybersecurity Risk Management Challenges in Regulated Industries and How to Solve Them",
+    "excerpt": "Regulated industries face complex cybersecurity challenges managing multiple compliance standards and third-party risks. AI-powered GRC platforms enable continuous compliance, risk scoring, and automated incident response, enhancing security and efficiency.",
+    "link": "https://grcsphere.net/2026/03/24/key-cybersecurity-risk-management-challenges-in-regulated-industries-and-how-to-solve-them/",
+    "date": "2026-03-24T16:40:56",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/03/featured-image-1774356051.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 46,
+    "title": "AI&#8217;s Impact on Multi-Framework Compliance: From Manual Mapping to Continuous Assurance",
+    "excerpt": "AI automates multi-framework compliance tasks, enabling continuous controls monitoring, risk scoring, and audit readiness. GRC Sphere&#8217;s AI platform streamlines evidence collection, third-party risk, and enhances efficiency.",
+    "link": "https://grcsphere.net/2026/03/24/ai-s-impact-on-multi-framework-compliance-from-manual-mapping-to-continuous-assurance/",
+    "date": "2026-03-24T16:40:25",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/03/featured-image-1774356021.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 44,
+    "title": "Automated Risk Prioritization: The Fast Track to Smarter Incident Response",
+    "excerpt": "Automated risk prioritization uses AI and real-time threat intelligence to reduce alert overload, speed incident response, align actions with business impact, enhance SOC efficiency, and strengthen compliance with frameworks like ISO 27001 and GDPR.",
+    "link": "https://grcsphere.net/2026/03/24/automated-risk-prioritization-the-fast-track-to-smarter-incident-response/",
+    "date": "2026-03-24T16:39:12",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/03/featured-image-1774355948.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 42,
+    "title": "Real-Time Vulnerability Tracking: The Engine of Modern Cybersecurity and Compliance",
+    "excerpt": "Real-time vulnerability tracking, powered by AI and integrated with compliance frameworks, enables proactive threat management, accelerates remediation, and streamlines audits, enhancing enterprise cybersecurity.",
+    "link": "https://grcsphere.net/2026/03/24/real-time-vulnerability-tracking-the-engine-of-modern-cybersecurity-and-compliance/",
+    "date": "2026-03-24T16:38:46",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/03/featured-image-1774355921.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 40,
+    "title": "Continuous Compliance Across Multiple Standards: Proven Strategies for ISO 27001, PCI DSS, GDPR, and HIPAA",
+    "excerpt": "Strategies for continuous compliance across ISO 27001, PCI DSS, GDPR, and HIPAA include harmonizing controls, leveraging AI for monitoring, automating evidence collection, risk-based prioritization, and using GRC Sphere&#8217;s AI platform to streamline processes and audit readiness.",
+    "link": "https://grcsphere.net/2026/03/24/continuous-compliance-across-multiple-standards-proven-strategies-for-iso-27001-pci-dss-gdpr-and-hipaa/",
+    "date": "2026-03-24T16:37:10",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/03/featured-image-1774355825.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 38,
+    "title": "The Future of Cybersecurity Governance: Integrating Automation with Expert Insight",
+    "excerpt": "The future of cybersecurity governance blends AI-driven automation with expert insight, enabling continuous control monitoring, risk scoring, and automated incident response for proactive, compliant security management.",
+    "link": "https://grcsphere.net/2026/03/24/the-future-of-cybersecurity-governance-integrating-automation-with-expert-insight-2/",
+    "date": "2026-03-24T16:25:54",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/03/featured-image-1774355151.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 36,
+    "title": "The Future of Cybersecurity Governance: Integrating Automation with Expert Insight",
+    "excerpt": "The future of cybersecurity governance blends AI-driven automation with expert insight, enabling continuous control monitoring, risk scoring, and automated incident response for proactive, compliant security management.",
+    "link": "https://grcsphere.net/2026/03/24/the-future-of-cybersecurity-governance-integrating-automation-with-expert-insight/",
+    "date": "2026-03-24T16:25:49",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/03/featured-image-1774355144.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 34,
+    "title": "Enterprise Guide: Best Practices for Real-Time Vulnerability Tracking",
+    "excerpt": "This guide highlights real-time vulnerability tracking using AI-powered risk scoring, continuous monitoring, and SIEM-EDR integration to enhance enterprise security, streamline remediation, and ensure compliance.",
+    "link": "https://grcsphere.net/2026/03/24/enterprise-guide-best-practices-for-real-time-vulnerability-tracking/",
+    "date": "2026-03-24T16:20:28",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/03/featured-image-1774354822.jpeg",
+    "alt_text": ""
+  },
+  {
+    "id": 19,
+    "title": "GRC Sphere &#8211; AI Powered Cybersecurity Platform",
+    "excerpt": "Comparing GRC Sphere and MetricStream highlights a choice between a specialised, AI-driven cybersecurity solution and a massive, established enterprise suite. GRC Sphere is a newer, high-growth platform from Observeri Technologies that focuses heavily on Risk Operations Center (ROC) and automated cybersecurity workflows. In contrast, MetricStream is a global market leader offering a comprehensive &#8220;Connected GRC&#8221; ecosystem for large-scale enterprise risk, compliance, and audit needs. Key ...",
+    "link": "https://grcsphere.net/2026/03/24/grc-sphere-ai-powered-cybersecurity-platform/",
+    "date": "2026-03-24T15:17:05",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/03/robot-pic.jpg",
+    "alt_text": ""
+  },
+  {
+    "id": 15,
+    "title": "Dynamic Risk Scoring: The Competitive Advantage in Enterprise Security and Compliance",
+    "excerpt": "Static risk models slow your security team down. They fail to match the speed and complexity of today’s threats.&nbsp;Dynamic risk scoring&nbsp;changes that by continuously recalibrating cyber risk based on real-time data. You’ll see how this approach sharpens risk-based prioritization, accelerates remediation, and strengthens compliance readiness—making your enterprise security efforts far more effective. Elevating Enterprise Security ...",
+    "link": "https://grcsphere.net/2026/03/24/dynamic-risk-scoring-the-competitive-advantage-in-enterprise-security-and-compliance/",
+    "date": "2026-03-24T15:03:13",
+    "alt_text": ""
+  },
+  {
+    "id": 12,
+    "title": "GRC Sphere: An AI-Powered Cybersecurity GRC Platform for Predictive Risk Management",
+    "excerpt": "Introduction: Why Traditional GRC Is Failing Security Teams Cybersecurity risk has evolved faster than traditional Governance, Risk, and Compliance (GRC) tools. Most legacy GRC platforms are&nbsp;documentation-heavy, reactive, and audit-centric, leaving CISOs with static dashboards that explain&nbsp;what went wrong&nbsp;rather than&nbsp;what will go wrong next. GRC Sphere was built to solve this exact gap. GRC Sphere is an&nbsp;Enterprise ...",
+    "link": "https://grcsphere.net/2026/03/24/grc-sphere-an-ai-powered-cybersecurity-grc-platform-for-predictive-risk-management/",
+    "date": "2026-03-24T14:59:48",
+    "alt_text": ""
+  },
+  {
+    "id": 8,
+    "title": "AI-Driven Security Architecture: Prioritize Risk, Accelerate Compliance",
+    "excerpt": "AI-driven security reshapes how you protect your enterprise. Traditional risk assessments miss urgent threats and slow compliance efforts. With smarter security architecture, you get real-time risk quantification and automated compliance aligned to frameworks like ISO 27001 and GDPR. GRC Sphere’s platform puts these tools at your fingertips—cutting audit burden and focusing your team where it ...",
+    "link": "https://grcsphere.net/2026/03/24/ai-driven-security-architecture-prioritize-risk-accelerate-compliance/",
+    "date": "2026-03-24T14:57:29",
+    "alt_text": ""
+  }
+]

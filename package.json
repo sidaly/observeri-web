@@ -9,6 +9,7 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "generate-downloads": "node scripts/generate-downloads.mjs",
+    "fetch-blogs": "node scripts/fetch-wordpress-posts.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
