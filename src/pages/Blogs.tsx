@@ -1,8 +1,18 @@
+import { Fragment, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "@/components/ui/pagination";
 import { FadeUp, StaggerContainer, StaggerItem } from "@/components/ScrollAnimations";
 import { BlogPostCard } from "@/components/BlogPostCard";
 import { ArrowRight, Newspaper } from "lucide-react";
@@ -10,8 +20,32 @@ import blogPosts from "@/data/posts.json";
 import type { BlogPostData } from "@/types/wordpress";
 
 const posts: BlogPostData[] = blogPosts;
+const POSTS_PER_PAGE = 6;
 
 const Blogs = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const pageCount = Math.ceil(posts.length / POSTS_PER_PAGE);
+  const paginatedPosts = posts.slice((currentPage - 1) * POSTS_PER_PAGE, currentPage * POSTS_PER_PAGE);
+  const pageNumbers = useMemo(() => {
+    if (pageCount <= 5) {
+      return Array.from({ length: pageCount }, (_, index) => index + 1);
+    }
+
+    if (currentPage <= 3) {
+      return [1, 2, 3, 4, pageCount];
+    }
+
+    if (currentPage >= pageCount - 2) {
+      return [1, pageCount - 3, pageCount - 2, pageCount - 1, pageCount];
+    }
+
+    return [1, currentPage - 1, currentPage, currentPage + 1, pageCount];
+  }, [currentPage, pageCount]);
+
+  const goToPage = (page: number) => {
+    setCurrentPage(Math.min(Math.max(page, 1), pageCount));
+  };
+
   return (
     <div className="min-h-screen bg-background bg-gradient-main">
       <Navbar />
@@ -29,7 +63,7 @@ const Blogs = () => {
         </div>
       </section>
 
-      <section className="py-20">
+      <section id="blog-posts" className="py-20">
         <div className="container mx-auto px-6">
           <div className="mx-auto mb-16 max-w-3xl text-center">
             <FadeUp><p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-primary">From our blog</p></FadeUp>
@@ -38,11 +72,74 @@ const Blogs = () => {
           </div>
 
           {posts.length > 0 ? (
-            <StaggerContainer className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-3" staggerDelay={0.08}>
-              {posts.map((post, index) => (
-                <StaggerItem key={post.id}><BlogPostCard post={post} delay={index * 0.05} /></StaggerItem>
-              ))}
-            </StaggerContainer>
+            <>
+              <StaggerContainer key={currentPage} className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-3" staggerDelay={0.08}>
+                {paginatedPosts.map((post, index) => (
+                  <StaggerItem key={post.id}><BlogPostCard post={post} delay={index * 0.05} /></StaggerItem>
+                ))}
+              </StaggerContainer>
+
+              {pageCount > 1 && (
+                <FadeUp delay={0.18}>
+                  <Pagination className="mt-12">
+                    <PaginationContent>
+                      <PaginationItem>
+                        <PaginationPrevious
+                          href="#blog-posts"
+                          aria-disabled={currentPage === 1}
+                          tabIndex={currentPage === 1 ? -1 : undefined}
+                          className={currentPage === 1 ? "pointer-events-none opacity-50" : undefined}
+                          onClick={(event) => {
+                            event.preventDefault();
+                            goToPage(currentPage - 1);
+                          }}
+                        />
+                      </PaginationItem>
+
+                      {pageNumbers.map((page, index) => {
+                        const previousPage = pageNumbers[index - 1];
+                        const showEllipsis = previousPage !== undefined && page - previousPage > 1;
+
+                        return (
+                          <Fragment key={page}>
+                            {showEllipsis && (
+                              <PaginationItem>
+                                <PaginationEllipsis />
+                              </PaginationItem>
+                            )}
+                            <PaginationItem>
+                              <PaginationLink
+                                href="#blog-posts"
+                                isActive={page === currentPage}
+                                onClick={(event) => {
+                                  event.preventDefault();
+                                  goToPage(page);
+                                }}
+                              >
+                                {page}
+                              </PaginationLink>
+                            </PaginationItem>
+                          </Fragment>
+                        );
+                      })}
+
+                      <PaginationItem>
+                        <PaginationNext
+                          href="#blog-posts"
+                          aria-disabled={currentPage === pageCount}
+                          tabIndex={currentPage === pageCount ? -1 : undefined}
+                          className={currentPage === pageCount ? "pointer-events-none opacity-50" : undefined}
+                          onClick={(event) => {
+                            event.preventDefault();
+                            goToPage(currentPage + 1);
+                          }}
+                        />
+                      </PaginationItem>
+                    </PaginationContent>
+                  </Pagination>
+                </FadeUp>
+              )}
+            </>
           ) : (
             <FadeUp>
               <div className="mx-auto flex max-w-2xl flex-col items-center rounded-2xl border border-dashed border-border/50 bg-card/30 py-16 text-center">
