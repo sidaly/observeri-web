@@ -1,5 +1,21 @@
 [
   {
+    "id": 162,
+    "title": "How CISOs Can Stop Patching Everything and Start Prioritizing What Actually Matters",
+    "excerpt": "Let’s be honest: your security team is exhausted. They are currently sprinting on a hamster wheel of \"Critical\" and \"High\" vulnerabilities, fueled by nothing but cold coffee and the sheer terror of missing a 9.8 CVSS score. But here is the uncomfortable truth: patching everything is not a strategy; it is a clerical exercise. Most ...",
+    "link": "https://grcsphere.net/2026/05/12/how-cisos-can-stop-patching-everything-and-start-prioritizing-what-actually-matters-2/",
+    "date": "2026-05-12T12:38:49",
+    "alt_text": ""
+  },
+  {
+    "id": 161,
+    "title": "How CISOs Can Stop Patching Everything and Start Prioritizing What Actually Matters",
+    "excerpt": "Let’s be honest: your security team is exhausted. They are currently sprinting on a hamster wheel of \"Critical\" and \"High\" vulnerabilities, fueled by nothing but cold coffee and the sheer terror of missing a 9.8 CVSS score. But here is the uncomfortable truth: patching everything is not a strategy; it is a clerical exercise. Most ...",
+    "link": "https://grcsphere.net/2026/05/12/how-cisos-can-stop-patching-everything-and-start-prioritizing-what-actually-matters/",
+    "date": "2026-05-12T12:37:48",
+    "alt_text": ""
+  },
+  {
     "id": 157,
     "title": "Why Everyone Is Talking About EPSS and LEV (And How They Change Your Vulnerability Prioritization Strategy)",
     "excerpt": "For years, cybersecurity teams have been trapped in a reactive \"patch everything\" loop. Driven by the Common Vulnerability Scoring System (CVSS), enterprises in the UAE and beyond have focused on fixing every \"Critical\" or \"High\" vulnerability, regardless of whether that vulnerability posed a real-world threat. The result? Overworked teams, massive backlogs, and no measurable reduction ...",
