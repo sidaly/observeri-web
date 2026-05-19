@@ -17,15 +17,15 @@ export const enterpriseGrcTopicSections = [
   },
   {
     id: "security-programs",
-    title: "Cybersecurity risk management software: dashboards, prioritization, third parties",
+    title: "Cybersecurity risk management: vulnerability tracking, prioritization, and quantification",
     body:
-      "Security buyers use Observeri as cybersecurity risk management software that unifies vulnerability risk prioritization tooling, cyber risk dashboard software, and attack surface risk management platform telemetry. Third party cyber risk management, vendor risk cybersecurity platform scoring, and security risk assessment tools feed a cyber risk scoring platform aligned to security posture management GRC practices—so remediation queues match business consequence, not only CVSS.",
+      "Security buyers use Observeri as cybersecurity risk management software that unifies vulnerability tracking, vulnerability prioritization, and vulnerability risk prioritization tooling with cyber risk dashboard software and attack surface risk management platform telemetry. AI risk assessment and cybersecurity risk quantification outputs—including FAIR risk analysis and FAIR risk assessment views—help teams prioritize fixes by business impact. Third party cyber risk management, vendor risk cybersecurity platform scoring, and security risk assessment tools feed a cyber risk scoring platform aligned to security posture management GRC practices—so remediation queues match business consequence, not only CVSS.",
   },
   {
     id: "compliance-frameworks",
-    title: "Compliance & audit: ISO 27001, NIST CSF, SOC 2, GDPR, HIPAA, PCI DSS",
+    title: "Compliance & audit: ISO 27001, NIST CSF, SOC 2, GDPR, HIPAA, PCI DSS, SWIFT, MiCA, NESA, NIA, DORA",
     body:
-      "Regulatory compliance management software in Observeri supports ISO 27001 compliance software patterns, NIST CSF risk management tool mappings, SOC 2 compliance platform evidence, GDPR compliance software operations, HIPAA compliance management system controls, and PCI DSS compliance solution traceability. Audit management software GRC workflows, compliance tracking platform status, and internal audit software tasks stay linked to live control tests and policies.",
+      "Regulatory compliance management software in Observeri supports ISO 27001 and ISO27001 compliance software patterns, NIST CSF and NIST 800-53 risk management tool mappings, SOC 2 compliance platform evidence, GDPR compliance software operations, HIPAA compliance and HIPAA compliance management system controls, PCI DSS and PCI compliance solution traceability, SWIFT CSP compliance for financial messaging security, and regional frameworks including MiCA compliance, NESA compliance framework, NIA compliance, SAMA cybersecurity framework, CBUAE compliance, and DORA compliance for operational resilience. Audit management software GRC workflows, compliance tracking platform status, and internal audit software tasks stay linked to live control tests and policies.",
   },
   {
     id: "quantification",

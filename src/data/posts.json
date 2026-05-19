@@ -1,5 +1,38 @@
 [
   {
+    "id": 176,
+    "title": "Why Everyone Is Talking About the Risk Operations Center (ROC): And How It Replaces Your Old Risk Register",
+    "excerpt": "If you are still managing your enterprise risk on a spreadsheet, you aren’t managing risk: you’re managing a digital graveyard. The traditional \"Risk Register\" has long been the industry’s open secret: a static, backward-looking document that sits in a folder until the week before an audit. It is a checkbox exercise that provides zero operational ...",
+    "link": "https://grcsphere.net/2026/05/19/why-everyone-is-talking-about-the-risk-operations-center-roc-and-how-it-replaces-your-old-risk-register/",
+    "date": "2026-05-19T13:51:56",
+    "alt_text": ""
+  },
+  {
+    "id": 169,
+    "title": "The 10 Best AI-Powered Cybersecurity GRC Tools of 2026 (Ranked &#038; Reviewed)",
+    "excerpt": "In 2026, the era of the \"compliance spreadsheet\" is officially dead. If you’re still managing your risk posture through manual data entry and annual audits, you’re not just behind the curve: you’re operating in a state of high-velocity vulnerability. Regulators in the UAE and globally have shifted from passive oversight to active enforcement. With fines ...",
+    "link": "https://grcsphere.net/2026/05/17/the-10-best-ai-powered-cybersecurity-grc-tools-of-2026-ranked-reviewed/",
+    "date": "2026-05-17T22:31:45",
+    "alt_text": ""
+  },
+  {
+    "id": 168,
+    "title": "The Billion-Dirham Blind Spot: Why AI Compliance Assurance is No Longer Optional",
+    "excerpt": "For decades, the board viewed regulatory compliance as a \"check-the-box\" administrative hurdle: a necessary cost of doing business, managed through spreadsheets and annual audits. That era ended abruptly in 2025. With the introduction of the UAE Federal Decree-Law No. 6 of 2025, the stakes for financial institutions and regulated enterprises have shifted from operational friction ...",
+    "link": "https://grcsphere.net/2026/05/17/the-billion-dirham-blind-spot-why-ai-compliance-assurance-is-no-longer-optional/",
+    "date": "2026-05-17T22:22:44",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/05/UWVMmE1kEBR.webp",
+    "alt_text": ""
+  },
+  {
+    "id": 163,
+    "title": "Why Your Third-Party Risk Management is a Catastrophe Waiting to Happen (And How to Fix It)",
+    "excerpt": "If you are a CISO or a Risk Officer in 2026, you are likely sitting on a ticking time bomb. You’ve spent millions securing your perimeter. You’ve locked down your endpoints, trained your staff, and deployed the latest AI-driven NDR. But while your front door is reinforced with titanium, your back door: the hundreds of ...",
+    "link": "https://grcsphere.net/2026/05/14/why-your-third-party-risk-management-is-a-catastrophe-waiting-to-happen-and-how-to-fix-it/",
+    "date": "2026-05-14T17:39:38",
+    "alt_text": ""
+  },
+  {
     "id": 162,
     "title": "How CISOs Can Stop Patching Everything and Start Prioritizing What Actually Matters",
     "excerpt": "Let’s be honest: your security team is exhausted. They are currently sprinting on a hamster wheel of \"Critical\" and \"High\" vulnerabilities, fueled by nothing but cold coffee and the sheer terror of missing a 9.8 CVSS score. But here is the uncomfortable truth: patching everything is not a strategy; it is a clerical exercise. Most ...",

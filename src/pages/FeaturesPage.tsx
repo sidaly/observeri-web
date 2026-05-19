@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, CheckCircle2, Layers3, ShieldCheck, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -6,19 +6,31 @@ import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import { FadeUp, ScaleUp, StaggerContainer, StaggerItem } from "@/components/ScrollAnimations";
 import { Button } from "@/components/ui/button";
-import { featureOutcomes, platformModules } from "@/data/platformModules";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { featureOutcomes, platformModules, type PlatformModule } from "@/data/platformModules";
 
 const platformPillars = [
   "Cybersecurity GRC platform modules",
-  "AI risk management software scoring",
+  "AI risk assessment & management scoring",
+  "ISO27001, NIST, FAIR & regulatory compliance",
+  "Vulnerability tracking & prioritization",
+  "Cybersecurity risk quantification",
+  "Audit, PCI, SWIFT, NESA, NIA, MiCA & DORA programs",
   "Control assessment platform automation",
-  "Audit workflow automation evidence",
+  "Risk acceptance & compensating controls",
   "Attack surface & vendor risk telemetry",
   "Risk register software & quantified exposure",
 ];
 
 const FeaturesPage = () => {
   const [activeImage, setActiveImage] = useState<{ src: string; title: string } | null>(null);
+  const [activeModule, setActiveModule] = useState<PlatformModule | null>(null);
 
   useEffect(() => {
     if (!activeImage) {
@@ -182,7 +194,14 @@ const FeaturesPage = () => {
                       </span>
                     </div>
 
-                    <h3 className="mt-5 text-2xl font-display font-semibold">{module.title}</h3>
+                    <button
+                      type="button"
+                      className="mt-5 text-left text-2xl font-display font-semibold transition-colors hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-sm"
+                      onClick={() => setActiveModule(module)}
+                      aria-label={`Learn more about ${module.title}`}
+                    >
+                      {module.title}
+                    </button>
                     <p className="mt-4 flex-1 text-sm leading-7 text-muted-foreground">{module.summary}</p>
 
                     <div className="mt-6 flex flex-wrap gap-2">
@@ -234,6 +253,115 @@ const FeaturesPage = () => {
       </section>
 
       <Footer />
+
+      <Dialog open={activeModule !== null} onOpenChange={(open) => !open && setActiveModule(null)}>
+        <DialogContent className="max-h-[90vh] max-w-2xl overflow-y-auto border-border/50 bg-gradient-card p-0 sm:rounded-3xl">
+          <AnimatePresence mode="wait">
+            {activeModule ? (
+              <motion.div
+                key={activeModule.code}
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -8 }}
+                transition={{ duration: 0.25, ease: "easeOut" }}
+              >
+                <div className="relative aspect-[16/10] overflow-hidden border-b border-border/30 bg-background/40">
+                  <img
+                    src={activeModule.image}
+                    alt={`${activeModule.title} module interface`}
+                    className="h-full w-full object-contain p-4"
+                  />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
+                </div>
+
+                <div className="p-6 md:p-8">
+                  <DialogHeader className="space-y-4 text-left">
+                    <div className="flex items-start gap-4">
+                      <motion.div
+                        className="rounded-2xl bg-primary/10 p-3"
+                        initial={{ scale: 0.8, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ delay: 0.1, duration: 0.3 }}
+                      >
+                        <activeModule.icon className="h-6 w-6 text-primary" />
+                      </motion.div>
+                      <div className="flex-1 space-y-1">
+                        <span className="inline-block rounded-full border border-border/40 bg-background/30 px-3 py-1 text-xs uppercase tracking-[0.16em] text-muted-foreground">
+                          {activeModule.code}
+                        </span>
+                        <DialogTitle className="text-2xl font-display font-semibold md:text-3xl">
+                          {activeModule.title}
+                        </DialogTitle>
+                      </div>
+                    </div>
+                    <DialogDescription className="text-base leading-7 text-muted-foreground">
+                      {activeModule.summary}
+                    </DialogDescription>
+                  </DialogHeader>
+
+                  <motion.p
+                    className="mt-6 text-sm leading-7 text-foreground/90"
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.15, duration: 0.3 }}
+                  >
+                    {activeModule.details}
+                  </motion.p>
+
+                  <motion.div
+                    className="mt-6"
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2, duration: 0.3 }}
+                  >
+                    <h4 className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-primary">
+                      Key Capabilities
+                    </h4>
+                    <ul className="space-y-2">
+                      {activeModule.capabilities.map((capability, index) => (
+                        <motion.li
+                          key={capability}
+                          className="flex items-start gap-3 text-sm leading-6 text-muted-foreground"
+                          initial={{ opacity: 0, x: -8 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          transition={{ delay: 0.25 + index * 0.05, duration: 0.25 }}
+                        >
+                          <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                          {capability}
+                        </motion.li>
+                      ))}
+                    </ul>
+                  </motion.div>
+
+                  <motion.div
+                    className="mt-6"
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.35, duration: 0.3 }}
+                  >
+                    <h4 className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-primary">
+                      Lifecycle
+                    </h4>
+                    <div className="flex flex-wrap gap-2">
+                      {activeModule.lifecycle.map((step, index) => (
+                        <motion.span
+                          key={step}
+                          className="rounded-full border border-border/40 bg-background/30 px-3 py-1 text-xs text-muted-foreground"
+                          initial={{ opacity: 0, scale: 0.9 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ delay: 0.4 + index * 0.04, duration: 0.2 }}
+                        >
+                          {step}
+                        </motion.span>
+                      ))}
+                    </div>
+                  </motion.div>
+                </div>
+              </motion.div>
+            ) : null}
+          </AnimatePresence>
+        </DialogContent>
+      </Dialog>
 
       {activeImage ? (
         <div

@@ -287,6 +287,8 @@ Contact: contact@observeri.com
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
               >
+
+                
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
