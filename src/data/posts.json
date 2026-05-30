@@ -1,5 +1,32 @@
 [
   {
+    "id": 188,
+    "title": "Stopping Ransomware Before It Starts: How GRC Is Your Secret Defensive Weapon",
+    "excerpt": "For most organizations, ransomware is treated like a natural disaster: unpredictable, inevitable, and manageable only through insurance and recovery. The security team waits for an alert, the SOC scrambles, and the C-suite prays the backups weren&#39;t hit. But here is the reality: ransomware is not just a technical failure. It is a governance failure. When ...",
+    "link": "https://grcsphere.net/2026/05/29/stopping-ransomware-before-it-starts-how-grc-is-your-secret-defensive-weapon/",
+    "date": "2026-05-29T14:04:14",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/05/6LQolvJsXlg.webp",
+    "alt_text": ""
+  },
+  {
+    "id": 183,
+    "title": "When ROC Meets SOC: Why Your Security Team Needs a &#8216;Risk Brain&#8217; to Stop Chasing Ghosts",
+    "excerpt": "For most CISOs, the Security Operations Center (SOC) is a loud, high-stress room where analysts play a never-ending game of \"Whack-A-Mole.\" Every day, thousands of alerts scream for attention. Most are noise. Some are minor. A few are catastrophic. The problem? Your SOC can’t tell the difference. While your SOC is focused on activity (the ...",
+    "link": "https://grcsphere.net/2026/05/25/when-roc-meets-soc-why-your-security-team-needs-a-risk-brain-to-stop-chasing-ghosts/",
+    "date": "2026-05-25T06:30:12",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/05/I_17O8jYU6s.webp",
+    "alt_text": ""
+  },
+  {
+    "id": 181,
+    "title": "Is Your GRC in the Stone Age? How Risk Intelligence Turns Boardroom Boredom into Billion-Dirham Decisions",
+    "excerpt": "Picture this: You’re in a high-stakes boardroom in DIFC or Abu Dhabi Global Market. The air is thick with the scent of expensive espresso and the weight of multi-billion dirham decisions. You, the CISO, stand up to present. You pull up a slide. It’s a \"Heatmap.\" It’s a grid of red, amber, and green squares. ...",
+    "link": "https://grcsphere.net/2026/05/22/is-your-grc-in-the-stone-age-how-risk-intelligence-turns-boardroom-boredom-into-billion-dirham-decisions/",
+    "date": "2026-05-22T15:01:11",
+    "featured_image": "https://grcsphere.net/wp-content/uploads/2026/05/frrf5yjGPwY.webp",
+    "alt_text": ""
+  },
+  {
     "id": 176,
     "title": "Why Everyone Is Talking About the Risk Operations Center (ROC): And How It Replaces Your Old Risk Register",
     "excerpt": "If you are still managing your enterprise risk on a spreadsheet, you aren’t managing risk: you’re managing a digital graveyard. The traditional \"Risk Register\" has long been the industry’s open secret: a static, backward-looking document that sits in a folder until the week before an audit. It is a checkbox exercise that provides zero operational ...",

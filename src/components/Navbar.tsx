@@ -10,6 +10,7 @@ const navItems = [
   { label: "Products", href: "/features" },
   { label: "Blogs", href: "/blogs" },
   { label: "About Us", href: "/about" },
+  { label: "Partners", href: "/partners" },
   { label: "Consultancy Service", href: "/consultancy-service" },
 ];
 
