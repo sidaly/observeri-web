@@ -157,7 +157,7 @@ const AiRiskOperationsCenter = () => {
                     </Link>
                   </Button>
                   <Button asChild variant="outline" size="lg">
-                    <a href="#signal-domains">See signal augmentation</a>
+                    <a href="#product-video">Watch product video</a>
                   </Button>
                 </div>
               </div>
@@ -171,7 +171,7 @@ const AiRiskOperationsCenter = () => {
               >
                 <img
                   src="/ai_risk_operation.png"
-                  alt="Observeri AI Risk Operations Center"
+                  alt="Observeri AI Risk Operations Center dashboard with security health index, risk severity distribution, FAIR quantification, and value at risk scenarios"
                   className="w-full rounded-[1.75rem] object-contain"
                 />
               </motion.div>
@@ -192,6 +192,38 @@ const AiRiskOperationsCenter = () => {
               </div>
             </SlideInRight>
           </div>
+        </div>
+      </section>
+
+      {/* Product video */}
+      <section id="product-video" className="border-y border-border/30 bg-card/20 py-24">
+        <div className="container mx-auto px-6">
+          <FadeUp>
+            <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-primary">Product overview</p>
+            <h2 className="max-w-3xl text-3xl font-display font-bold md:text-5xl">
+              See the AI Risk Operations Center in action
+            </h2>
+            <p className="mt-5 max-w-3xl text-lg leading-8 text-muted-foreground">
+              Watch how Observeri unifies incidents, risks, vulnerabilities, threats, and compliance into live asset
+              risk scores—with AI-guided remediation that protects your crown jewels.
+            </p>
+          </FadeUp>
+
+          <ScaleUp delay={0.1} className="mt-12">
+            <div className="overflow-hidden rounded-[2rem] border-gradient bg-gradient-card p-3 shadow-2xl shadow-background/30">
+              <div className="relative aspect-video w-full overflow-hidden rounded-[1.75rem] bg-background/50">
+                <iframe
+                  src="https://www.youtube.com/embed/Jg7ilCidBu0"
+                  title="Observeri AI Risk Operations Center product overview"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full border-0"
+                />
+              </div>
+            </div>
+          </ScaleUp>
         </div>
       </section>
 

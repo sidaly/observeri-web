@@ -143,7 +143,7 @@ const ThirdPartyRisk = () => {
               >
                 <img
                   src="/third_party_risk.png"
-                  alt="Observeri Third Party Risk Management module"
+                  alt="Observeri Third Party Risk dashboard showing risk trend, risk factors, exposure by category, and at-risk vendor health scores"
                   className="w-full rounded-[1.75rem] object-contain"
                 />
                 <motion.div
