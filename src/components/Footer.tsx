@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Twitter, Linkedin, Youtube } from "lucide-react";
+import { Twitter, Linkedin, Youtube, BlueSky } from "lucide-react";
 import { Link } from "react-router-dom";
 import { FadeUp } from "./ScrollAnimations";
 import logoIcon from "@/assets/grc-sphere-icon.png";
@@ -15,6 +15,7 @@ const socialLinks = [
   { icon: Youtube, href: "https://www.youtube.com/@ObserveriTechnologies", label: "YouTube" },
   { icon: Linkedin, href: "https://www.linkedin.com/company/observeri-technologies", label: "LinkedIn" },
   { icon: Twitter, href: "https://x.com/observeritech", label: "X" },
+
 ];
 
 export const Footer = () => {

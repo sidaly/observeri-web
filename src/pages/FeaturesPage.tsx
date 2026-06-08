@@ -214,6 +214,89 @@ const FeaturesPage = () => {
                         </span>
                       ))}
                     </div>
+
+                    {module.code === "3RD_PARTY" ? (
+                      <Link
+                        to="/products/third-party-risk"
+                        className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
+                      >
+                        Explore Third Party Risk
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    ) : null}
+                    {module.code === "CORE_SYSTEM" ? (
+                      <Link
+                        to="/products/ai-risk-operations-center"
+                        className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
+                      >
+                        Explore AI Risk Operations Center
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    ) : null}
+                    {module.code === "PREDICT_V2" ? (
+                      <Link
+                        to="/products/cyber-risk-management"
+                        className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
+                      >
+                        Explore Cyber Risk Management
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    ) : null}
+                    {module.code === "VULNERABILITIES" ? (
+                      <Link
+                        to="/products/vulnerability-operations"
+                        className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
+                      >
+                        Explore Vulnerability Operations
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    ) : null}
+                    {module.code === "IS_GOVERNANCE" || module.code === "POLICY_MGMT" ? (
+                      <Link
+                        to="/products/security-governance"
+                        className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
+                      >
+                        Explore Security Governance
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    ) : null}
+                    {module.code === "COMPLIANCE_MGMT" ? (
+                      <Link
+                        to="/products/compliance-management"
+                        className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
+                      >
+                        Explore Compliance Management
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    ) : null}
+                    {module.code === "REMEDIATION" ||
+                    module.code === "THREAT" ? (
+                      <Link
+                        to="/products/exposure-management"
+                        className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
+                      >
+                        Explore Exposure Management
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    ) : null}
+                    {module.code === "HUMAN_RISK" ? (
+                      <Link
+                        to="/products/human-risk-management"
+                        className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
+                      >
+                        Explore Human Risk Management
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    ) : null}
+                    {module.code === "ASSET_MGMT" ? (
+                      <Link
+                        to="/products/information-asset-management"
+                        className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
+                      >
+                        Explore Information Asset Management
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    ) : null}
                   </div>
                 </motion.article>
               </StaggerItem>

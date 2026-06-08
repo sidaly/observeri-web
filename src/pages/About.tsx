@@ -297,7 +297,7 @@ const About = () => {
                     Why enterprises adopt Observeri GRC.
                   </h2>
                   <p className="mt-6 text-lg leading-8 text-muted-foreground">
-                    The story across the decks is consistent: stronger governance is not just about
+                    The story across Observeri GRC is consistent: stronger governance is not just about
                     avoiding fines. It protects reputation, improves resilience, accelerates execution,
                     and gives leadership a cleaner line of sight into enterprise risk.
                   </p>
@@ -361,7 +361,7 @@ const About = () => {
                     <p className="text-sm text-muted-foreground">3-year exposure</p>
                     <p className="mt-2 text-3xl font-display font-bold text-foreground">$23.6M</p>
                     <p className="mt-3 text-sm leading-6 text-muted-foreground">
-                      Projected cumulative risk exposure in the status quo scenario highlighted in the deck.
+                      Projected cumulative risk exposure in the status quo scenario highlighted in Observeri GRC.
                     </p>
                   </div>
                   <div className="rounded-2xl border border-border/30 bg-background/30 p-5">
@@ -408,7 +408,7 @@ const About = () => {
             </FadeUp>
             <FadeUp delay={0.16}>
               <p className="mt-5 text-lg leading-8 text-muted-foreground">
-                The implementation model in the decks is designed for minimal disruption: SaaS delivery,
+                The implementation model in Observeri GRC is designed for minimal disruption: SaaS delivery,
                 API-first integration, no added headcount, and just enough executive enablement to make
                 the system operational quickly.
               </p>

@@ -79,9 +79,17 @@ const Solutions = () => {
               </p>
             </FadeUp>
             <FadeUp delay={0.08}>
+             
               <h2 className="text-3xl font-display font-bold md:text-5xl">
-                Explore the industries called out directly in the presentation.
+                Observeri GRC for regulated industries with very different risk realities.
               </h2>
+              <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
+                Industry pages connect GRC software for banks, healthcare compliance software, industrial cybersecurity GRC,
+                public sector GRC platform work, and fintech compliance platform rollouts to the same AI governance core.
+                Regional teams often discover Observeri through GRC software UAE, cybersecurity GRC Dubai, Abu Dhabi compliance
+                software, fintech GRC UAE, and broader risk management platform Middle East searches—then validate against a
+                global GRC software comparison checklist.
+              </p>
             </FadeUp>
           </div>
 

@@ -15,6 +15,17 @@ import ConsultancyService from "./pages/ConsultancyService";
 import Partners from "./pages/Partners";
 import NotFound from "./pages/NotFound";
 import Blogs from "./pages/Blogs";
+import ThirdPartyRisk from "./pages/ThirdPartyRisk";
+import CyberRiskManagement from "./pages/CyberRiskManagement";
+import VulnerabilityOperations from "./pages/VulnerabilityOperations";
+import AiRiskOperationsCenter from "./pages/AiRiskOperationsCenter";
+import SecurityGovernance from "./pages/SecurityGovernance";
+import ExposureManagement from "./pages/ExposureManagement";
+import DataPrivacyProtection from "./pages/DataPrivacyProtection";
+import ComplianceManagement from "./pages/ComplianceManagement";
+import InformationAssetManagement from "./pages/InformationAssetManagement";
+import HumanRiskManagement from "./pages/HumanRiskManagement";
+import { PageSeo } from "./components/PageSeo";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +35,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <PageSeo />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
@@ -31,6 +43,16 @@ const App = () => (
           <Route path="/newsroom" element={<Newsroom />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/features" element={<FeaturesPage />} />
+          <Route path="/products/third-party-risk" element={<ThirdPartyRisk />} />
+          <Route path="/products/cyber-risk-management" element={<CyberRiskManagement />} />
+          <Route path="/products/vulnerability-operations" element={<VulnerabilityOperations />} />
+          <Route path="/products/ai-risk-operations-center" element={<AiRiskOperationsCenter />} />
+          <Route path="/products/security-governance" element={<SecurityGovernance />} />
+          <Route path="/products/exposure-management" element={<ExposureManagement />} />
+          <Route path="/products/compliance-management" element={<ComplianceManagement />} />
+          <Route path="/products/information-asset-management" element={<InformationAssetManagement />} />
+          <Route path="/products/human-risk-management" element={<HumanRiskManagement />} />
+          <Route path="/products/data-privacy-protection" element={<DataPrivacyProtection />} />
           <Route path="/consultancy-service" element={<ConsultancyService />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/solutions" element={<Solutions />} />

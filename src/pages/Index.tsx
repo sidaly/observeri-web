@@ -384,7 +384,7 @@ const Index = () => {
             </FadeUp>
             <FadeUp delay={0.16}>
               <p className="mt-5 text-lg text-muted-foreground">
-                The presentation’s core argument is simple: mitigation costs roughly 4-6% of recovery exposure,
+                Observeri GRC’s core argument is simple: mitigation costs roughly 4-6% of recovery exposure,
                 creating 12-27X ROI potential in year one.
               </p>
             </FadeUp>
@@ -572,7 +572,7 @@ const Index = () => {
                   Speak the CFO&apos;s language with expected annual loss.
                 </h2>
                 <p className="mt-5 max-w-2xl text-lg leading-8 text-muted-foreground">
-                  Instead of abstract red-yellow-green scoring, the presentation reframes exposure in dollars:
+                  Instead of abstract red-yellow-green scoring, Observeri GRC reframes exposure in dollars:
                   asset value multiplied by threat probability and residual risk becomes financial impact leadership
                   can budget against.
                 </p>
@@ -809,7 +809,7 @@ const Index = () => {
                   Can you afford to leave $2M+ of monthly risk exposure unmanaged?
                 </h2>
                 <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">
-                  The presentation closes with an investment decision, not a feature checklist: modeled annual cost
+                  Observeri GRC closes with an investment decision, not a feature checklist: modeled annual cost
                   of $500K, year 1 return above $9M, and a payback period of 21 days.
                 </p>
 

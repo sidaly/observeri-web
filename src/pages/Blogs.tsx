@@ -33,7 +33,7 @@ const Blogs = () => {
         <div className="container mx-auto px-6">
           <div className="mx-auto mb-16 max-w-3xl text-center">
             <FadeUp><p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-primary">From our blog</p></FadeUp>
-            <FadeUp delay={0.06}><h2 className="text-3xl font-display font-bold md:text-4xl">Latest articles from GRC sphere</h2></FadeUp>
+            <FadeUp delay={0.06}><h2 className="text-3xl font-display font-bold md:text-4xl">Latest articles from Observeri GRC</h2></FadeUp>
             <FadeUp delay={0.12}><p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">In-depth articles on AI-powered GRC, compliance strategies, and risk management best practices.</p></FadeUp>
           </div>
 
@@ -48,7 +48,7 @@ const Blogs = () => {
               <div className="mx-auto flex max-w-2xl flex-col items-center rounded-2xl border border-dashed border-border/50 bg-card/30 py-16 text-center">
                 <Newspaper className="mb-4 h-12 w-12 text-muted-foreground/50" />
                 <h3 className="text-lg font-semibold text-muted-foreground">No blog posts yet</h3>
-                <p className="mt-2 text-sm text-muted-foreground">Run <code className="rounded bg-muted px-1.5 py-0.5">npm run fetch-blogs</code> to fetch posts from GRC sphere.</p>
+                <p className="mt-2 text-sm text-muted-foreground">Run <code className="rounded bg-muted px-1.5 py-0.5">npm run fetch-blogs</code> to fetch posts from Observeri GRC.</p>
               </div>
             </FadeUp>
           )}
@@ -56,7 +56,7 @@ const Blogs = () => {
           <FadeUp delay={0.2}>
             <div className="mt-12 flex justify-center gap-4">
               <Button variant="outline" asChild>
-                <a href="https://grcsphere.net" target="_blank" rel="noopener noreferrer">Visit GRC sphere<ArrowRight className="ml-2 h-4 w-4" /></a>
+                <a href="https://observeri.com" target="_blank" rel="noopener noreferrer">Visit Observeri GRC<ArrowRight className="ml-2 h-4 w-4" /></a>
               </Button>
             </div>
           </FadeUp>

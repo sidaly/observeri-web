@@ -185,7 +185,7 @@ export const platformModules: PlatformModule[] = [
     title: "Human Risk",
     code: "HUMAN_RISK",
     icon: Users,
-    image: "/human_risk.png",
+    image: "/human_risk_management.png",
     summary:
       "Quantifies user exposure using identity context, privilege impact, trust indicators, anomaly signals, and environmental risk.",
     lifecycle: ["Profile users", "Quantify exposure", "Detect anomalies", "Trigger controls"],
@@ -219,7 +219,7 @@ export const platformModules: PlatformModule[] = [
     title: "Asset Management",
     code: "ASSET_MGMT",
     icon: Network,
-    image: "/asset_management.png",
+    image: "/information_asset_management.png",
     summary:
       "Ingests assets through API, ETL, or entry, then scores risk using business value, data classification, CIA impact, and exposure data.",
     lifecycle: ["Ingest assets", "Analyze risk", "Maintain register", "Score exposure"],
