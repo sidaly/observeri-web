@@ -24,6 +24,7 @@ import {
 } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
+import { CasmLaunchAnnouncement } from "@/components/CasmLaunchAnnouncement";
 import { Footer } from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
@@ -251,6 +252,7 @@ const Index = () => {
     <div className="min-h-screen bg-background bg-gradient-main">
       <Navbar />
       <Hero />
+      <CasmLaunchAnnouncement />
 
       <section
         id="features"

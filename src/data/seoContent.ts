@@ -19,7 +19,7 @@ export const enterpriseGrcTopicSections = [
     id: "security-programs",
     title: "Cybersecurity risk management: vulnerability tracking, prioritization, and quantification",
     body:
-      "Security buyers use Observeri as cybersecurity risk management software that unifies vulnerability tracking, vulnerability prioritization, and vulnerability risk prioritization tooling with cyber risk dashboard software and attack surface risk management platform telemetry. AI risk assessment and cybersecurity risk quantification outputs—including FAIR risk analysis and FAIR risk assessment views—help teams prioritize fixes by business impact. Third party cyber risk management, vendor risk cybersecurity platform scoring, and security risk assessment tools feed a cyber risk scoring platform aligned to security posture management GRC practices—so remediation queues match business consequence, not only CVSS.",
+      "Security buyers use Observeri as cybersecurity risk management software that unifies vulnerability tracking, vulnerability prioritization, and vulnerability risk prioritization tooling with cyber risk dashboard software and attack surface risk management platform telemetry. Continuous attack surface management, external attack surface monitoring, and continuous threat exposure management connect discovered assets to live risk scores. Threat monitoring, threat feeds, and vulnerabilities data feed prioritization queues, while dark web monitoring extends visibility beyond the perimeter. AI risk assessment and cybersecurity risk quantification outputs—including FAIR risk analysis and FAIR risk assessment views—help teams prioritize fixes by business impact. Third party cyber risk management, vendor risk cybersecurity platform scoring, and security risk assessment tools feed a cyber risk scoring platform aligned to security posture management GRC practices—so remediation queues match business consequence, not only CVSS.",
   },
   {
     id: "compliance-frameworks",
@@ -55,7 +55,7 @@ export const enterpriseGrcTopicSections = [
     id: "long-tail",
     title: "Long-tail coverage: real-time dashboards, FAIR, continuous monitoring",
     body:
-      "Observeri maps to searches for an AI-based cyber risk prioritization platform, real-time GRC dashboard for enterprises, automated ISO 27001 risk assessment tool outputs, enterprise cyber risk exposure analytics, continuous compliance monitoring software, integrated GRC platform with AI insights, cyber risk quantification using FAIR model methods, and SaaS GRC platform for fintech companies that need rapid onboarding.",
+      "Observeri maps to searches for an AI-based cyber risk prioritization platform, real-time GRC dashboard for enterprises, automated ISO 27001 risk assessment tool outputs, enterprise cyber risk exposure analytics, continuous compliance monitoring software, integrated GRC platform with AI insights, cyber risk quantification using FAIR model methods, continuous attack surface management, external attack surface monitoring, continuous threat exposure management, threat monitoring software, threat feeds integration, vulnerabilities management, dark web monitoring, and SaaS GRC platform for fintech companies that need rapid onboarding.",
   },
   {
     id: "features",

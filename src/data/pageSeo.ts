@@ -10,9 +10,9 @@ export type PageSeoConfig = {
 export const defaultPageSeo: PageSeoConfig = {
   title: "Observeri | Cybersecurity GRC Platform & AI Risk Management Software",
   description:
-    "Enterprise cybersecurity GRC and AI risk management: integrated governance, compliance, continuous monitoring, FAIR-style quantification, UAE and Middle East, and modern alternatives to legacy GRC suites.",
+    "Enterprise cybersecurity GRC and AI risk management with continuous attack surface management, external attack surface monitoring, continuous threat exposure management, threat monitoring, threat feeds, vulnerability prioritization, and dark web monitoring—plus integrated governance, compliance, FAIR-style quantification, UAE and Middle East programs, and modern alternatives to legacy GRC suites.",
   keywords:
-    "SAMA cybersecurity compliance guide, NESA UAE GRC software, GRC platform Dubai, ISO 27001 automation, UAE cyber risk quantification, FAIR risk quantification, fintech, MetricStream alternative, MEA RSA Archer alternative, UAE AI GRC platform, Middle East",
+    "SAMA cybersecurity compliance guide, NESA UAE GRC software, GRC platform Dubai, ISO 27001 automation, UAE cyber risk quantification, FAIR risk quantification, fintech, MetricStream alternative, MEA RSA Archer alternative, UAE AI GRC platform, Middle East, continuous attack surface management, external attack surface monitoring, continuous threat exposure management, threat monitoring, threat feeds, vulnerabilities, dark web monitoring",
   ogImage: "/grc-sphere-full-logo.png",
 };
 
@@ -45,9 +45,9 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
   "/features": {
     title: "GRC Platform Modules | Observeri AI Risk & Compliance Software",
     description:
-      "Explore Observeri GRC modules: AI Risk Operations Center, predictive risk intelligence, vulnerability operations, compliance management, third party risk, and executive dashboards.",
+      "Explore Observeri GRC modules: continuous attack surface management, external attack surface monitoring, AI Risk Operations Center, threat monitoring, threat feeds, vulnerability operations, compliance management, third party risk, and executive dashboards.",
     keywords:
-      "GRC modules, AI GRC platform, cybersecurity GRC software, risk intelligence modules, compliance management software",
+      "GRC modules, AI GRC platform, cybersecurity GRC software, continuous attack surface management, external attack surface monitoring, continuous threat exposure management, threat monitoring, threat feeds, vulnerabilities, dark web monitoring, risk intelligence modules, compliance management software",
   },
   "/products/third-party-risk": {
     title: "Third Party Risk Management Software | Observeri GRC TPRM",
@@ -68,17 +68,17 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
   "/products/vulnerability-operations": {
     title: "Vulnerability Operations Software | SLA Tracking & Exploitability Prioritization | Observeri",
     description:
-      "Observeri Vulnerability Operations: ingest CVEs via API or Excel, prioritize with an exploitability agent, track defined SLAs, get AI remediation recommendations, and convert findings into managed remediation programmes.",
+      "Observeri Vulnerability Operations: ingest CVEs and vulnerabilities via API or Excel, prioritize with exploitability scoring and threat feeds, track defined SLAs, get AI remediation recommendations, and convert findings into managed remediation programmes.",
     keywords:
-      "vulnerability management software, vulnerability tracking, vulnerability prioritization, EPSS prioritization, CVE management, vulnerability SLA tracking, vulnerability remediation platform, exploitability scoring",
+      "vulnerability management software, vulnerabilities, vulnerability tracking, vulnerability prioritization, EPSS prioritization, CVE management, threat feeds, threat monitoring, vulnerability SLA tracking, vulnerability remediation platform, exploitability scoring",
     ogImage: "/vulnerability_operations.png",
   },
   "/products/ai-risk-operations-center": {
     title: "AI Risk Operations Center | Unified Risk Intelligence & Asset Risk Scoring | Observeri",
     description:
-      "Observeri AI Risk Operations Center augments incidents, risks, vulnerabilities, threats, and compliance issues into live asset risk scores—focusing remediation on 80% risk reduction and protecting crown-jewel assets.",
+      "Observeri AI Risk Operations Center augments incidents, risks, vulnerabilities, threats, and compliance issues into live asset risk scores—with threat monitoring, threat feeds, and continuous threat exposure management to focus remediation on 80% risk reduction.",
     keywords:
-      "AI risk operations center, asset risk scoring, continuous risk exposure, AI GRC platform, unified risk intelligence, crown jewel protection, risk reduction targeting, cyber risk exposure platform",
+      "AI risk operations center, asset risk scoring, continuous risk exposure, continuous threat exposure management, threat monitoring, threat feeds, vulnerabilities, AI GRC platform, unified risk intelligence, crown jewel protection, risk reduction targeting, cyber risk exposure platform",
     ogImage: "/ai_risk_operation.png",
   },
   "/products/security-governance": {
@@ -90,11 +90,11 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
     ogImage: "/governance_management.png",
   },
   "/products/exposure-management": {
-    title: "Exposure Management Software | ASM, Issues Hub & AI Threat Analysis | Observeri",
+    title: "Exposure Management Software | CASM, ASM, Threat Monitoring & Dark Web | Observeri",
     description:
-      "Observeri Exposure Management: plan security assessments with automated compliance testing, centralize audit and compliance issues with SLA tracking, dedicated remediation hub, external attack surface management, and AI emerging threat analysis.",
+      "Observeri Exposure Management: continuous attack surface management, external attack surface monitoring, continuous threat exposure management, threat monitoring, threat feeds, vulnerability correlation, and dark web monitoring—plus assessment planning, issues hub, remediation, and AI threat analysis.",
     keywords:
-      "exposure management software, attack surface management, compliance issue tracking, remediation hub, AI threat analysis, audit issue management, security assessment planning, SLA remediation tracking",
+      "exposure management software, continuous attack surface management, external attack surface monitoring, continuous threat exposure management, attack surface management, threat monitoring, threat feeds, vulnerabilities, dark web monitoring, compliance issue tracking, remediation hub, AI threat analysis, audit issue management, security assessment planning, SLA remediation tracking",
     ogImage: "/threats.png",
   },
   "/products/compliance-management": {
