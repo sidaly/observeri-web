@@ -82,6 +82,16 @@ export const productPages: ProductPage[] = [
     image: "/threats.png",
   },
   {
+    slug: "external-attack-surface-management",
+    label: "External Attack Surface Management",
+    shortLabel: "EASM",
+    href: "/products/external-attack-surface-management",
+    icon: Radar,
+    description: "Continuous external discovery, shadow IT detection, attack paths, web pentest, and cloud posture.",
+    featured: true,
+    image: "/easm/slide-1.png",
+  },
+  {
     slug: "compliance-management",
     label: "Compliance Management",
     shortLabel: "Compliance",

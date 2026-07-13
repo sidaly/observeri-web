@@ -120,7 +120,7 @@ export const CasmLaunchAnnouncement = () => {
                       </Link>
                     </Button>
                     <Button asChild variant="outline" size="lg">
-                      <Link to="/products/exposure-management">Explore exposure management</Link>
+                      <Link to="/products/external-attack-surface-management">Explore EASM</Link>
                     </Button>
                   </div>
 

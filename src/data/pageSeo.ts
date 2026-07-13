@@ -97,6 +97,14 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
       "exposure management software, continuous attack surface management, external attack surface monitoring, continuous threat exposure management, attack surface management, threat monitoring, threat feeds, vulnerabilities, dark web monitoring, compliance issue tracking, remediation hub, AI threat analysis, audit issue management, security assessment planning, SLA remediation tracking",
     ogImage: "/threats.png",
   },
+  "/products/external-attack-surface-management": {
+    title: "External Attack Surface Management (EASM) | Continuous ASM & Shadow IT | Observeri",
+    description:
+      "Observeri External Attack Surface Management: continuous domain and subdomain discovery, host and port inventory, shadow IT detection, attack path analysis, web pentest, smart contract checks, dark web monitoring, and cloud posture—linked to GRC remediation.",
+    keywords:
+      "external attack surface management, EASM software, continuous attack surface management, external attack surface monitoring, shadow IT detection, attack path analysis, threat monitoring, threat feeds, vulnerabilities, dark web monitoring, cloud security posture, web application penetration testing",
+    ogImage: "/easm/slide-1.png",
+  },
   "/products/compliance-management": {
     title: "Compliance Management Software | AI Register, Self-Assessment & Regulatory Tracking | Observeri",
     description:

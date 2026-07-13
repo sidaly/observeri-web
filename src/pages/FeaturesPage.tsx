@@ -269,13 +269,21 @@ const FeaturesPage = () => {
                         <ArrowRight className="h-4 w-4" />
                       </Link>
                     ) : null}
-                    {module.code === "REMEDIATION" ||
-                    module.code === "THREAT" ? (
+                    {module.code === "REMEDIATION" ? (
                       <Link
                         to="/products/exposure-management"
                         className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
                       >
                         Explore Exposure Management
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    ) : null}
+                    {module.code === "THREAT" ? (
+                      <Link
+                        to="/products/external-attack-surface-management"
+                        className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
+                      >
+                        Explore External Attack Surface Management
                         <ArrowRight className="h-4 w-4" />
                       </Link>
                     ) : null}

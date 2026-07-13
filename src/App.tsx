@@ -21,6 +21,7 @@ import VulnerabilityOperations from "./pages/VulnerabilityOperations";
 import AiRiskOperationsCenter from "./pages/AiRiskOperationsCenter";
 import SecurityGovernance from "./pages/SecurityGovernance";
 import ExposureManagement from "./pages/ExposureManagement";
+import ExternalAttackSurfaceManagement from "./pages/ExternalAttackSurfaceManagement";
 import DataPrivacyProtection from "./pages/DataPrivacyProtection";
 import ComplianceManagement from "./pages/ComplianceManagement";
 import InformationAssetManagement from "./pages/InformationAssetManagement";
@@ -49,6 +50,7 @@ const App = () => (
           <Route path="/products/ai-risk-operations-center" element={<AiRiskOperationsCenter />} />
           <Route path="/products/security-governance" element={<SecurityGovernance />} />
           <Route path="/products/exposure-management" element={<ExposureManagement />} />
+          <Route path="/products/external-attack-surface-management" element={<ExternalAttackSurfaceManagement />} />
           <Route path="/products/compliance-management" element={<ComplianceManagement />} />
           <Route path="/products/information-asset-management" element={<InformationAssetManagement />} />
           <Route path="/products/human-risk-management" element={<HumanRiskManagement />} />
