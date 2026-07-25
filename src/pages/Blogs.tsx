@@ -8,12 +8,17 @@ import { BlogPostCard } from "@/components/BlogPostCard";
 import { ArrowRight, Newspaper } from "lucide-react";
 import blogPosts from "@/data/posts.json";
 import type { BlogPostData } from "@/types/wordpress";
+import { SchemaOrg } from "@/components/SchemaOrg";
+import { blogPostingSchema } from "@/lib/schema";
 
 const posts: BlogPostData[] = blogPosts;
 
 const Blogs = () => {
+  const blogSchemas = posts.map((post) => blogPostingSchema(post));
+
   return (
     <div className="min-h-screen bg-background bg-gradient-main">
+      <SchemaOrg schema={blogSchemas} />
       <Navbar />
 
       <section className="relative overflow-hidden pb-16 pt-32">

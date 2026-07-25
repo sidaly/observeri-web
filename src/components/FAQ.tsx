@@ -3,30 +3,30 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus } from "lucide-react";
 import { FadeUp } from "./ScrollAnimations";
 
-const faqData = [
+export const faqData = [
   {
-    question: "How can I implement GRC Sphere in my organization?",
-    answer: "Getting started with GRC Sphere is simple. Sign up for a free trial, configure your governance frameworks, set up your risk policies, and start managing compliance across your organization. Our onboarding team will guide you through the entire process.",
+    question: "How can I implement Observeri in my organization?",
+    answer: "Getting started with Observeri is simple. Sign up for a free trial, configure your governance frameworks, set up your risk policies, and start managing compliance across your organization. Our onboarding team will guide you through the entire process.",
   },
   {
-    question: "Can I customize GRC Sphere workflows for my needs?",
-    answer: "Yes, GRC Sphere is highly customizable. You can create custom workflows, define your own risk metrics, build personalized dashboards, and configure automated compliance checks specific to your organization's requirements.",
+    question: "Can I customize Observeri workflows for my needs?",
+    answer: "Yes, Observeri is highly customizable. You can create custom workflows, define your own risk metrics, build personalized dashboards, and configure automated compliance checks specific to your organization's requirements.",
   },
   {
-    question: "Is any technical expertise required to use GRC Sphere?",
-    answer: "No coding knowledge is required. GRC Sphere features an intuitive interface designed for non-technical users. Our platform provides pre-built templates and drag-and-drop configuration tools to make setup effortless.",
+    question: "Is any technical expertise required to use Observeri?",
+    answer: "No coding knowledge is required. Observeri features an intuitive interface designed for non-technical users. Our platform provides pre-built templates and drag-and-drop configuration tools to make setup effortless.",
   },
   {
-    question: "Are there any guides for implementing GRC Sphere?",
+    question: "Are there any guides for implementing Observeri?",
     answer: "Absolutely. We provide comprehensive documentation, video tutorials, implementation guides, and webinars. Our support team also offers personalized onboarding sessions and best practice consultations.",
   },
   {
-    question: "What kind of support does GRC Sphere offer?",
+    question: "What kind of support does Observeri offer?",
     answer: "We offer 24/7 customer support through multiple channels including email, phone, and live chat. Enterprise customers receive dedicated account managers and priority support.",
   },
   {
-    question: "How does GRC Sphere handle data security?",
-    answer: "Security is our top priority. GRC Sphere uses enterprise-grade encryption, regular security audits, compliance with major standards (ISO 27001, SOC 2), and automated backup systems to protect your data.",
+    question: "How does Observeri handle data security?",
+    answer: "Security is our top priority. Observeri uses enterprise-grade encryption, regular security audits, compliance with major standards (ISO 27001, SOC 2), and automated backup systems to protect your data.",
   },
 ];
 

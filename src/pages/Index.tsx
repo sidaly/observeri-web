@@ -27,6 +27,7 @@ import { Hero } from "@/components/Hero";
 import { CasmLaunchAnnouncement } from "@/components/CasmLaunchAnnouncement";
 import { AiModelRiskLaunchAnnouncement } from "@/components/AiModelRiskLaunchAnnouncement";
 import { Footer } from "@/components/Footer";
+import { FAQ } from "@/components/FAQ";
 import ContactForm from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
 import {
@@ -913,6 +914,7 @@ const Index = () => {
         </div>
       </section>
 
+      <FAQ />
       <ContactForm />
       <Footer />
     </div>

@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { defaultPageSeo, getPageSeoForPath, type PageSeoConfig } from "@/data/pageSeo";
+import type { JsonLdSchema } from "@/lib/schema";
 
 const upsertMeta = (attribute: "name" | "property", key: string, content: string) => {
   const selector = `meta[${attribute}="${key}"]`;
@@ -42,11 +43,13 @@ const applyPageSeo = (seo: PageSeoConfig, pathname: string) => {
   canonical.setAttribute("href", `${window.location.origin}${pathname}`);
 };
 
-export const usePageSeo = (override?: PageSeoConfig) => {
+export const usePageSeo = (override?: PageSeoConfig): PageSeoConfig & { schemas?: JsonLdSchema } => {
   const { pathname } = useLocation();
 
   useEffect(() => {
     const seo = override ?? getPageSeoForPath(pathname);
     applyPageSeo(seo, pathname);
   }, [pathname, override]);
+
+  return override ?? getPageSeoForPath(pathname);
 };
