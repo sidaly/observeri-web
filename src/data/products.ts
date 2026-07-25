@@ -29,7 +29,7 @@ export const productPages: ProductPage[] = [
     icon: Sparkles,
     description: "Unified intelligence for incidents, risks, vulns, threats, compliance, and live asset risk scores.",
     featured: true,
-    image: "/ai_risk_operation.png",
+    image: "/ai-risk-operations-center.png",
   },
   {
     slug: "third-party-risk",

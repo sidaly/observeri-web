@@ -32,7 +32,7 @@ export const platformModules: PlatformModule[] = [
     title: "AI Risk Operations Center",
     code: "CORE_SYSTEM",
     icon: Radar,
-    image: "/ai_risk_operation.png",
+    image: "/ai-risk-operations-center.png",
     summary:
       "Connects asset inventory, exposure scanning, automated assessments, control mapping, and predictive AI into one risk intelligence engine.",
     lifecycle: ["Aggregate risk signals", "Trigger assessments", "Recommend fixes", "Plan budget"],

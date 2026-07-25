@@ -170,7 +170,7 @@ const AiRiskOperationsCenter = () => {
                 transition={{ duration: 0.3 }}
               >
                 <img
-                  src="/ai_risk_operation.png"
+                  src="/ai-risk-operations-center.png"
                   alt="Observeri AI Risk Operations Center dashboard with security health index, risk severity distribution, FAIR quantification, and value at risk scenarios"
                   className="w-full rounded-[1.75rem] object-contain"
                 />
