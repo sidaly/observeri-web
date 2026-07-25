@@ -1,0 +1,35 @@
+# Observeri
+
+> Observeri is an AI-powered cybersecurity GRC (Governance, Risk, and Compliance) platform that helps organizations manage cyber risk, automate compliance, and quantify risk in real time. It combines governance, risk management, and compliance workflows into a modern, actionable system designed for regulated industries.
+
+Observeri focuses on practical, continuous risk intelligence rather than traditional checklist-style GRC tools. The platform is built for security, risk, and compliance teams that need to map controls, collect evidence, monitor cyber risk, and prepare for audits efficiently. It is particularly relevant for organizations in the UAE, Middle East, and global regulated sectors seeking predictive cyber risk management.
+
+## Core Platform
+
+- [Home](https://www.observeri.com/): Overview of the Observeri AI-powered GRC platform
+- [Features / Platform Modules](https://www.observeri.com/features): Detailed AI-powered modules including Intelligence Engine, Predictive Risk Intelligence, Risk Operations Center, Third Party Risk, Vulnerability Operations, Compliance Management, Asset Management, Policy Management, and Executive Dashboards
+- [About Observeri](https://www.observeri.com/about): Company background, mission, and strategic cyber risk management approach
+- [Solutions Overview](https://www.observeri.com/solutions): Industry-specific GRC solutions for regulated sectors
+
+## Industry Solutions
+
+- [Banking & Financial Services](https://www.observeri.com/solutions): GRC for banks and fintech (CBUAE, DFSA, AML/CFT, SOX)
+- [Healthcare & Life Sciences](https://www.observeri.com/solutions/healthcare-life-sciences): HIPAA, UAE PDPL, and healthcare compliance risk management
+- [Government & Public Sector](https://www.observeri.com/solutions): NESA/NIA, data sovereignty, and public sector governance
+- [Technology & SaaS](https://www.observeri.com/solutions): SOC 2, ISO 27001, GDPR, and DevSecOps compliance
+- [Retail & E-commerce](https://www.observeri.com/solutions): PCI DSS and third-party risk for retail
+- [Energy & Utilities](https://www.observeri.com/solutions): Industrial cybersecurity and critical infrastructure GRC
+
+## Insights & Resources
+
+- [Blog / Insights](https://www.observeri.com/blogs): Expert articles on AI GRC, cyber risk quantification, compliance automation, vendor risk, attack surface management, CISO topics, and regulatory updates (NIS2, DORA, ISO 27001, etc.)
+- [Newsroom](https://www.observeri.com/newsroom): Company news, product launches, and media coverage
+
+## Company
+
+- [Careers](https://www.observeri.com/career): Open roles at Observeri Technologies
+- [Contact](https://www.observeri.com/): Get in touch with the team
+
+## Optional
+
+- [Sitemap](https://www.observeri.com/sitemap.xml): Full list of public pages for discovery
