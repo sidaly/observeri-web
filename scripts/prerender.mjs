@@ -11,7 +11,6 @@ import fs from "fs";
 import http from "http";
 import path from "path";
 import { fileURLToPath } from "url";
-import puppeteer from "puppeteer";
 import { routes, SITE_URL } from "./routes.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -121,6 +120,29 @@ function outPathForRoute(route) {
   return path.join(DIST, route.replace(/^\//, ""), "index.html");
 }
 
+// Vercel's build image does not ship libnspr4/libnss3. Puppeteer's stock Chrome
+// fails there. @sparticuz/chromium bundles those libraries for Amazon Linux.
+async function launchBrowser() {
+  if (process.platform === "linux") {
+    const [{ default: chromium }, { default: puppeteer }] = await Promise.all([
+      import("@sparticuz/chromium"),
+      import("puppeteer-core"),
+    ]);
+    chromium.setGraphicsMode = false;
+    return puppeteer.launch({
+      args: chromium.args,
+      executablePath: await chromium.executablePath(),
+      headless: true,
+    });
+  }
+
+  const { default: puppeteer } = await import("puppeteer");
+  return puppeteer.launch({
+    headless: true,
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+  });
+}
+
 async function run() {
   if (!fs.existsSync(path.join(DIST, "index.html"))) {
     throw new Error("dist/index.html not found. Run `vite build` before prerendering.");
@@ -131,10 +153,7 @@ async function run() {
   const { port } = server.address();
   const origin = `http://127.0.0.1:${port}`;
 
-  const browser = await puppeteer.launch({
-    headless: "new",
-    args: ["--no-sandbox", "--disable-setuid-sandbox"],
-  });
+  const browser = await launchBrowser();
 
   let failures = 0;
 
