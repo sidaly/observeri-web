@@ -20,6 +20,7 @@ const applyPageSeo = (seo: PageSeoConfig, pathname: string) => {
   document.title = seo.title;
 
   upsertMeta("name", "description", seo.description);
+  upsertMeta("name", "robots", seo.robots ?? "index, follow");
 
   if (seo.keywords) {
     upsertMeta("name", "keywords", seo.keywords);

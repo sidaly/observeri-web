@@ -26,6 +26,12 @@ import DataPrivacyProtection from "./pages/DataPrivacyProtection";
 import ComplianceManagement from "./pages/ComplianceManagement";
 import InformationAssetManagement from "./pages/InformationAssetManagement";
 import HumanRiskManagement from "./pages/HumanRiskManagement";
+import AwsMarketplaceRegister from "./pages/AwsMarketplaceRegister";
+import AwsMarketplaceConfirm from "./pages/AwsMarketplaceConfirm";
+import AwsMarketplaceVerify from "./pages/AwsMarketplaceVerify";
+import AwsMarketplaceLogin from "./pages/AwsMarketplaceLogin";
+import AwsMarketplaceAdmin from "./pages/AwsMarketplaceAdmin";
+import AwsMarketplaceSubscribe from "./pages/AwsMarketplaceSubscribe";
 import { PageSeo } from "./components/PageSeo";
 
 const queryClient = new QueryClient();
@@ -59,6 +65,12 @@ const App = () => (
           <Route path="/partners" element={<Partners />} />
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/solutions/:slug" element={<IndustrySolution />} />
+          <Route path="/aws-marketplace/register" element={<AwsMarketplaceRegister />} />
+          <Route path="/aws-marketplace/confirm" element={<AwsMarketplaceConfirm />} />
+          <Route path="/aws-marketplace/verify" element={<AwsMarketplaceVerify />} />
+          <Route path="/aws-marketplace/login" element={<AwsMarketplaceLogin />} />
+          <Route path="/aws-marketplace/admin" element={<AwsMarketplaceAdmin />} />
+          <Route path="/aws-marketplace/subscribe" element={<AwsMarketplaceSubscribe />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

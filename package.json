@@ -13,6 +13,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@aws-sdk/client-marketplace-entitlement-service": "^3.1146.0",
+    "@aws-sdk/client-marketplace-metering": "^3.1146.0",
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-accordion": "^1.2.11",
     "@radix-ui/react-alert-dialog": "^1.1.14",

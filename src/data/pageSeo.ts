@@ -8,6 +8,7 @@ export type PageSeoConfig = {
   description: string;
   keywords?: string;
   ogImage?: string;
+  robots?: string;
   schemas?: JsonLdSchema;
 };
 
@@ -343,6 +344,36 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
       { name: "Industry Solutions", item: "/solutions" },
       { name: "Energy & Utilities" },
     ]),
+  },
+  "/aws-marketplace/register": {
+    title: "Set Up Observeri | AWS Marketplace Registration",
+    description: "Create the first Observeri admin account for your AWS Marketplace contract and confirm entitlement before access.",
+    robots: "noindex, nofollow",
+  },
+  "/aws-marketplace/login": {
+    title: "Observeri Admin Login | AWS Marketplace Customers",
+    description: "Sign in to the Observeri admin console for your AWS Marketplace subscription and review contract entitlements.",
+    robots: "noindex, nofollow",
+  },
+  "/aws-marketplace/admin": {
+    title: "Observeri Admin Console | AWS Marketplace Account",
+    description: "Review your Observeri organization, AWS account, and live Marketplace entitlements from the admin console.",
+    robots: "noindex, nofollow",
+  },
+  "/aws-marketplace/verify": {
+    title: "Confirm Your Observeri Admin Email",
+    description: "Confirm the admin email for your Observeri account created from an AWS Marketplace subscription.",
+    robots: "noindex, nofollow",
+  },
+  "/aws-marketplace/confirm": {
+    title: "Check Your Email | Observeri Registration",
+    description: "A confirmation email is on its way so you can activate the Observeri admin account tied to AWS Marketplace.",
+    robots: "noindex, nofollow",
+  },
+  "/aws-marketplace/subscribe": {
+    title: "Subscribe on AWS Marketplace | Observeri",
+    description: "Observeri access starts with an AWS Marketplace contract. Subscribe there, then complete registration when AWS redirects you.",
+    robots: "noindex, nofollow",
   },
 };
 

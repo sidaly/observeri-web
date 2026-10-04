@@ -12,5 +12,7 @@ Allow: /
 
 User-agent: *
 Allow: /
+Disallow: /aws-marketplace/
+Disallow: /api/
 
 Sitemap: https://observeri.com/sitemap.xml
