@@ -1,35 +1,53 @@
-# Observeri
+# Observeri Technologies
 
-> Observeri is an AI-powered cybersecurity GRC (Governance, Risk, and Compliance) platform that helps organizations manage cyber risk, automate compliance, and quantify risk in real time. It combines governance, risk management, and compliance workflows into a modern, actionable system designed for regulated industries.
+> Observeri Technologies is a Dubai-based provider of AI-powered governance, risk, and compliance (GRC) software for regulated enterprises. Its platform connects cyber risk management, compliance, security governance, and threat exposure with financial risk intelligence.
 
-Observeri focuses on practical, continuous risk intelligence rather than traditional checklist-style GRC tools. The platform is built for security, risk, and compliance teams that need to map controls, collect evidence, monitor cyber risk, and prepare for audits efficiently. It is particularly relevant for organizations in the UAE, Middle East, and global regulated sectors seeking predictive cyber risk management.
+Founded in 2025. Headquarters: Dubai, United Arab Emirates. Website: https://www.observeri.com. Contact: connect@observeri.com.
 
-## Core Platform
+The platform serves CISOs, CROs, heads of internal audit, and boards. Core topics include cyber risk quantification, predictive risk intelligence, external attack surface management, compliance automation, and third-party risk. Markets include the UAE, Saudi Arabia, the GCC, the UK, and international enterprises.
 
-- [Home](https://www.observeri.com/): Overview of the Observeri AI-powered GRC platform
-- [Features / Platform Modules](https://www.observeri.com/features): Detailed AI-powered modules including Intelligence Engine, Predictive Risk Intelligence, Risk Operations Center, Third Party Risk, Vulnerability Operations, Compliance Management, Asset Management, Policy Management, and Executive Dashboards
-- [About Observeri](https://www.observeri.com/about): Company background, mission, and strategic cyber risk management approach
-- [Solutions Overview](https://www.observeri.com/solutions): Industry-specific GRC solutions for regulated sectors
+Supported framework topics include SAMA, NESA, ISO 27001, NIST CSF, DORA, MiCA, and the EU AI Act. Framework support describes product capabilities, not certification or endorsement by a regulator.
 
-## Industry Solutions
+## Company and platform
 
-- [Banking & Financial Services](https://www.observeri.com/solutions): GRC for banks and fintech (CBUAE, DFSA, AML/CFT, SOX)
-- [Healthcare & Life Sciences](https://www.observeri.com/solutions/healthcare-life-sciences): HIPAA, UAE PDPL, and healthcare compliance risk management
-- [Government & Public Sector](https://www.observeri.com/solutions): NESA/NIA, data sovereignty, and public sector governance
-- [Technology & SaaS](https://www.observeri.com/solutions): SOC 2, ISO 27001, GDPR, and DevSecOps compliance
-- [Retail & E-commerce](https://www.observeri.com/solutions): PCI DSS and third-party risk for retail
-- [Energy & Utilities](https://www.observeri.com/solutions): Industrial cybersecurity and critical infrastructure GRC
+- [Home](https://www.observeri.com/): Overview of Observeri's AI-powered GRC platform.
+- [Platform modules](https://www.observeri.com/features): Catalog of the platform's modules and capabilities.
+- [About Observeri](https://www.observeri.com/about): Company background and approach to governance, risk, and compliance.
+- [Team and founder](https://www.observeri.com/team): Founder Ali Naqvi and company contact information.
+- [Contact](https://www.observeri.com/#contact): Product enquiries and demo requests.
 
-## Insights & Resources
+## Products
 
-- [Blog / Insights](https://www.observeri.com/blogs): Expert articles on AI GRC, cyber risk quantification, compliance automation, vendor risk, attack surface management, CISO topics, and regulatory updates (NIS2, DORA, ISO 27001, etc.)
-- [Newsroom](https://www.observeri.com/newsroom): Company news, product launches, and media coverage
+- [AI Risk Operations Center](https://www.observeri.com/products/ai-risk-operations-center): Unified intelligence connecting incidents, risks, vulnerabilities, threats, compliance, and asset risk scores.
+- [Cyber Risk Management](https://www.observeri.com/products/cyber-risk-management): Live risk scoring, control mapping, FAIR-aligned quantification, and remediation prioritization.
+- [Security Governance](https://www.observeri.com/products/security-governance): KRI/KPI monitoring, policy management, security budgeting, and change management.
+- [External Attack Surface Management](https://www.observeri.com/products/external-attack-surface-management): External asset discovery, shadow IT detection, attack paths, and cloud posture.
+- [Information Asset Management](https://www.observeri.com/products/information-asset-management): Asset inventory, AI risk scores, control effectiveness, and exposure visibility.
+- [Data Privacy & Protection](https://www.observeri.com/products/data-privacy-protection): PII detection, sensitive data discovery, secret scanning, and exposure scoring.
+- [Third-Party Risk Management](https://www.observeri.com/products/third-party-risk): Vendor discovery, risk prioritization, evidence collection, and remediation.
+- [Vulnerability Operations](https://www.observeri.com/products/vulnerability-operations): Vulnerability ingestion, exploitability prioritization, SLA tracking, and remediation programs.
+- [Exposure Management](https://www.observeri.com/products/exposure-management): Assessment planning, attack surface monitoring, issue tracking, and remediation workflows.
+- [Compliance Management](https://www.observeri.com/products/compliance-management): Regulations library, AI compliance registers, self-assessments, submissions, and policy gap analysis.
+- [Human Risk Management](https://www.observeri.com/products/human-risk-management): Privileged identity monitoring, Human Risk Exposure scoring, and financial exposure analysis.
 
-## Company
+## Industry solutions
 
-- [Careers](https://www.observeri.com/career): Open roles at Observeri Technologies
-- [Contact](https://www.observeri.com/): Get in touch with the team
+- [Solutions overview](https://www.observeri.com/solutions): Industry-specific GRC programs.
+- [Banking & Financial Services](https://www.observeri.com/solutions/banking-financial-services): Risk and compliance workflows for banks and financial institutions.
+- [Healthcare & Life Sciences](https://www.observeri.com/solutions/healthcare-life-sciences): Patient data protection and healthcare risk management.
+- [Government & Public Sector](https://www.observeri.com/solutions/government-public-sector): Public sector governance, compliance, and data sovereignty.
+- [Technology & SaaS](https://www.observeri.com/solutions/technology-saas): Technology risk, vendor oversight, and security compliance.
+- [Retail & E-commerce](https://www.observeri.com/solutions/retail-ecommerce): Payment security, transaction risk, and third-party oversight.
+- [Energy & Utilities](https://www.observeri.com/solutions/energy-utilities): Critical infrastructure and operational technology risk management.
+
+## Insights and services
+
+- [Blog](https://www.observeri.com/blogs): Listing of articles about GRC, compliance, and cybersecurity; article links may lead to the external publication.
+- [Newsroom](https://www.observeri.com/newsroom): Company news and announcements.
+- [Consultancy](https://www.observeri.com/consultancy-service): Cybersecurity and GRC advisory services.
+- [Partners](https://www.observeri.com/partners): Observeri's partner program.
 
 ## Optional
 
-- [Sitemap](https://www.observeri.com/sitemap.xml): Full list of public pages for discovery
+- [Careers](https://www.observeri.com/career): Careers at Observeri Technologies.
+- [XML sitemap](https://www.observeri.com/sitemap.xml): Public URL directory.

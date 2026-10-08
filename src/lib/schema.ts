@@ -7,12 +7,19 @@ import { SITE_URL } from "@/lib/site";
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": `${SITE_URL}/#organization`,
   name: "Observeri Technologies",
   url: SITE_URL,
+  foundingDate: "2025",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Dubai",
+    addressCountry: "AE",
+  },
   logo: `${SITE_URL}/grc-sphere-full-logo.png`,
   sameAs: [
-    "https://twitter.com/GRCSphere",
-    "https://www.linkedin.com/company/observeri",
+    "https://x.com/observeritech",
+    "https://www.linkedin.com/company/observeri-technologies",
   ],
   contactPoint: {
     "@type": "ContactPoint",
@@ -24,46 +31,14 @@ export const organizationSchema = {
   },
 };
 
-export const softwareApplicationSchema = {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  name: "Observeri GRC",
-  applicationCategory: "SecurityApplication",
-  operatingSystem: "Web browser",
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "USD",
-    priceValidUntil: "2026-12-31",
-    description: "Free trial available. Enterprise pricing on request.",
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.8",
-    reviewCount: "50",
-  },
-  description:
-    "AI-powered cybersecurity GRC platform for governance, risk, compliance, and continuous threat exposure management.",
-  url: SITE_URL,
-  brand: {
-    "@type": "Organization",
-    name: "Observeri Technologies",
-  },
-};
-
 export const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "Observeri GRC",
+  "@id": `${SITE_URL}/#website`,
+  name: "Observeri Technologies",
+  alternateName: "Observeri",
   url: SITE_URL,
-  potentialAction: {
-    "@type": "SearchAction",
-    target: {
-      "@type": "EntryPoint",
-      urlTemplate: `${SITE_URL}/?search={search_term_string}`,
-    },
-    "query-input": "required name=search_term_string",
-  },
+  publisher: { "@id": `${SITE_URL}/#organization` },
 };
 
 export function breadcrumbSchema(items: { name: string; item?: string }[]) {
@@ -129,29 +104,20 @@ export function productSchema(
 ) {
   return {
     "@context": "https://schema.org",
-    "@type": "Product",
+    "@type": "SoftwareApplication",
+    "@id": `${SITE_URL}${url}#software`,
     name,
     description,
     image: `${SITE_URL}${image}`,
     url: `${SITE_URL}${url}`,
-    brand: {
-      "@type": "Brand",
-      name: "Observeri",
+    applicationCategory: category,
+    operatingSystem: "Web browser",
+    publisher: {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: "Observeri Technologies",
+      url: SITE_URL,
     },
-    category,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.8",
-      reviewCount: "50",
-    },
-    offers: {
-      "@type": "Offer",
-      url: `${SITE_URL}${url}`,
-      price: "0",
-      priceCurrency: "USD",
-      priceValidUntil: "2026-12-31",
-      availability: "https://schema.org/InStock",
-      description: "Free trial available. Enterprise pricing on request.",
-    },
+    // Pricing and reviews are omitted until verified, visible data is available.
   };
 }

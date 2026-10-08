@@ -26,6 +26,7 @@ const PAGE_DIR = path.join(SRC, "pages");
 const DATA_DIR = path.join(SRC, "data");
 
 const ROUTE_SOURCE_FILES = {
+  "/llms.txt": [path.join(__dirname, "..", "public", "llms.txt")],
   "/": [path.join(PAGE_DIR, "Index.tsx"), path.join(DATA_DIR, "seoContent.ts"), path.join(DATA_DIR, "pageSeo.ts")],
   "/about": [path.join(PAGE_DIR, "About.tsx"), path.join(DATA_DIR, "pageSeo.ts")],
   "/career": [path.join(PAGE_DIR, "Career.tsx"), path.join(DATA_DIR, "pageSeo.ts")],
@@ -104,7 +105,9 @@ function run() {
     throw new Error("dist/ not found. Run `vite build` before generating the sitemap.");
   }
 
-  const urls = routes
+  // Include the static AI-readable directory without prerendering it as a page.
+  const sitemapRoutes = [...routes, "/llms.txt"];
+  const urls = sitemapRoutes
     .map((route) => {
       const loc = `${SITE_URL}${route === "/" ? "/" : route}`;
       const priority = route === "/" ? "1.0" : "0.8";
@@ -127,7 +130,7 @@ ${urls}
 `;
 
   fs.writeFileSync(OUTPUT_FILE, xml, "utf8");
-  console.log(`Wrote sitemap with ${routes.length} URLs to ${path.relative(DIST, OUTPUT_FILE)}`);
+  console.log(`Wrote sitemap with ${sitemapRoutes.length} URLs to ${path.relative(DIST, OUTPUT_FILE)}`);
 }
 
 run();

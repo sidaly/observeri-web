@@ -26,6 +26,7 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
   "/": defaultPageSeo,
   "/team": {
     title: "Our Team & Founder | Observeri Technologies",
+    schemas: breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Team", item: "/team" }]),
     description: "Meet Observeri Technologies founder Ali Naqvi. Founded in 2025 in Dubai, UAE, Observeri builds AI-powered governance, risk, and compliance software.",
   },
   "/about": {
@@ -400,12 +401,9 @@ export const getPageSeoForPath = (pathname: string): PageSeoConfig => {
     }
   }
 
-  if (pathname === "/404" || pathname.match(/^\/[^/]+$/)) {
-    return {
-      title: "Page Not Found | Observeri",
-      description: "The page you requested could not be found. Explore Observeri GRC modules and industry solutions.",
-    };
-  }
-
-  return defaultPageSeo;
+  return {
+    title: "Page Not Found | Observeri",
+    description: "The page you requested could not be found. Explore Observeri GRC modules and industry solutions.",
+    robots: "noindex, follow",
+  };
 };
