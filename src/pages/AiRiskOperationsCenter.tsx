@@ -169,8 +169,8 @@ const AiRiskOperationsCenter = () => {
                 whileHover={{ scale: 1.01 }}
                 transition={{ duration: 0.3 }}
               >
-                <img
-                  src="/ai-risk-operations-center.png"
+                <img decoding="async"
+                  src="/ai-risk-operations-center.webp"
                   alt="Observeri AI Risk Operations Center dashboard with security health index, risk severity distribution, FAIR quantification, and value at risk scenarios"
                   className="w-full rounded-[1.75rem] object-contain"
                 />

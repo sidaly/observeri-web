@@ -15,4 +15,4 @@ Allow: /
 Disallow: /aws-marketplace/
 Disallow: /api/
 
-Sitemap: https://observeri.com/sitemap.xml
+Sitemap: https://www.observeri.com/sitemap.xml

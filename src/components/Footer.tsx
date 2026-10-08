@@ -1,14 +1,16 @@
+import { RelatedProducts } from "./RelatedProducts";
 import { motion } from "framer-motion";
-import { Twitter, Linkedin, Youtube, BlueSky } from "lucide-react";
+import { Twitter, Linkedin, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
 import { FadeUp } from "./ScrollAnimations";
-import logoIcon from "@/assets/grc-sphere-icon.png";
+import logoIcon from "@/assets/grc-sphere-icon.webp";
 
 const navLinks = [
   { label: "About", href: "/about" },
   { label: "Solutions", href: "/solutions" },
   { label: "Careers", href: "/career" },
-  { label: "Contact Us", href: "#" },
+  { label: "Team", href: "/team" },
+  { label: "Contact Us", href: "/#contact" },
 ];
 
 const socialLinks = [
@@ -20,6 +22,8 @@ const socialLinks = [
 
 export const Footer = () => {
   return (
+    <>
+    <RelatedProducts />
     <footer className="bg-slate-950 border-t border-slate-800">
       <div className="container mx-auto px-6 py-16">
         {/* Navigation Links */}
@@ -47,7 +51,7 @@ export const Footer = () => {
               to="/" 
               className="flex items-center gap-3 mb-6 hover:opacity-80 transition-opacity"
             >
-              <img src={logoIcon} alt="GRC Sphere" className="w-10 h-10" />
+              <img loading="lazy" decoding="async" src={logoIcon} alt="Observeri Technologies" className="w-10 h-10" />
               <span className="text-xl font-bold text-white font-display">Observeri Technologies</span>
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed max-w-md mb-8">
@@ -80,6 +84,8 @@ export const Footer = () => {
             <div className="flex flex-col justify-between h-full">
               <div>
                 <h4 className="font-semibold text-white mb-6">Get in Touch</h4>
+                <address className="mb-4 text-sm not-italic text-slate-300">Observeri Technologies<br />Dubai, United Arab Emirates</address>
+                <p className="mb-4 text-sm text-slate-400">Founded in 2025</p>
                 <a 
                   href="mailto:connect@observeri.com"
                   className="text-slate-300 hover:text-white transition-colors text-sm"
@@ -95,11 +101,12 @@ export const Footer = () => {
         <FadeUp delay={0.2}>
           <div className="pt-8 border-t border-slate-800">
             <p className="text-xs text-slate-500">
-              © 2025 GRC Sphere. All rights reserved.
+              © {new Date().getFullYear()} Observeri Technologies. All rights reserved.
             </p>
           </div>
         </FadeUp>
       </div>
     </footer>
+    </>
   );
 };

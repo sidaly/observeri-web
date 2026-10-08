@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Lock, CheckCircle } from "lucide-react";
-import logoIcon from "@/assets/grc-sphere-icon.png";
+import logoIcon from "@/assets/grc-sphere-icon.webp";
 
 export const Hero = () => {
   return (
@@ -134,7 +134,7 @@ export const Hero = () => {
                   {/* Sidebar */}
                   <div className="hidden md:block space-y-4">
                     <div className="flex items-center gap-3 p-3 rounded-lg bg-primary/10">
-                      <img src={logoIcon} alt="Observeri" className="w-5 h-5" />
+                      <img decoding="async" src={logoIcon} alt="Observeri" className="w-5 h-5" />
                       <div className="h-3 w-20 bg-muted rounded" />
                     </div>
                     {[1, 2, 3, 4].map((i) => (
@@ -212,7 +212,7 @@ export const Hero = () => {
                 transition={{ delay: 1.2, duration: 0.5 }}
               >
                 <Lock className="w-6 h-6 text-primary mb-2" />
-                <p className="text-xs font-medium">SOC 2 Certified</p>
+                <p className="text-xs font-medium">SOC 2 Controls</p>
               </motion.div>
             </motion.div>
             <motion.div 
@@ -227,7 +227,7 @@ export const Hero = () => {
                 transition={{ delay: 1.4, duration: 0.5 }}
               >
                 <CheckCircle className="w-6 h-6 text-green-400 mb-2" />
-                <p className="text-xs font-medium">ISO 27001 Ready</p>
+                <p className="text-xs font-medium">ISO 27001 Controls</p>
               </motion.div>
             </motion.div>
           </motion.div>

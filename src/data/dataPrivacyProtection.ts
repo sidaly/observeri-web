@@ -67,7 +67,7 @@ export const dppRopaShowcase = {
   title: "Register of Processing Activities",
   description:
     "Central repository of personal data processing activities for compliance and transparency—switch between a structured data register and interactive data flow diagrams for every processing activity.",
-  image: "/data_privacy_protection.png",
+  image: "/data_privacy_protection.webp",
   stats: [
     { label: "Total Activities", icon: Database },
     { label: "Active", icon: ClipboardList },

@@ -170,8 +170,8 @@ const HumanRiskManagement = () => {
                 whileHover={{ scale: 1.01 }}
                 transition={{ duration: 0.3 }}
               >
-                <img
-                  src="/human_risk_management.png"
+                <img decoding="async"
+                  src="/human_risk_management.webp"
                   alt="Observeri Human Cyber Risk Model dashboard with HRE scores and privileged identity rankings"
                   className="w-full rounded-[1.75rem] object-contain"
                 />
@@ -231,7 +231,7 @@ const HumanRiskManagement = () => {
               whileHover={{ scale: 1.005 }}
               transition={{ duration: 0.3 }}
             >
-              <img
+              <img loading="lazy" decoding="async"
                 src={hrHreShowcase.image}
                 alt="Human Cyber Risk Model dashboard showing risk distribution, top 10 highest risk identities, and HRE metrics"
                 className="w-full rounded-[1.75rem] object-contain"

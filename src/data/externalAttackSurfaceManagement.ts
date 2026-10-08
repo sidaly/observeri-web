@@ -291,52 +291,52 @@ export const easmStats = [
 
 export const easmSlides: EasmSlide[] = [
   {
-    src: "/easm/slides/easm-02.png",
+    src: "/easm/slides/easm-02.webp",
     label: "Analytics dashboard",
     alt: "Observeri EASM analytics dashboard with risk trends and attack surface growth",
   },
   {
-    src: "/easm/slides/easm-01.png",
+    src: "/easm/slides/easm-01.webp",
     label: "Cloud posture",
     alt: "Observeri EASM cloud misconfiguration posture scan workspace",
   },
   {
-    src: "/easm/slides/easm-03.png",
+    src: "/easm/slides/easm-03.webp",
     label: "Hosts inventory",
     alt: "Observeri EASM hosts inventory with risk and CDN context",
   },
   {
-    src: "/easm/slides/easm-04.png",
+    src: "/easm/slides/easm-04.webp",
     label: "Ports inventory",
     alt: "Observeri EASM open ports inventory with protocol and encryption status",
   },
   {
-    src: "/easm/slides/easm-05.png",
+    src: "/easm/slides/easm-05.webp",
     label: "Intelligence",
     alt: "Observeri EASM domain and ASN intelligence enrichment view",
   },
   {
-    src: "/easm/slides/easm-06.png",
+    src: "/easm/slides/easm-06.webp",
     label: "Shadow IT",
     alt: "Observeri EASM shadow IT and rogue asset detection findings",
   },
   {
-    src: "/easm/slides/easm-07.png",
+    src: "/easm/slides/easm-07.webp",
     label: "Attack paths",
     alt: "Observeri EASM attack path mapping from public entry to impact",
   },
   {
-    src: "/easm/slides/easm-08.png",
+    src: "/easm/slides/easm-08.webp",
     label: "Web pentest",
     alt: "Observeri EASM web application penetration testing findings queue",
   },
   {
-    src: "/easm/slides/easm-09.png",
+    src: "/easm/slides/easm-09.webp",
     label: "Smart contracts",
     alt: "Observeri EASM smart contract security analysis and controls coverage",
   },
   {
-    src: "/easm/slides/easm-10.png",
+    src: "/easm/slides/easm-10.webp",
     label: "Asset graph",
     alt: "Observeri EASM asset graph topology with per-host risk detail",
   },

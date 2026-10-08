@@ -170,7 +170,7 @@ const DataPrivacyProtection = () => {
                 whileHover={{ scale: 1.01 }}
                 transition={{ duration: 0.3 }}
               >
-                <img
+                <img decoding="async"
                   src={dppRopaShowcase.image}
                   alt="Observeri Register of Processing Activities — data flow diagram for Customer KYC data"
                   className="w-full rounded-[1.75rem] object-contain"
@@ -213,7 +213,7 @@ const DataPrivacyProtection = () => {
               whileHover={{ scale: 1.005 }}
               transition={{ duration: 0.3 }}
             >
-              <img
+              <img loading="lazy" decoding="async"
                 src={dppRopaShowcase.image}
                 alt="Data flow diagram showing Customer KYC data from sources through processing and storage to recipients"
                 className="w-full rounded-[1.75rem] object-contain"

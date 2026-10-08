@@ -32,7 +32,7 @@ export const platformModules: PlatformModule[] = [
     title: "AI Risk Operations Center",
     code: "CORE_SYSTEM",
     icon: Radar,
-    image: "/ai-risk-operations-center.png",
+    image: "/ai-risk-operations-center.webp",
     summary:
       "Connects asset inventory, exposure scanning, automated assessments, control mapping, and predictive AI into one risk intelligence engine.",
     lifecycle: ["Aggregate risk signals", "Trigger assessments", "Recommend fixes", "Plan budget"],
@@ -49,7 +49,7 @@ export const platformModules: PlatformModule[] = [
     title: "Predictive Risk Intelligence",
     code: "PREDICT_V2",
     icon: Sparkles,
-    image: "/predictive_risk_intelligence.png",
+    image: "/predictive_risk_intelligence.webp",
     summary:
       "Generates risk exposure scores, incident likelihood predictions, control effectiveness scores, and compliance risk forecasts.",
     lifecycle: ["Score exposure", "Forecast incidents", "Assess controls", "Explain failure paths"],
@@ -66,7 +66,7 @@ export const platformModules: PlatformModule[] = [
     title: "Focused Remediation",
     code: "REMEDIATION",
     icon: Target,
-    image: "/focused_remediation.png",
+    image: "/focused_remediation.webp",
     summary:
       "Centrally manages remediation issues from audits, regulatory inspections, security assessments, and external assessments with configurable SLAs and automated expiry alerts.",
     lifecycle: ["Capture issues", "Assign ownership", "Track SLAs", "Close with evidence"],
@@ -83,7 +83,7 @@ export const platformModules: PlatformModule[] = [
     title: "Risk Incidents",
     code: "RISK_INCIDENT",
     icon: ShieldAlert,
-    image: "/risk_incidents.png",
+    image: "/risk_incidents.webp",
     summary:
       "Centralizes incident reporting, classification, assignment, investigation, remediation, and executive oversight.",
     lifecycle: ["Capture incidents", "Classify severity", "Assign responders", "Track closure"],
@@ -100,7 +100,7 @@ export const platformModules: PlatformModule[] = [
     title: "Third Party Risk",
     code: "3RD_PARTY",
     icon: Handshake,
-    image: "/third_party_risk.png",
+    image: "/third_party_risk.webp",
     summary:
       "Manages vendor onboarding, contracts, assessments, risk prioritization, gap remediation, and continuous monitoring.",
     lifecycle: ["Onboard vendors", "Manage contracts", "Assess risk", "Monitor gaps"],
@@ -117,7 +117,7 @@ export const platformModules: PlatformModule[] = [
     title: "Threats",
     code: "THREAT",
     icon: TriangleAlert,
-    image: "/threats.png",
+    image: "/threats.webp",
     summary:
       "Combines threat registration, attack surface visibility, threat intelligence, and AI-assisted analysis for faster prioritization.",
     lifecycle: ["Register threats", "Enrich context", "Analyze impact", "Treat exposure"],
@@ -134,7 +134,7 @@ export const platformModules: PlatformModule[] = [
     title: "Vulnerability Operations",
     code: "VULNERABILITIES",
     icon: Activity,
-    image: "/vulnerability_operations.png",
+    image: "/vulnerability_operations.webp",
     summary:
       "Tracks vulnerabilities with CVE, CVSS, EPSS, exploit context, SLA aging, remediation queues, and program health analytics.",
     lifecycle: ["Register CVEs", "Prioritize by EPSS", "Manage queues", "Measure SLAs"],
@@ -151,7 +151,7 @@ export const platformModules: PlatformModule[] = [
     title: "Vulnerability Scanner",
     code: "VUL_SCANNING",
     icon: ScanSearch,
-    image: "/vulnerability_scanner.png",
+    image: "/vulnerability_scanner.webp",
     summary:
       "Launches authorized web scans, reviews findings by severity, and pushes validated results into the vulnerability workflow.",
     lifecycle: ["Define targets", "Select scanner", "Test endpoints", "Export findings"],
@@ -168,7 +168,7 @@ export const platformModules: PlatformModule[] = [
     title: "Governance Management",
     code: "IS_GOVERNANCE",
     icon: Building2,
-    image: "/governance_management.png",
+    image: "/governance_management.webp",
     summary:
       "Unifies governance KPIs, budgets, control assessments, document repositories, and AI-supported policy comparison.",
     lifecycle: ["Define KPIs", "Track performance", "Manage budgets", "Govern documents"],
@@ -185,7 +185,7 @@ export const platformModules: PlatformModule[] = [
     title: "Human Risk",
     code: "HUMAN_RISK",
     icon: Users,
-    image: "/human_risk_management.png",
+    image: "/human_risk_management.webp",
     summary:
       "Quantifies user exposure using identity context, privilege impact, trust indicators, anomaly signals, and environmental risk.",
     lifecycle: ["Profile users", "Quantify exposure", "Detect anomalies", "Trigger controls"],
@@ -202,7 +202,7 @@ export const platformModules: PlatformModule[] = [
     title: "Compliance Management",
     code: "COMPLIANCE_MGMT",
     icon: FileCheck2,
-    image: "/compliance_management.png",
+    image: "/compliance_management.webp",
     summary:
       "Selects frameworks, maps requirements, runs assessments, produces gap registers, and suggests remediation plans.",
     lifecycle: ["Select framework", "Map requirements", "Assess compliance", "Plan remediation"],
@@ -219,7 +219,7 @@ export const platformModules: PlatformModule[] = [
     title: "Asset Management",
     code: "ASSET_MGMT",
     icon: Network,
-    image: "/information_asset_management.png",
+    image: "/information_asset_management.webp",
     summary:
       "Ingests assets through API, ETL, or entry, then scores risk using business value, data classification, CIA impact, and exposure data.",
     lifecycle: ["Ingest assets", "Analyze risk", "Maintain register", "Score exposure"],
@@ -236,7 +236,7 @@ export const platformModules: PlatformModule[] = [
     title: "Policy Management",
     code: "POLICY_MGMT",
     icon: FileText,
-    image: "/policy_management.png",
+    image: "/policy_management.webp",
     summary:
       "Generates framework-aligned policies, compares documents against regulations, identifies gaps, and builds compliance reports.",
     lifecycle: ["Upload documents", "Generate policies", "Compare compliance", "Report gaps"],
@@ -253,7 +253,7 @@ export const platformModules: PlatformModule[] = [
     title: "Executive Dashboards",
     code: "DASHBOARDS",
     icon: LayoutDashboard,
-    image: "/executive_dashboards.png",
+    image: "/executive_dashboards.webp",
     summary:
       "Surfaces live metrics for high-risk assets, human risk exposure, heat maps, SLA monitoring, and predictive risk to drive investment and remediation decisions.",
     lifecycle: ["Identify high-risk assets", "Prioritize investments", "Allocate resources", "Plan remediation"],

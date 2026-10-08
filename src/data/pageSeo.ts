@@ -24,6 +24,10 @@ export const defaultPageSeo: PageSeoConfig = {
 
 export const pageSeoByPath: Record<string, PageSeoConfig> = {
   "/": defaultPageSeo,
+  "/team": {
+    title: "Our Team & Founder | Observeri Technologies",
+    description: "Meet Observeri Technologies founder Ali Naqvi. Founded in 2025 in Dubai, UAE, Observeri builds AI-powered governance, risk, and compliance software.",
+  },
   "/about": {
     title: "About Observeri | AI-Powered Cybersecurity GRC Company",
     description:
@@ -66,12 +70,12 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
       "Observeri TPRM automates vendor discovery, AI risk prioritization, evidence collection, and gap remediation with audit-ready dossiers.",
     keywords:
       "third party risk management software, TPRM platform, vendor risk management, vendor risk assessment tool, third party cyber risk management, vendor risk cybersecurity platform",
-    ogImage: "/third_party_risk.png",
+    ogImage: "/third_party_risk.webp",
     schemas: [
       productSchema(
         "Observeri Third Party Risk Management",
         "Observeri TPRM automates vendor discovery, AI risk prioritization, evidence collection, and gap remediation with audit-ready dossiers.",
-        "/third_party_risk.png",
+        "/third_party_risk.webp",
         "/products/third-party-risk",
         "SecurityApplication",
       ),
@@ -84,12 +88,12 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
       "Observeri cyber risk management links risks to live controls and assets, auto-updates scores, and adds AI prioritization and FAIR quantification.",
     keywords:
       "cyber risk management software, risk register software, AI risk management, FAIR risk quantification, control assessment platform, cyber risk scoring platform, integrated risk management software",
-    ogImage: "/predictive_risk_intelligence.png",
+    ogImage: "/predictive_risk_intelligence.webp",
     schemas: [
       productSchema(
         "Observeri Cyber Risk Management",
         "Observeri cyber risk management links risks to live controls and assets, auto-updates scores, and adds AI prioritization and FAIR quantification.",
-        "/predictive_risk_intelligence.png",
+        "/predictive_risk_intelligence.webp",
         "/products/cyber-risk-management",
         "SecurityApplication",
       ),
@@ -102,12 +106,12 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
       "Observeri Vulnerability Operations ingests CVEs, prioritizes with EPSS and threat feeds, tracks SLAs, and drives AI-guided remediation.",
     keywords:
       "vulnerability management software, vulnerabilities, vulnerability tracking, vulnerability prioritization, EPSS prioritization, CVE management, threat feeds, threat monitoring, vulnerability SLA tracking, vulnerability remediation platform, exploitability scoring",
-    ogImage: "/vulnerability_operations.png",
+    ogImage: "/vulnerability_operations.webp",
     schemas: [
       productSchema(
         "Observeri Vulnerability Operations",
         "Observeri Vulnerability Operations ingests CVEs, prioritizes with EPSS and threat feeds, tracks SLAs, and drives AI-guided remediation.",
-        "/vulnerability_operations.png",
+        "/vulnerability_operations.webp",
         "/products/vulnerability-operations",
         "SecurityApplication",
       ),
@@ -120,12 +124,12 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
       "Observeri AI Risk Operations Center fuses incidents, risks, vulnerabilities, threats, and compliance into live asset risk scores.",
     keywords:
       "AI risk operations center, asset risk scoring, continuous risk exposure, continuous threat exposure management, threat monitoring, threat feeds, vulnerabilities, AI GRC platform, unified risk intelligence, crown jewel protection, risk reduction targeting, cyber risk exposure platform",
-    ogImage: "/ai-risk-operations-center.png",
+    ogImage: "/ai-risk-operations-center.webp",
     schemas: [
       productSchema(
         "Observeri AI Risk Operations Center",
         "Observeri AI Risk Operations Center fuses incidents, risks, vulnerabilities, threats, and compliance into live asset risk scores.",
-        "/ai-risk-operations-center.png",
+        "/ai-risk-operations-center.webp",
         "/products/ai-risk-operations-center",
         "SecurityApplication",
       ),
@@ -138,12 +142,12 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
       "Observeri Security Governance delivers KRI/KPI monitoring, AI policy management, risk-informed budgeting, and change management for CISOs.",
     keywords:
       "security governance software, KRI KPI monitoring, policy management software, AI security budgeting, change management GRC, security project management, governance risk compliance",
-    ogImage: "/governance_management.png",
+    ogImage: "/governance_management.webp",
     schemas: [
       productSchema(
         "Observeri Security Governance",
         "Observeri Security Governance delivers KRI/KPI monitoring, AI policy management, risk-informed budgeting, and change management for CISOs.",
-        "/governance_management.png",
+        "/governance_management.webp",
         "/products/security-governance",
         "SecurityApplication",
       ),
@@ -156,12 +160,12 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
       "Observeri Exposure Management unifies attack surface management, threat monitoring, dark web monitoring, issue tracking, and AI remediation.",
     keywords:
       "exposure management software, continuous attack surface management, external attack surface monitoring, continuous threat exposure management, attack surface management, threat monitoring, threat feeds, vulnerabilities, dark web monitoring, compliance issue tracking, remediation hub, AI threat analysis, audit issue management, security assessment planning, SLA remediation tracking",
-    ogImage: "/threats.png",
+    ogImage: "/threats.webp",
     schemas: [
       productSchema(
         "Observeri Exposure Management",
         "Observeri Exposure Management unifies attack surface management, threat monitoring, dark web monitoring, issue tracking, and AI remediation.",
-        "/threats.png",
+        "/threats.webp",
         "/products/exposure-management",
         "SecurityApplication",
       ),
@@ -174,12 +178,12 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
       "Observeri EASM continuously discovers domains, hosts, and shadow IT, then maps attack paths, dark web exposure, and cloud risks into GRC.",
     keywords:
       "external attack surface management, EASM software, continuous attack surface management, external attack surface monitoring, shadow IT detection, attack path analysis, threat monitoring, threat feeds, vulnerabilities, dark web monitoring, cloud security posture, web application penetration testing",
-    ogImage: "/easm/slide-1.png",
+    ogImage: "/easm/slide-1.webp",
     schemas: [
       productSchema(
         "Observeri External Attack Surface Management",
         "Observeri EASM continuously discovers domains, hosts, and shadow IT, then maps attack paths, dark web exposure, and cloud risks into GRC.",
-        "/easm/slide-1.png",
+        "/easm/slide-1.webp",
         "/products/external-attack-surface-management",
         "SecurityApplication",
       ),
@@ -192,12 +196,12 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
       "Observeri Compliance Management maintains regulations, builds AI compliance registers, runs self-assessments, and tracks submissions.",
     keywords:
       "compliance management software, AI compliance register, regulatory compliance tracking, horizon scanning, compliance self-assessment, regulatory submission SLA, compliance incidents breaches, policy gap analysis, ISO SOC2 GDPR compliance",
-    ogImage: "/compliance_management.png",
+    ogImage: "/compliance_management.webp",
     schemas: [
       productSchema(
         "Observeri Compliance Management",
         "Observeri Compliance Management maintains regulations, builds AI compliance registers, runs self-assessments, and tracks submissions.",
-        "/compliance_management.png",
+        "/compliance_management.webp",
         "/products/compliance-management",
         "SecurityApplication",
       ),
@@ -210,12 +214,12 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
       "Observeri Information Asset Management ingests assets, applies live AI risk scores and control effectiveness, and maps a unified exposure view.",
     keywords:
       "information asset management, asset inventory software, AI asset risk scoring, control effectiveness per asset, unified exposure view, CIA triad asset profiling, asset register GRC, CMDB integration, live asset risk scores",
-    ogImage: "/information_asset_management.png",
+    ogImage: "/information_asset_management.webp",
     schemas: [
       productSchema(
         "Observeri Information Asset Management",
         "Observeri Information Asset Management ingests assets, applies live AI risk scores and control effectiveness, and maps a unified exposure view.",
-        "/information_asset_management.png",
+        "/information_asset_management.webp",
         "/products/information-asset-management",
         "SecurityApplication",
       ),
@@ -228,12 +232,12 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
       "Observeri Human Risk Management scans privileged identities, calculates HRE scores, and quantifies financial exposure with automated controls.",
     keywords:
       "human risk management, privileged identity monitoring, HRE scoring, insider threat detection, identity risk scoring, privileged access review, human cyber risk model, automated access controls, financial exposure people risk",
-    ogImage: "/human_risk_management.png",
+    ogImage: "/human_risk_management.webp",
     schemas: [
       productSchema(
         "Observeri Human Risk Management",
         "Observeri Human Risk Management scans privileged identities, calculates HRE scores, and quantifies financial exposure with automated controls.",
-        "/human_risk_management.png",
+        "/human_risk_management.webp",
         "/products/human-risk-management",
         "SecurityApplication",
       ),
@@ -246,12 +250,12 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
       "Observeri Data Privacy & Protection detects PII, discovers sensitive data and secrets, and scores exposure with NER-based classification.",
     keywords:
       "data privacy software, PII detection, sensitive data discovery, secret scanning, credential scanning, NER data identification, data exposure scoring, data classification, GDPR data discovery, PDPL compliance",
-    ogImage: "/data_privacy_protection.png",
+    ogImage: "/data_privacy_protection.webp",
     schemas: [
       productSchema(
         "Observeri Data Privacy & Protection",
         "Observeri Data Privacy & Protection detects PII, discovers sensitive data and secrets, and scores exposure with NER-based classification.",
-        "/data_privacy_protection.png",
+        "/data_privacy_protection.webp",
         "/products/data-privacy-protection",
         "SecurityApplication",
       ),
@@ -378,6 +382,7 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
 };
 
 export const getPageSeoForPath = (pathname: string): PageSeoConfig => {
+  pathname = pathname.replace(/\/+$/, "") || "/";
   const exact = pageSeoByPath[pathname];
   if (exact) {
     return exact;

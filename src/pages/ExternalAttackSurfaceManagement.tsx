@@ -153,7 +153,7 @@ const EasmSlideshow = () => {
                       </div>
                     </div>
                   </div>
-                  <img
+                  <img decoding="async"
                     src={slide.src}
                     alt={slide.alt}
                     className="aspect-[16/10] w-full bg-[#0b0e14] object-contain object-top"
@@ -283,8 +283,8 @@ const ExternalAttackSurfaceManagement = () => {
                 whileHover={{ scale: 1.01 }}
                 transition={{ duration: 0.3 }}
               >
-                <img
-                  src="/easm/slide-1.png"
+                <img loading="lazy" decoding="async"
+                  src="/easm/slide-1.webp"
                   alt="Observeri External Attack Surface Management module overview"
                   className="w-full rounded-[1.75rem] object-contain"
                 />

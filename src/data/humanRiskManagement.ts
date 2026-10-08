@@ -202,7 +202,7 @@ export const hrHreShowcase = {
   title: "Human Risk Exposure—quantified, visualized, actionable",
   description:
     "The HRE dashboard combines the Human Cyber Risk Model formula with live identity metrics—showing critical and high-risk counts, average and maximum HRE scores, financial exposure, and the identities requiring immediate action.",
-  image: "/human_risk_management.png",
+  image: "/human_risk_management.webp",
   formula: "HRE = Asset Risk × Privilege Impact × Access Probability × Trust Factor × Environmental Risk",
   formulaFactors: [
     { abbr: "AR", label: "Asset Risk", color: "text-sky-400" },

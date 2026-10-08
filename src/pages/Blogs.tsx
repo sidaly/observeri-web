@@ -13,6 +13,17 @@ import { blogPostingSchema } from "@/lib/schema";
 
 const posts: BlogPostData[] = blogPosts;
 
+const relatedProduct = (post: BlogPostData) => {
+  const topic = `${post.title} ${post.excerpt}`.toLowerCase();
+  if (/vendor|third.party|supply.chain/.test(topic)) return { slug: "third-party-risk", label: "Third Party Risk Management" };
+  if (/vulnerab|cve|exploit/.test(topic)) return { slug: "vulnerability-operations", label: "Vulnerability Operations" };
+  if (/attack.surface|easm/.test(topic)) return { slug: "external-attack-surface-management", label: "External Attack Surface Management" };
+  if (/compliance|regulat|audit|iso |sama|nesa/.test(topic)) return { slug: "compliance-management", label: "Compliance Management" };
+  if (/privacy|personal.data/.test(topic)) return { slug: "data-privacy-protection", label: "Data Privacy & Protection" };
+  if (/ai |artificial.intelligence/.test(topic)) return { slug: "ai-risk-operations-center", label: "AI Risk Operations Center" };
+  return { slug: "cyber-risk-management", label: "Cyber Risk Management" };
+};
+
 const Blogs = () => {
   const blogSchemas = posts.map((post) => blogPostingSchema(post));
 
@@ -45,7 +56,14 @@ const Blogs = () => {
           {posts.length > 0 ? (
             <StaggerContainer className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-3" staggerDelay={0.08}>
               {posts.map((post, index) => (
-                <StaggerItem key={post.id}><BlogPostCard post={post} delay={index * 0.05} /></StaggerItem>
+                <StaggerItem key={post.id}>
+                  <div className="flex h-full flex-col gap-4">
+                    <BlogPostCard post={post} delay={index * 0.05} />
+                    <Link className="text-sm text-primary underline underline-offset-4" to={`/products/${relatedProduct(post).slug}`}>
+                      Explore {relatedProduct(post).label}
+                    </Link>
+                  </div>
+                </StaggerItem>
               ))}
             </StaggerContainer>
           ) : (

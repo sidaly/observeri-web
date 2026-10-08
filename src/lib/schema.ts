@@ -2,7 +2,7 @@ import type { BlogPostData } from "@/types/wordpress";
 
 export type JsonLdSchema = Record<string, unknown> | Record<string, unknown>[];
 
-const SITE_URL = "https://observeri.com";
+import { SITE_URL } from "@/lib/site";
 
 export const organizationSchema = {
   "@context": "https://schema.org",

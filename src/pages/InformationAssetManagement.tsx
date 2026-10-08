@@ -169,8 +169,8 @@ const InformationAssetManagement = () => {
                 whileHover={{ scale: 1.01 }}
                 transition={{ duration: 0.3 }}
               >
-                <img
-                  src="/information_asset_management.png"
+                <img decoding="async"
+                  src="/information_asset_management.webp"
                   alt="Observeri Information Asset Management unified exposure view with AI risk scores and asset detail panel"
                   className="w-full rounded-[1.75rem] object-contain"
                 />
@@ -213,7 +213,7 @@ const InformationAssetManagement = () => {
               whileHover={{ scale: 1.005 }}
               transition={{ duration: 0.3 }}
             >
-              <img
+              <img loading="lazy" decoding="async"
                 src={iamExposureShowcase.image}
                 alt="Asset exposure graph showing risk-tiered nodes with Core Banking Application Server detail panel including AI risk score, control effectiveness, and CIA triad"
                 className="w-full rounded-[1.75rem] object-contain"

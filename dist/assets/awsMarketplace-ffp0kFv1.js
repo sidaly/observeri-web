@@ -1,0 +1,1 @@
+const s=async(o,e)=>{const a=await fetch(o,{credentials:"include",headers:{"Content-Type":"application/json",...(e==null?void 0:e.headers)||{}},...e}),r=await a.json().catch(()=>({}));if(!a.ok)throw new Error(r.error||"Request failed");return r};export{s as m};

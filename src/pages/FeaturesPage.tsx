@@ -175,7 +175,7 @@ const FeaturesPage = () => {
                     onClick={() => setActiveImage({ src: module.image, title: module.title })}
                     aria-label={`Open ${module.title} image full screen`}
                   >
-                    <img
+                    <img decoding="async"
                       src={module.image}
                       alt={`${module.title} module interface`}
                       className="h-full w-full object-contain p-3 transition-transform duration-500 group-hover:scale-[1.03]"
@@ -357,7 +357,7 @@ const FeaturesPage = () => {
                 transition={{ duration: 0.25, ease: "easeOut" }}
               >
                 <div className="relative aspect-[16/10] overflow-hidden border-b border-border/30 bg-background/40">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={activeModule.image}
                     alt={`${activeModule.title} module interface`}
                     className="h-full w-full object-contain p-4"
@@ -471,7 +471,7 @@ const FeaturesPage = () => {
             <X className="h-5 w-5" />
           </button>
 
-          <img
+          <img loading="lazy" decoding="async"
             src={activeImage.src}
             alt={`${activeImage.title} module interface`}
             className="max-h-[92vh] max-w-[96vw] rounded-2xl border border-border/40 bg-background object-contain shadow-2xl"

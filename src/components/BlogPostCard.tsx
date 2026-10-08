@@ -31,7 +31,7 @@ export function BlogPostCard({ post, delay = 0 }: BlogPostCardProps) {
       {/* Featured Image */}
       {post.featured_image && (
         <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20">
-          <img
+          <img loading="lazy" decoding="async"
             src={post.featured_image}
             alt={post.alt_text || post.title}
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"

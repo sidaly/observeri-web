@@ -2,7 +2,7 @@
 // Keep in sync with the routes in src/App.tsx and the slugs in
 // src/data/industrySolutions.ts.
 
-export const SITE_URL = (process.env.SITE_URL || "https://observeri.com").replace(/\/$/, "");
+export const SITE_URL = (process.env.SITE_URL || "https://www.observeri.com").replace(/\/$/, "");
 
 const industrySolutionSlugs = [
   "banking-financial-services",
@@ -16,6 +16,7 @@ const industrySolutionSlugs = [
 const staticRoutes = [
   "/",
   "/about",
+  "/team",
   "/career",
   "/newsroom",
   "/blogs",

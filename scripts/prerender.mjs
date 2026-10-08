@@ -139,6 +139,7 @@ async function launchBrowser() {
   const { default: puppeteer } = await import("puppeteer");
   return puppeteer.launch({
     headless: true,
+    ...(process.env.PUPPETEER_EXECUTABLE_PATH ? { executablePath: process.env.PUPPETEER_EXECUTABLE_PATH } : {}),
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
 }
@@ -193,7 +194,7 @@ async function run() {
           ];
           document.querySelectorAll("script, iframe, img, link").forEach((el) => {
             const src = el.getAttribute("src") || el.getAttribute("href") || "";
-            if (!src) return;
+            if (!src || el.getAttribute("rel") === "canonical") return;
             if (injectedHosts.some((h) => src.includes(h)) || src.includes(localOrigin)) {
               el.remove();
             }

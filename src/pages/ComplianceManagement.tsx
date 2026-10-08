@@ -168,8 +168,8 @@ const ComplianceManagement = () => {
                 whileHover={{ scale: 1.01 }}
                 transition={{ duration: 0.3 }}
               >
-                <img
-                  src="/compliance_management.png"
+                <img decoding="async"
+                  src="/compliance_management.webp"
                   alt="Observeri Compliance Management module"
                   className="w-full rounded-[1.75rem] object-contain"
                 />

@@ -168,8 +168,8 @@ const ExposureManagement = () => {
                 whileHover={{ scale: 1.01 }}
                 transition={{ duration: 0.3 }}
               >
-                <img
-                  src="/threats.png"
+                <img decoding="async"
+                  src="/threats.webp"
                   alt="Observeri Exposure Management module"
                   className="w-full rounded-[1.75rem] object-contain"
                 />

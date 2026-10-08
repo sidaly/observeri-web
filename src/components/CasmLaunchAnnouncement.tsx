@@ -12,12 +12,12 @@ import {
 
 const slides = [
   {
-    src: "/easm/slide-1.png",
+    src: "/easm/slide-1.webp",
     alt: "Observeri External Attack Surface Management module overview — domain discovery, vulnerability scanning, penetration testing, dark web monitoring, attack path analysis, and cloud security posture",
     label: "EASM module overview",
   },
   {
-    src: "/casm-dashboard.png",
+    src: "/casm-dashboard.webp",
     alt: "Observeri CASM dashboard showing host risk distribution, top risky hosts, technology exposure, exposed port frequency, geographic exposure, and subdomain depth",
     label: "CASM dashboard preview",
   },
@@ -197,7 +197,7 @@ export const CasmLaunchAnnouncement = () => {
                                 </div>
                               </div>
                             </div>
-                            <img
+                            <img loading="lazy" decoding="async"
                               src={slide.src}
                               alt={slide.alt}
                               className="aspect-[16/9] w-full object-contain bg-[#0b1120]"

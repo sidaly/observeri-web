@@ -29,7 +29,7 @@ export const productPages: ProductPage[] = [
     icon: Sparkles,
     description: "Unified intelligence for incidents, risks, vulns, threats, compliance, and live asset risk scores.",
     featured: true,
-    image: "/ai-risk-operations-center.png",
+    image: "/ai-risk-operations-center.webp",
   },
   {
     slug: "third-party-risk",
@@ -39,7 +39,7 @@ export const productPages: ProductPage[] = [
     icon: Handshake,
     description: "Continuous vendor discovery, AI prioritization, and evidence-backed closure.",
     featured: true,
-    image: "/third_party_risk.png",
+    image: "/third_party_risk.webp",
   },
   {
     slug: "cyber-risk-management",
@@ -49,7 +49,7 @@ export const productPages: ProductPage[] = [
     icon: Radar,
     description: "Live risk scoring, control mapping, FAIR quantification, and smart remediation.",
     featured: true,
-    image: "/predictive_risk_intelligence.png",
+    image: "/predictive_risk_intelligence.webp",
   },
   {
     slug: "vulnerability-operations",
@@ -59,7 +59,7 @@ export const productPages: ProductPage[] = [
     icon: Activity,
     description: "API & Excel ingestion, exploitability prioritization, SLA tracking, and remediation programmes.",
     featured: true,
-    image: "/vulnerability_operations.png",
+    image: "/vulnerability_operations.webp",
   },
   {
     slug: "security-governance",
@@ -69,7 +69,7 @@ export const productPages: ProductPage[] = [
     icon: Building2,
     description: "KRI/KPI monitoring, policy management, AI budgeting, change management, and project delivery.",
     featured: true,
-    image: "/governance_management.png",
+    image: "/governance_management.webp",
   },
   {
     slug: "exposure-management",
@@ -79,7 +79,7 @@ export const productPages: ProductPage[] = [
     icon: Globe,
     description: "Assessment planning, issues hub, remediation hub, attack surface, and AI threat analysis.",
     featured: true,
-    image: "/threats.png",
+    image: "/threats.webp",
   },
   {
     slug: "external-attack-surface-management",
@@ -89,7 +89,7 @@ export const productPages: ProductPage[] = [
     icon: Radar,
     description: "Continuous external discovery, shadow IT detection, attack paths, web pentest, and cloud posture.",
     featured: true,
-    image: "/easm/slide-1.png",
+    image: "/easm/slide-1.webp",
   },
   {
     slug: "compliance-management",
@@ -99,7 +99,7 @@ export const productPages: ProductPage[] = [
     icon: FileCheck2,
     description: "Regulations library, AI compliance register, horizon scanning, submissions, incidents, and policy gap analysis.",
     featured: true,
-    image: "/compliance_management.png",
+    image: "/compliance_management.webp",
   },
   {
     slug: "information-asset-management",
@@ -109,7 +109,7 @@ export const productPages: ProductPage[] = [
     icon: Network,
     description: "Asset ingestion, live AI risk scores, control effectiveness, CIA profiling, and unified exposure view.",
     featured: true,
-    image: "/information_asset_management.png",
+    image: "/information_asset_management.webp",
   },
   {
     slug: "human-risk-management",
@@ -119,7 +119,7 @@ export const productPages: ProductPage[] = [
     icon: Users,
     description: "AI privileged ID scanning, HRE scoring, ML analytics, automated controls, and financial exposure.",
     featured: true,
-    image: "/human_risk_management.png",
+    image: "/human_risk_management.webp",
   },
   {
     slug: "data-privacy-protection",
@@ -129,7 +129,7 @@ export const productPages: ProductPage[] = [
     icon: Fingerprint,
     description: "PII detection, sensitive data scanning, secret discovery, NER identification, and exposure scoring.",
     featured: true,
-    image: "/data_privacy_protection.png",
+    image: "/data_privacy_protection.webp",
   },
 ];
 

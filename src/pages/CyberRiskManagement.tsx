@@ -167,8 +167,8 @@ const CyberRiskManagement = () => {
                 whileHover={{ scale: 1.01 }}
                 transition={{ duration: 0.3 }}
               >
-                <img
-                  src="/predictive_risk_intelligence.png"
+                <img decoding="async"
+                  src="/predictive_risk_intelligence.webp"
                   alt="Observeri Cyber Risk Management dashboard"
                   className="w-full rounded-[1.75rem] object-contain"
                 />

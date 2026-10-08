@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import logoIcon from "@/assets/grc-sphere-icon.png";
+import logoIcon from "@/assets/grc-sphere-icon.webp";
 import { industrySolutions } from "@/data/industrySolutions";
 import { featuredProductPages, productPages } from "@/data/products";
 
@@ -70,7 +70,7 @@ export const Navbar = () => {
         <div className="flex h-16 items-center justify-between">
           <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
             <Link to="/" className="group flex items-center gap-2">
-              <img
+              <img decoding="async"
                 src={logoIcon}
                 alt="Observeri"
                 className="h-9 w-9 transition-transform duration-300 group-hover:scale-110"

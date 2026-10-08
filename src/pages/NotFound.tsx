@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import logoIcon from "@/assets/grc-sphere-icon.png";
+import logoIcon from "@/assets/grc-sphere-icon.webp";
 
 const NotFound = () => {
   const location = useLocation();
@@ -15,7 +15,7 @@ const NotFound = () => {
     <div className="min-h-screen bg-background bg-gradient-main flex items-center justify-center">
       <div className="text-center px-6">
         <div className="inline-flex items-center gap-2 mb-8">
-          <img src={logoIcon} alt="Observeri GRC" className="w-10 h-10" />
+          <img decoding="async" src={logoIcon} alt="Observeri GRC" className="w-10 h-10" />
           <span className="text-2xl font-display font-bold">Observeri GRC</span>
         </div>
         

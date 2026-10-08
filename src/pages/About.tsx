@@ -23,7 +23,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoIcon from "@/assets/grc-sphere-icon.png";
+import logoIcon from "@/assets/grc-sphere-icon.webp";
 
 const stats = [
   { value: "24/7", label: "Risk Monitoring" },
@@ -215,7 +215,7 @@ const About = () => {
               <div className="rounded-[2rem] border-gradient bg-gradient-card p-8 md:p-10">
                 <div className="flex items-center gap-4 border-b border-border/30 pb-6">
                   <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 p-2">
-                    <img src={logoIcon} alt="Observeri GRC" className="h-full w-full object-contain" />
+                    <img decoding="async" src={logoIcon} alt="Observeri GRC" className="h-full w-full object-contain" />
                   </div>
                   <div>
                     <p className="text-sm uppercase tracking-[0.2em] text-primary">Platform Core</p>
@@ -501,6 +501,11 @@ const About = () => {
         </div>
       </section>
 
+      <section className="container mx-auto px-6 py-16">
+        <h2 className="text-3xl font-display font-bold">Our company</h2>
+        <p className="mt-5 max-w-3xl leading-7 text-muted-foreground">Observeri Technologies was founded in 2025 and is headquartered in Dubai, United Arab Emirates.</p>
+        <a href="/team" className="mt-5 inline-block text-primary underline">Meet our founder and team</a>
+      </section>
       <Footer />
     </div>
   );

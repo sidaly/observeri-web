@@ -193,7 +193,7 @@ export const iamExposureShowcase = {
   title: "Unified asset exposure—see risk across your entire estate",
   description:
     "The exposure graph connects every asset by risk tier, network zone, and classification. Select any node to reveal live AI risk score, control effectiveness, residual risk, AI criticality, CIA triad impact, and linked control assessments—all in one panel.",
-  image: "/information_asset_management.png",
+  image: "/information_asset_management.webp",
   assetExample: {
     id: "AST-Z546IA",
     name: "Core Banking Application Server",

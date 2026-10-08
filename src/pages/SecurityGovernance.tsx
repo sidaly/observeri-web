@@ -169,8 +169,8 @@ const SecurityGovernance = () => {
                 whileHover={{ scale: 1.01 }}
                 transition={{ duration: 0.3 }}
               >
-                <img
-                  src="/governance_management.png"
+                <img decoding="async"
+                  src="/governance_management.webp"
                   alt="Observeri Security Governance module"
                   className="w-full rounded-[1.75rem] object-contain"
                 />
