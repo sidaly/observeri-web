@@ -1,11 +1,9 @@
-import { createRoot, hydrateRoot } from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 
 const rootElement = document.getElementById("root")!;
 
-if (rootElement.hasChildNodes()) {
-  hydrateRoot(rootElement, <App />);
-} else {
-  createRoot(rootElement).render(<App />);
-}
+// Prerendering saves browser DOM snapshots, not React server-rendered markup.
+// Mount the interactive app normally; the static HTML remains available to crawlers.
+createRoot(rootElement).render(<App />);

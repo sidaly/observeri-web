@@ -35,12 +35,6 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
     description: "Read the terms for using the Observeri Technologies website, submitting enquiries, accessing accounts, and viewing product information.",
     schemas: breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Terms of Service" }]),
   },
-  "/thank-you": {
-    title: "Thank You for Your Enquiry | Observeri",
-    description: "Your message has been received. The Observeri team will review your enquiry and respond within one business day.",
-    robots: "noindex, follow",
-    schemas: breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Thank You" }]),
-  },
   "/team": {
     title: "Our Team & Founder | Observeri Technologies",
     schemas: breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Team", item: "/team" }]),

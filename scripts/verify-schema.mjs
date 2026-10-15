@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-import { prerenderRoutes as routes, SITE_URL } from './routes.mjs';
+import { routes, SITE_URL } from './routes.mjs';
 
 for (const route of routes) {
   const html = fs.readFileSync(`dist${route === '/' ? '' : route}/index.html`, 'utf8');

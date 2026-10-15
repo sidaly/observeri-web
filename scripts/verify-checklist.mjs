@@ -132,6 +132,7 @@ try {
   await click('Reject optional');
   console.log('Consent checks passed: no consent, reject persistence, analytics-only, marketing-only, accept all, withdrawal, expired and invalid storage.');
 
+  await page.setViewport({width:390,height:844,isMobile:true,deviceScaleFactor:1});
   await go('/');
   await page.type('#email','test@example.com');
   await page.type('#message','Automated test; requests are intercepted locally.');
@@ -145,11 +146,19 @@ try {
   assert.equal(new URL(page.url()).pathname,'/');
   contactResponse={status:200,body:{ok:true}};
   await click('Send Message');
-  await page.waitForFunction(()=>location.pathname==='/thank-you' && !!document.querySelector('h1')?.textContent.includes('Thank you'));
+  await page.waitForSelector('[role="dialog"]');
+  assert.equal(new URL(page.url()).pathname,'/');
+  assert.ok(await page.$eval('[role="dialog"]',el=>el.textContent.includes('Thank you for your message')));
+  assert.equal(await page.$eval('#message',el=>el.value),'');
+  assert.equal(await page.$eval('#email',el=>el.value),'');
   assert.equal(contactCalls,3);
-  assert.ok(await page.$eval('meta[name="robots"]',el=>el.content.includes('noindex')));
   assert.ok(!fs.readFileSync('dist/sitemap.xml','utf8').includes('/thank-you'));
-  console.log('Contact form checks passed: failure and unconfirmed responses retain form; confirmed success redirects to noindex thank-you. No emails sent.');
+  await new Promise(resolve => setTimeout(resolve, 1000));
+  await page.screenshot({path:path.join(screenshots,'thank-you-popup-mobile.png')});
+  await page.keyboard.press('Escape');
+  await page.waitForSelector('[role="dialog"]',{hidden:true});
+  await page.waitForFunction(()=>document.activeElement?.textContent === 'Send Message');
+  console.log('Contact form checks passed: failures retain form; confirmed success opens popup without navigation, resets fields, and returns focus on close. No emails sent.');
 
   await page.setViewport({width:390,height:844,isMobile:true,deviceScaleFactor:1});
   await go('/products/external-attack-surface-management');

@@ -37,7 +37,6 @@ const AwsMarketplaceSubscribe = lazy(() => import("./pages/AwsMarketplaceSubscri
 import { PageSeo } from "./components/PageSeo";
 
 const Legal = lazy(() => import("./pages/Legal"));
-const ThankYou = lazy(() => import("./pages/ThankYou"));
 const Team = lazy(() => import("./pages/Team"));
 
 const queryClient = new QueryClient();
@@ -55,7 +54,6 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/privacy-policy" element={<Legal />} />
           <Route path="/terms" element={<Legal />} />
-          <Route path="/thank-you" element={<ThankYou />} />
           <Route path="/team" element={<Team />} />
           <Route path="/about" element={<About />} />
           <Route path="/career" element={<Career />} />

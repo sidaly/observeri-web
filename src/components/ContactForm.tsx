@@ -1,13 +1,16 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import * as React from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { toast } from "@/components/ui/use-toast";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter, DialogClose } from "@/components/ui/dialog";
 
 export const ContactForm: React.FC = () => {
-  const navigate = useNavigate();
+  const [successOpen, setSuccessOpen] = React.useState(false);
+  const submitButton = React.useRef<HTMLButtonElement>(null);
+  const dismissSubmissionNotice = React.useRef<(() => void) | null>(null);
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [subject, setSubject] = React.useState("");
@@ -17,8 +20,9 @@ export const ContactForm: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    dismissSubmissionNotice.current?.();
     if (!email || !message) {
-      toast({ title: "Missing fields", description: "Please provide at least your email and a message." });
+      dismissSubmissionNotice.current = toast({ title: "Missing fields", description: "Please provide at least your email and a message." }).dismiss;
       return;
     }
 
@@ -45,11 +49,10 @@ export const ContactForm: React.FC = () => {
       setSubject("");
       setMessage("");
       setCompany("");
-      navigate("/thank-you");
-      window.scrollTo(0, 0);
+      setSuccessOpen(true);
     } catch (err) {
       const description = err instanceof Error ? err.message : "Something went wrong. Please try again later.";
-      toast({ title: "Error", description });
+      dismissSubmissionNotice.current = toast({ title: "Error", description }).dismiss;
     } finally {
       setLoading(false);
     }
@@ -107,7 +110,7 @@ export const ContactForm: React.FC = () => {
 
               <p className="text-sm text-muted-foreground">We use the information you provide to respond to your enquiry. Read our <Link to="/privacy-policy" className="text-primary underline">Privacy Policy</Link>.</p>
               <div className="pt-2">
-                <Button type="submit" variant="hero" size="lg" className="w-full" disabled={loading}>
+                <Button ref={submitButton} type="submit" variant="hero" size="lg" className="w-full" disabled={loading}>
                   {loading ? "Sending..." : "Send Message"}
                 </Button>
               </div>
@@ -115,6 +118,20 @@ export const ContactForm: React.FC = () => {
           </div>
         </div>
       </div>
+      <Dialog open={successOpen} onOpenChange={setSuccessOpen}>
+        <DialogContent className="w-[90vw] max-w-md rounded-2xl" onCloseAutoFocus={(event) => {
+          event.preventDefault();
+          submitButton.current?.focus({ preventScroll: true });
+        }}>
+          <DialogHeader>
+            <DialogTitle>Thank you for your message</DialogTitle>
+            <DialogDescription>Your message has been received. Our team will review your enquiry and respond within one business day.</DialogDescription>
+          </DialogHeader>
+          <DialogFooter>
+            <DialogClose asChild><Button>Done</Button></DialogClose>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };

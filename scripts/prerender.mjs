@@ -11,7 +11,7 @@ import fs from "fs";
 import http from "http";
 import path from "path";
 import { fileURLToPath } from "url";
-import { prerenderRoutes as routes, SITE_URL } from "./routes.mjs";
+import { routes, SITE_URL } from "./routes.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -84,7 +84,7 @@ async function autoScroll(page) {
 
 // Analytics / ads hosts whose scripts inject runtime-only markup (tracking
 // beacons with the local prerender origin) that must never be baked into the
-// static HTML. The original GTM/gtag tags remain in index.html for real users.
+// static HTML. Real visitors load tracking only after granting consent.
 const BLOCKED_HOSTS = [
   "googletagmanager.com",
   "google-analytics.com",
@@ -179,11 +179,9 @@ async function run() {
 
         // Strip runtime-injected analytics/ads nodes and anything referencing
         // the local prerender origin so they never end up in the static HTML.
-        // The authored gtag.js tag and inline GTM loader in index.html are kept
-        // so analytics keeps working for real users on the served pages.
+        // The consent-aware client loaders handle tracking for real visitors.
         await page.evaluate((localOrigin) => {
-          // Hosts whose tags are injected at runtime (the inline GTM loader
-          // re-creates gtm.js on the client) or are pure tracking beacons.
+          // Hosts whose tags are injected at runtime or are tracking beacons.
           const injectedHosts = [
             "googletagmanager.com/gtm.js",
             "google-analytics.com",
