@@ -1,0 +1,294 @@
+{
+  "/": {
+    "keyword": "AI GRC platform",
+    "title": "Observeri — AI-Powered GRC Platform | Cyber Risk Quantification",
+    "description": "Observeri turns cyber, technology, and operational risk data into real-time financial intelligence. AI GRC platform for regulated enterprises across UAE, GCC, and beyond.",
+    "h1": "AI-Powered GRC Platform for Regulated Enterprises",
+    "body": [
+      "Observeri is an AI-powered cybersecurity GRC platform and enterprise GRC solution built for regulated organisations that need more than checkbox compliance. Our governance risk and compliance software unifies cyber risk management, IT risk management software workflows, and integrated risk management into a single AI Risk Operations Center — continuously scoring every asset, predicting risk exposure 30–90 days forward, and expressing residual risk as expected annual loss your board and CFO can act on.",
+      "Unlike legacy GRC platforms, Observeri is predictive, not retrospective. Our AI GRC platform for regulated enterprises in banking, energy, healthcare, government, and ports maps 3,000+ controls to SAMA, NESA, ISO 27001, NIST CSF, DORA, MiCA, and the EU AI Act — with deployment options including SaaS, KSA sovereign cloud, and hybrid on-premises. Replace your RSA Archer, ServiceNow IRM, or MetricStream implementation with a platform that compresses audit cycles without shelf-ware."
+    ],
+    "faqs": [
+      {
+        "question": "What is an AI GRC platform?",
+        "answer": "An AI GRC platform uses artificial intelligence to automate governance, risk, and compliance workflows — continuously scoring assets, predicting risk exposure, and mapping controls to regulatory frameworks. Observeri's AI GRC platform goes further by expressing residual risk as expected annual loss rather than colour-coded heat maps."
+      },
+      {
+        "question": "How is Observeri different from RSA Archer or ServiceNow GRC?",
+        "answer": "Observeri is AI-native and predictive. While Archer and ServiceNow record last quarter's assessments, Observeri forecasts risk exposure 30–90 days forward, quantifies risk in financial terms, and integrates external attack surface monitoring into the same risk register — enabling faster deployment and board-ready reporting."
+      },
+      {
+        "question": "Does Observeri support SAMA and NESA compliance?",
+        "answer": "Yes. Observeri maps controls to SAMA Cybersecurity Framework and NESA requirements alongside global frameworks including ISO 27001, NIST CSF, DORA, and MiCA. The platform is available in KSA sovereign cloud and hybrid deployment configurations for GCC-regulated organisations."
+      },
+      {
+        "question": "What deployment options does Observeri offer?",
+        "answer": "Observeri supports SaaS, KSA sovereign cloud, and hybrid or on-premises (OVA) deployment, making it suitable for regulated enterprises across the UAE, Saudi Arabia, and the wider GCC that have data residency or sovereignty requirements."
+      }
+    ]
+  },
+  "/products/ai-risk-operations-center": {
+    "keyword": "AI risk operations center",
+    "title": "AI Risk Operations Center | Continuous Predictive Risk Intelligence",
+    "description": "Observeri's AI Risk Operations Center continuously re-scores every asset, forecasts risk 30–90 days forward, and expresses exposure as expected annual loss. One intelligence engine for all risk signals.",
+    "h1": "AI Risk Operations Center — One Intelligence Engine for Every Risk Signal",
+    "body": [
+      "The AI Risk Operations Center is Observeri's core intelligence layer. It consolidates incidents, risks, vulnerabilities, threats, and compliance issues into a single operational view — calculating a live asset risk score for every asset and directing your team to where remediation protects the highest-value targets.",
+      "Unlike periodic GRC assessments, the AI Risk Operations Center operates continuously. As new signals arrive — a new CVE, a change in control effectiveness, a vendor breach — scores update automatically. Predictive AI models forecast risk exposure 30–90 days forward, enabling CISOs and risk owners to shift from reactive response to proactive resilience. Risk is expressed as expected annual loss, not red/amber/green, so executives and CFOs can fund remediation against a financial risk appetite."
+    ],
+    "faqs": [
+      {
+        "question": "What is an AI Risk Operations Center?",
+        "answer": "An AI Risk Operations Center (AI ROC) is a continuous intelligence engine that aggregates cyber, technology, operational, and compliance risk signals and uses AI to score, prioritise, and forecast exposure in real time — replacing periodic, manual risk assessments with always-on risk intelligence."
+      },
+      {
+        "question": "How does Observeri's AI ROC differ from a traditional GRC dashboard?",
+        "answer": "A traditional GRC dashboard records past assessments. Observeri's AI ROC continuously re-scores assets as signals change and predicts exposure 30–90 days forward, expressed as expected annual loss — giving boards and CISOs a financial view of risk rather than static colour ratings."
+      },
+      {
+        "question": "Which risk types does the AI Risk Operations Center cover?",
+        "answer": "The AI ROC covers cyber risk, technology risk, operational risk, third-party and vendor risk, AI model risk, and compliance risk — all on a unified taxonomy and a single risk register."
+      }
+    ]
+  },
+  "/products/cyber-risk-management": {
+    "keyword": "Cyber risk management software",
+    "title": "Cyber Risk Management Software | AI Quantification & Predictive Scoring",
+    "description": "Observeri cyber risk management software connects risks to live controls and assets, updates scores continuously, and quantifies exposure as expected annual loss. Act on the risk that matters most.",
+    "h1": "Cyber Risk Management Software — Quantify, Predict, and Remediate with Precision",
+    "body": [
+      "Observeri GRC connects risks to live controls, assets, and signals — updating scores as your security posture changes and giving your team a clear, prioritised view of what to tackle next. As a cyber risk quantification software platform, Observeri moves beyond subjective ratings by expressing exposure as expected annual loss using FAIR-aligned financial modelling.",
+      "The predictive cyber risk platform forecasts exploitability and risk exposure 30–90 days forward, so remediation follows financial impact — not noise in the vulnerability queue. Board-level cyber risk reporting is built in: executives see their risk in dollars, not heat maps, enabling faster budget approvals and more credible governance conversations. For organisations replacing RSA Archer, ServiceNow IRM, or MetricStream, Observeri deploys faster, requires less customisation, and delivers quantified cyber risk insight from day one."
+    ],
+    "faqs": [
+      {
+        "question": "What is cyber risk quantification?",
+        "answer": "Cyber risk quantification (CRQ) is the process of expressing cybersecurity risk in financial terms — typically as expected annual loss (EAL) or loss exceedance curves — so organisations can prioritise investment and communicate risk to boards and CFOs in language they understand."
+      },
+      {
+        "question": "How does Observeri quantify cyber risk?",
+        "answer": "Observeri uses a FAIR-aligned approach: asset value multiplied by threat probability and residual control effectiveness produces an expected annual loss figure. This updates continuously as new signals arrive, giving live financial risk exposure rather than a point-in-time assessment."
+      },
+      {
+        "question": "Can Observeri replace RSA Archer for cyber risk management?",
+        "answer": "Yes. Observeri is an AI-native alternative to RSA Archer for cyber risk management. It deploys faster, requires no complex customisation, and delivers predictive risk quantification and board-ready financial reporting that Archer does not offer natively."
+      }
+    ]
+  },
+  "/products/security-governance": {
+    "keyword": "Security governance platform",
+    "title": "Security Governance Platform | ISO 27001, NIST CSF & Control Mapping",
+    "description": "Observeri Security Governance unifies KRI/KPI monitoring, policy management, automated control assessment, and change management — giving CISOs one workspace to steer the security programme.",
+    "h1": "Security Governance Platform — Govern Security with Evidence, Not Estimates",
+    "body": [
+      "Observeri Security Governance unifies KRI/KPI monitoring, policy management, AI budgeting, change management, and dedicated project management — giving boards and CISOs one workspace to steer the security programme with defensible evidence.",
+      "As a cybersecurity governance software platform, Observeri pre-maps 3,000+ controls to ISO 27001, NIST CSF, SAMA, NESA, SOC 2, and other frameworks, with automated control assessment that tests design and operating effectiveness continuously. GRC control mapping is automated — eliminating the manual spreadsheet work that slows down traditional governance cycles. Security governance for regulated industries in the UAE and GCC benefits from regional framework coverage alongside global standards."
+    ],
+    "faqs": [
+      {
+        "question": "What is a security governance platform?",
+        "answer": "A security governance platform provides the tools CISOs and security teams need to manage policies, monitor key risk and performance indicators, map controls to frameworks, and demonstrate compliance to boards and regulators — replacing fragmented spreadsheets and manual processes."
+      },
+      {
+        "question": "Does Observeri support ISO 27001 control mapping?",
+        "answer": "Yes. Observeri pre-maps 3,000+ controls to ISO 27001 and automates both design and operating effectiveness testing, producing audit-ready evidence without manual documentation effort."
+      },
+      {
+        "question": "Which governance frameworks does Observeri support?",
+        "answer": "Observeri supports ISO 27001, NIST CSF, NIST 800-53, SAMA Cybersecurity Framework, NESA, SOC 2, DORA, MiCA, EU AI Act, and ISO 42001, with the ability to add custom frameworks and cross-map controls across multiple standards simultaneously."
+      }
+    ]
+  },
+  "/products/external-attack-surface-management": {
+    "keyword": "External attack surface management",
+    "title": "External Attack Surface Management (EASM) | Continuous Attack Surface Monitoring",
+    "description": "Observeri EASM continuously discovers, scans, and prioritises every public-facing asset — domains, cloud services, shadow IT, dark-web signals — so security teams close exposure before attackers find it.",
+    "h1": "External Attack Surface Management — Know Every Edge of Your Exposure Before Attackers Do",
+    "body": [
+      "Observeri EASM (Observer Eye) continuously discovers, scans, and prioritises every public-facing asset across your digital footprint — domains, subdomains, cloud services, open ports, shadow IT, and dark-web signals — so GRC and security teams close exposure with evidence, not guesswork.",
+      "For most enterprises, the known perimeter is a myth. Shadow IT, dormant subdomains, and unsanctioned SaaS expand faster than manual inventories can track. Observeri EASM integrated with GRC platform workflows means every discovered asset feeds directly into the same risk register, control mapping, and remediation workflow — unlike standalone EASM tools that exist in a separate scanner silo. Dark web monitoring enterprise coverage extends visibility beyond the perimeter, with exploit-ranked vulnerability management ensuring remediation effort follows real-world exploitability rather than CVSS scores alone."
+    ],
+    "faqs": [
+      {
+        "question": "What is External Attack Surface Management (EASM)?",
+        "answer": "EASM is the continuous discovery, monitoring, and prioritisation of an organisation's internet-facing assets — everything visible and potentially reachable by an attacker, including shadow IT, forgotten subdomains, misconfigured cloud services, and exposed APIs."
+      },
+      {
+        "question": "How is Observeri EASM different from a vulnerability scanner?",
+        "answer": "A vulnerability scanner tests known assets you tell it about. Observeri EASM discovers assets you may not know exist, continuously monitors them for new exposures, and integrates findings directly into the GRC risk register — so discovered risk immediately informs governance and remediation workflows."
+      },
+      {
+        "question": "Does Observeri EASM include dark web monitoring?",
+        "answer": "Yes. Observeri EASM includes dark web monitoring enterprise coverage, surfacing mentions of your organisation, leaked credentials, and data exposure signals from dark web sources alongside internet-facing asset discovery."
+      }
+    ]
+  },
+  "/products/information-asset-management": {
+    "keyword": "Information asset management software",
+    "title": "Information Asset Management | AI-Powered Asset Risk Scoring & Inventory",
+    "description": "Observeri Information Asset Management ingests assets via API or ETL, assigns live AI risk scores from the AI ROC, and gives teams a unified exposure graph to prioritise remediation on what matters most.",
+    "h1": "Information Asset Management — Every Asset Scored, Every Control Measured",
+    "body": [
+      "Observeri Information Asset Management ingests assets through API, ETL, or manual entry — then pulls live AI risk scores and control effectiveness data from the AI Risk Operations Center. Teams explore a unified exposure graph, drill into CIA triad impact, and prioritise remediation on the assets that carry the greatest business risk.",
+      "As an information asset management software platform built for regulated enterprises, Observeri maintains a live information asset register that feeds directly into ISO 27001 control mapping, risk assessments, and audit workflows. Asset-based risk quantification means every remediation decision is backed by financial exposure data — not subjective criticality ratings. Technology asset classification UAE and GCC enterprises need is built in, with deployment-ready integrations for common asset sources including cloud platforms, CMDB tools, and vulnerability scanners."
+    ],
+    "faqs": [
+      {
+        "question": "What is information asset management in GRC?",
+        "answer": "Information asset management in GRC is the practice of discovering, classifying, and continuously scoring an organisation's information assets — systems, data, applications, and infrastructure — against their risk exposure, so remediation and control investment follows business value."
+      },
+      {
+        "question": "How does Observeri score asset risk?",
+        "answer": "Observeri uses its AI Risk Operations Center to continuously calculate a live risk score for each asset, combining asset value, CIA triad impact, control effectiveness, threat probability, and exploitability signals — updating automatically as conditions change."
+      },
+      {
+        "question": "Does the asset management module support ISO 27001 requirements?",
+        "answer": "Yes. Observeri's information asset register is designed to meet ISO 27001 asset management requirements (Annex A.5.9 and A.5.10), with automated classification, ownership assignment, and evidence output ready for audit."
+      }
+    ]
+  },
+  "/products/data-privacy-protection": {
+    "keyword": "Data privacy management software",
+    "title": "Data Privacy & AI Data Loss Prevention | AI DLP Platform for Enterprises",
+    "description": "Observeri detects, classifies, and scores PII and sensitive data exposure across every connected source. AI DLP platform with real-time data leakage detection for regulated enterprises in UAE and GCC.",
+    "h1": "Data Privacy & Protection — Find Sensitive Data. Classify It. Score the Exposure.",
+    "body": [
+      "Observeri Data Privacy & Protection delivers PII detection and classification, sensitive data discovery, secret and credential scanning, NER-based identification, data exposure scoring, and unified classification across every connected source — so privacy teams know what data exists, where it lives, and how exposed it is.",
+      "As an AI data loss prevention platform, Observeri monitors AI model data governance in real time, detecting data leakage from open and self-hosted AI models before it becomes a breach. For enterprises operating under UAE PDPL, Saudi PDPL, EU AI Act, ISO 42001, and NIST AI RMF requirements, Observeri's AI DLP for enterprises combines traditional data privacy management with AI-specific governance — closing the gap that legacy DLP tools leave open when employees use LLMs with sensitive data."
+    ],
+    "faqs": [
+      {
+        "question": "What is AI DLP and how is it different from traditional DLP?",
+        "answer": "Traditional DLP monitors known data flows across defined channels. AI DLP extends this to monitor how sensitive data interacts with AI models — detecting when employees share PII, credentials, or confidential information with LLMs like ChatGPT or Copilot, and preventing data leakage through AI prompts and outputs."
+      },
+      {
+        "question": "Does Observeri support UAE and Saudi data privacy law compliance?",
+        "answer": "Yes. Observeri supports compliance with the UAE Personal Data Protection Law (PDPL) and Saudi Arabia's PDPL, providing data discovery, classification, and exposure scoring capabilities aligned to both regulatory frameworks."
+      },
+      {
+        "question": "How does Observeri detect AI model data leakage?",
+        "answer": "Observeri monitors data flows to and from AI models in real time using NER (Named Entity Recognition) and classification models that identify sensitive data types — flagging and optionally blocking interactions that risk exposing PII, credentials, or confidential business data."
+      }
+    ]
+  },
+  "/products/third-party-risk": {
+    "keyword": "Third-party risk management software",
+    "title": "Third-Party Risk Management Software | Vendor Risk & Nth-Party Visibility",
+    "description": "Observeri autonomously maintains a live vendor risk profile for every third party, with continuous monitoring, automated assessments, and Nth-party visibility — integrated with the same GRC risk register.",
+    "h1": "Third-Party Risk Management — Your Vendors. Their Exposure. Your Responsibility.",
+    "body": [
+      "Observeri GRC autonomously maintains a live inventory and risk profile for every vendor, so you can answer one question at any time: are we safe to depend on them right now? As a third-party risk management software platform, Observeri automates vendor onboarding, questionnaire distribution, ongoing monitoring, and Nth-party visibility — all tied to the same control and issue workflows as your internal risk register.",
+      "For banking and financial services organisations subject to DORA third-party ICT risk requirements and SAMA outsourcing risk guidelines, Observeri provides the continuous vendor monitoring software needed to evidence compliance without manual spreadsheet tracking. Automated vendor risk questionnaires, real-time scoring updates, and Nth-party risk management platform capabilities give risk teams full supply chain visibility — from direct suppliers to the vendors their vendors rely on."
+    ],
+    "faqs": [
+      {
+        "question": "What is third-party risk management?",
+        "answer": "Third-party risk management (TPRM) is the process of identifying, assessing, and continuously monitoring the cyber, operational, and compliance risks introduced by vendors, suppliers, and other external parties — including Nth-party risks from the vendors your vendors use."
+      },
+      {
+        "question": "How does Observeri handle DORA third-party ICT risk requirements?",
+        "answer": "Observeri maps vendor risk assessments and monitoring to DORA's ICT third-party risk requirements, automating questionnaire distribution, criticality classification, ongoing monitoring, and incident notification workflows for regulated financial institutions."
+      },
+      {
+        "question": "What is Nth-party risk and how does Observeri address it?",
+        "answer": "Nth-party risk refers to the risk introduced by the vendors of your vendors — suppliers two or more tiers down your supply chain. Observeri's Nth-party visibility layer maps these relationships and surfaces risk signals from across the supply chain, not just your direct vendors."
+      }
+    ]
+  },
+  "/products/vulnerability-operations": {
+    "keyword": "Vulnerability management platform",
+    "title": "Vulnerability Operations Platform | Exploit-Ranked Risk-Based Vulnerability Management",
+    "description": "Observeri ingests vulnerability findings, enriches every CVE with exploit context, and prioritises remediation by real-world exploitability and business impact — not CVSS scores alone.",
+    "h1": "Vulnerability Operations — Prioritise What Is Exploitable. Fix What Matters First.",
+    "body": [
+      "Observeri Vulnerability Operations ingests findings from APIs or Excel, enriches every CVE with exploit context, prioritises with an exploitability agent, tracks SLAs, and converts the highest-impact issues into managed remediation programmes.",
+      "As a risk-based vulnerability management platform, Observeri moves beyond CVSS-only prioritisation. Exploit-prioritised vulnerability remediation means teams focus on vulnerabilities with active exploits in the wild — not the longest list of theoretical findings. AI vulnerability risk scoring combines asset value, business context, control effectiveness, and threat intelligence to produce a ranked remediation queue that security engineers and GRC teams can both use. Vulnerability management integrated with GRC means every finding flows into the same risk register, control mapping, and audit trail."
+    ],
+    "faqs": [
+      {
+        "question": "What is risk-based vulnerability management?",
+        "answer": "Risk-based vulnerability management (RBVM) prioritises vulnerabilities by their actual risk to the business — considering exploitability, asset value, business context, and control effectiveness — rather than ranking purely by CVSS severity scores, which often misrepresent real-world risk."
+      },
+      {
+        "question": "How does Observeri prioritise vulnerability remediation?",
+        "answer": "Observeri uses an exploitability agent that enriches every CVE with real-world exploit intelligence, then combines this with asset value, control effectiveness, and business impact to produce a ranked remediation queue. SLA tracking ensures high-priority findings receive timely attention."
+      },
+      {
+        "question": "What is the difference between CVSS and exploit-based scoring?",
+        "answer": "CVSS (Common Vulnerability Scoring System) rates vulnerability severity based on technical characteristics. Exploit-based scoring additionally considers whether an exploit is actively used in the wild, making it a more accurate predictor of real breach risk and enabling more focused remediation effort."
+      }
+    ]
+  },
+  "/products/exposure-management": {
+    "keyword": "Exposure management platform",
+    "title": "Exposure Management Platform | Continuous Threat Exposure Management (CTEM)",
+    "description": "Observeri Exposure Management unifies assessment planning, issue tracking, remediation, EASM, and AI threat analysis — so teams reduce exposure from the perimeter to the core with precision.",
+    "h1": "Exposure Management — See Your Full Exposure. Close It with Precision.",
+    "body": [
+      "Observeri Exposure Management unifies assessment planning, centralised issue tracking, a dedicated remediation hub, external attack surface visibility, and AI-powered threat analysis — so teams plan tests, prioritise findings, and reduce exposure from the perimeter to the core.",
+      "As a continuous threat exposure management (CTEM) platform — aligned to the Gartner CTEM framework — Observeri provides the structured programme enterprises need to move from ad hoc vulnerability scanning to systematic, measurable exposure reduction. CTEM vs EASM: exposure management goes further than surface monitoring, encompassing the full cycle of scoping, discovery, prioritisation, validation, and mobilisation. Attack surface exposure scoring gives security and GRC teams a unified view of where the organisation is most at risk, with GRC-integrated exposure management ensuring every finding feeds the risk register and compliance workflows."
+    ],
+    "faqs": [
+      {
+        "question": "What is Continuous Threat Exposure Management (CTEM)?",
+        "answer": "CTEM is a Gartner-defined framework for continuous, programmatic reduction of cyber exposure. It covers five stages — scoping, discovery, prioritisation, validation, and mobilisation — and shifts organisations from periodic assessments to always-on exposure reduction."
+      },
+      {
+        "question": "What is the difference between CTEM and EASM?",
+        "answer": "EASM (External Attack Surface Management) focuses on discovering and monitoring internet-facing assets. CTEM is broader — it encompasses the full exposure reduction programme, including internal assets, vulnerability validation, and the organisational processes that turn findings into fixed risk. Observeri integrates both."
+      },
+      {
+        "question": "Why is exposure management important for regulated enterprises?",
+        "answer": "Regulators increasingly expect organisations to demonstrate continuous, evidence-based risk reduction — not just annual assessments. A CTEM platform provides the structured programme, audit trail, and quantified exposure metrics needed to satisfy SAMA, NESA, DORA, and ISO 27001 requirements."
+      }
+    ]
+  },
+  "/products/compliance-management": {
+    "keyword": "Compliance management software",
+    "title": "Compliance Management Software | SAMA, NESA, ISO 27001, DORA — Multi-Framework GRC",
+    "description": "Observeri automates multi-framework compliance — building registers from regulations, running AI self-assessments, tracking submissions, and managing incidents — across SAMA, NESA, ISO 27001, DORA, and more.",
+    "h1": "Compliance Management — From Regulation to Evidence. Compliance That Runs Itself.",
+    "body": [
+      "Observeri Compliance Management lets teams maintain regulations and standards, auto-build compliance registers from uploaded documentation, run AI self-assessments with confidence-scored results, track regulatory submissions, manage incidents and breaches, and compare policies against requirements with AI remediation guidance.",
+      "As a multi-framework compliance software platform, Observeri maps controls and evidence across SAMA, NESA, ISO 27001, NIST CSF, DORA, MiCA, EU AI Act, SOC 2, and regional frameworks simultaneously — eliminating the duplication of maintaining separate compliance registers per standard. For GCC enterprises replacing spreadsheet compliance tracking, Observeri's automated regulatory compliance platform compresses compliance cycles from weeks to days, with compliance drift monitoring that alerts teams to control gaps before the next audit."
+    ],
+    "faqs": [
+      {
+        "question": "What frameworks does Observeri Compliance Management support?",
+        "answer": "Observeri supports SAMA Cybersecurity Framework, NESA, ISO 27001, NIST CSF, NIST 800-53, DORA, MiCA, EU AI Act, ISO 42001, SOC 2, PCI DSS, and additional regional standards — with the ability to add custom frameworks and map controls across multiple standards at once."
+      },
+      {
+        "question": "How does Observeri automate compliance management?",
+        "answer": "Observeri auto-builds compliance registers from uploaded regulation documents, runs AI self-assessments with confidence scoring, tracks evidence collection against each control, monitors compliance drift, and generates audit-ready reports — reducing manual compliance effort significantly."
+      },
+      {
+        "question": "What is compliance drift and how does Observeri detect it?",
+        "answer": "Compliance drift occurs when controls that were once effective become ineffective due to configuration changes, personnel changes, or evolving threats. Observeri monitors control effectiveness continuously and alerts teams when a previously passing control begins to degrade — before it becomes an audit finding."
+      }
+    ]
+  },
+  "/products/human-risk-management": {
+    "keyword": "Human risk management platform",
+    "title": "Human Risk Management Platform | Insider Risk & Employee Cyber Risk Scoring",
+    "description": "Observeri continuously profiles identities, monitors privileged accounts, and calculates Human Risk Exposure (HRE) scores — so teams act on the users driving the greatest cyber exposure.",
+    "h1": "Human Risk Management — Quantify People Risk. AI Scans Privileged IDs Before Attackers Do.",
+    "body": [
+      "Observeri Human Risk Management continuously profiles identities, monitors high-risk privileged accounts, and calculates Human Risk Exposure (HRE) scores using asset risk, privilege impact, access probability, trust factors, and environmental risk — so teams act on the users driving the greatest cyber exposure.",
+      "As an insider risk management software platform, Observeri goes beyond security awareness training metrics to quantify actual human risk. Employee security risk scoring gives security and GRC teams a ranked view of which identities represent the highest exposure — enabling targeted controls, access reviews, and monitoring. Human risk integrated with GRC means HRE scores feed the same risk register and remediation workflows as technical vulnerabilities, giving CISOs a complete picture of exposure across technology and people."
+    ],
+    "faqs": [
+      {
+        "question": "What is Human Risk Exposure (HRE)?",
+        "answer": "Human Risk Exposure (HRE) is a quantified score that represents the risk an individual identity poses to the organisation, based on factors including asset access, privilege level, access probability, behavioural signals, and environmental risk. It enables teams to prioritise human-layer controls by actual risk rather than role or seniority alone."
+      },
+      {
+        "question": "How is Observeri's Human Risk Management different from security awareness platforms?",
+        "answer": "Security awareness platforms track training completion and phishing simulation click rates. Observeri's Human Risk Management calculates a financial risk exposure score per identity based on actual access, behaviour, and environmental signals — integrating human risk into the same GRC risk register as technical vulnerabilities."
+      },
+      {
+        "question": "Does Observeri monitor privileged accounts specifically?",
+        "answer": "Yes. Observeri continuously monitors high-risk privileged accounts — administrators, service accounts, and high-access users — scoring each for exposure and alerting when behaviour or access patterns suggest elevated risk, before an attacker can exploit that access."
+      }
+    ]
+  }
+}

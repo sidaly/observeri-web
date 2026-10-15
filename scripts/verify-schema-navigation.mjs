@@ -32,7 +32,7 @@ try {
       const schemas = JSON.parse(nodes[0].textContent);
       const types = schemas.map(s => s['@type']);
       if (route === '/') return types.includes('FAQPage') && types.includes('Organization') && !types.includes('SoftwareApplication');
-      if (route.startsWith('/products/')) return schemas.some(s => s['@type'] === 'SoftwareApplication' && s.url.endsWith(route)) && !types.includes('FAQPage');
+      if (route.startsWith('/products/')) return schemas.some(s => s['@type'] === 'SoftwareApplication' && s.url.endsWith(route)) && types.includes('FAQPage');
       return types.length === 1 && types[0] === 'BreadcrumbList';
     }, {timeout: 15000}, route);
     const canonical = await page.$eval('link[rel="canonical"]', el => el.href);

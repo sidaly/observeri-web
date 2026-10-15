@@ -1,3 +1,5 @@
+import auditSeo from "@/data/auditSeo.json";
+import { AuditOverview, PageFaq } from "@/components/AuditContent";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   ArrowLeft,
@@ -121,8 +123,8 @@ const CyberRiskManagement = () => {
                 <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-primary">
                   {crmHero.eyebrow}
                 </p>
-                <h1 className="text-4xl font-display font-bold md:text-5xl lg:text-6xl">{crmHero.headline}</h1>
-                <p className="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">{crmHero.subheadline}</p>
+                <h1 className="text-4xl font-display font-bold md:text-5xl lg:text-6xl">{auditSeo["/products/cyber-risk-management"].h1}</h1>
+                <p className="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">{auditSeo["/products/cyber-risk-management"].body[0]}</p>
 
                 <div className="mt-8 min-h-[52px]">
                   <AnimatePresence mode="wait">
@@ -192,6 +194,7 @@ const CyberRiskManagement = () => {
           </div>
         </div>
       </section>
+      <AuditOverview path="/products/cyber-risk-management" />
 
       {/* Why guesswork */}
       <section className="border-y border-border/30 bg-card/20 py-24">
@@ -463,6 +466,7 @@ const CyberRiskManagement = () => {
         </div>
       </section>
 
+      <PageFaq path="/products/cyber-risk-management" />
       <Footer />
     </div>
   );

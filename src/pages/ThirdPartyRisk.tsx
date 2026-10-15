@@ -1,3 +1,5 @@
+import auditSeo from "@/data/auditSeo.json";
+import { AuditOverview, PageFaq } from "@/components/AuditContent";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   ArrowLeft,
@@ -118,8 +120,8 @@ const ThirdPartyRisk = () => {
                 <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-primary">
                   {tprmHero.eyebrow}
                 </p>
-                <h1 className="text-4xl font-display font-bold md:text-5xl lg:text-6xl">{tprmHero.headline}</h1>
-                <p className="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">{tprmHero.subheadline}</p>
+                <h1 className="text-4xl font-display font-bold md:text-5xl lg:text-6xl">{auditSeo["/products/third-party-risk"].h1}</h1>
+                <p className="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">{auditSeo["/products/third-party-risk"].body[0]}</p>
 
                 <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                   <Button asChild variant="hero" size="lg" className="group">
@@ -171,6 +173,7 @@ const ThirdPartyRisk = () => {
           </div>
         </div>
       </section>
+      <AuditOverview path="/products/third-party-risk" />
 
       {/* Why it matters */}
       <section className="border-y border-border/30 bg-card/20 py-24">
@@ -492,6 +495,7 @@ const ThirdPartyRisk = () => {
         </div>
       </section>
 
+      <PageFaq path="/products/third-party-risk" />
       <Footer />
     </div>
   );

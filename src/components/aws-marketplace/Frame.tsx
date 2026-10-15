@@ -1,3 +1,4 @@
+import { CookieSettingsButton } from "@/components/CookieConsent";
 import { Link } from "react-router-dom";
 import type { ReactNode } from "react";
 
@@ -20,6 +21,7 @@ export const MarketplaceFrame = ({ eyebrow, title, description, children }: Fram
         <p className="mt-4 text-base leading-7 text-muted-foreground">{description}</p>
         <div className="mt-8">{children}</div>
       </div>
+      <footer className="mt-8 flex flex-wrap gap-5 text-sm text-muted-foreground"><Link to="/privacy-policy" className="underline">Privacy Policy</Link><Link to="/terms" className="underline">Terms of Service</Link><CookieSettingsButton /></footer>
     </div>
   </div>
 );

@@ -1,3 +1,4 @@
+import { AuditOverview } from "@/components/AuditContent";
 import React from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -254,6 +255,7 @@ const Index = () => {
     <div className="min-h-screen bg-background bg-gradient-main">
       <Navbar />
       <Hero />
+      <AuditOverview path="/" />
       <AiModelRiskLaunchAnnouncement />
       <CasmLaunchAnnouncement />
 

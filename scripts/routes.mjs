@@ -17,6 +17,8 @@ const staticRoutes = [
   "/",
   "/about",
   "/team",
+  "/privacy-policy",
+  "/terms",
   "/career",
   "/newsroom",
   "/blogs",
@@ -41,3 +43,6 @@ export const routes = [
   ...staticRoutes,
   ...industrySolutionSlugs.map((slug) => `/solutions/${slug}`),
 ];
+
+// Conversion confirmations should be served as HTML but excluded from search indexes.
+export const prerenderRoutes = [...routes, "/thank-you"];

@@ -1,3 +1,5 @@
+import auditSeo from "@/data/auditSeo.json";
+import { AuditOverview, PageFaq } from "@/components/AuditContent";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   ArrowLeft,
@@ -124,8 +126,8 @@ const HumanRiskManagement = () => {
                 <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-primary">
                   {hrHero.eyebrow}
                 </p>
-                <h1 className="text-4xl font-display font-bold md:text-5xl lg:text-6xl">{hrHero.headline}</h1>
-                <p className="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">{hrHero.subheadline}</p>
+                <h1 className="text-4xl font-display font-bold md:text-5xl lg:text-6xl">{auditSeo["/products/human-risk-management"].h1}</h1>
+                <p className="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">{auditSeo["/products/human-risk-management"].body[0]}</p>
 
                 <div className="mt-8 min-h-[52px]">
                   <AnimatePresence mode="wait">
@@ -195,6 +197,7 @@ const HumanRiskManagement = () => {
           </div>
         </div>
       </section>
+      <AuditOverview path="/products/human-risk-management" />
 
       <section id="hre-dashboard" className="border-y border-border/30 bg-card/20 py-24">
         <div className="container mx-auto px-6">
@@ -678,6 +681,7 @@ const HumanRiskManagement = () => {
         </div>
       </section>
 
+      <PageFaq path="/products/human-risk-management" />
       <Footer />
     </div>
   );

@@ -26,6 +26,8 @@ const PAGE_DIR = path.join(SRC, "pages");
 const DATA_DIR = path.join(SRC, "data");
 
 const ROUTE_SOURCE_FILES = {
+  "/privacy-policy": [path.join(PAGE_DIR, "Legal.tsx")],
+  "/terms": [path.join(PAGE_DIR, "Legal.tsx")],
   "/llms.txt": [path.join(__dirname, "..", "public", "llms.txt")],
   "/": [path.join(PAGE_DIR, "Index.tsx"), path.join(DATA_DIR, "seoContent.ts"), path.join(DATA_DIR, "pageSeo.ts")],
   "/about": [path.join(PAGE_DIR, "About.tsx"), path.join(DATA_DIR, "pageSeo.ts")],

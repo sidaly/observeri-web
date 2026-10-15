@@ -1,3 +1,4 @@
+import { Link, useNavigate } from "react-router-dom";
 import * as React from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
@@ -6,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { toast } from "@/components/ui/use-toast";
 
 export const ContactForm: React.FC = () => {
+  const navigate = useNavigate();
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [subject, setSubject] = React.useState("");
@@ -35,12 +37,16 @@ export const ContactForm: React.FC = () => {
         throw new Error(result?.error || "Unable to send message");
       }
 
+      const result = await response.json().catch(() => null);
+      if (result?.ok !== true) throw new Error("Unable to confirm your submission. Please try again.");
+
       setName("");
       setEmail("");
       setSubject("");
       setMessage("");
       setCompany("");
-      toast({ title: "Message sent", description: "Thanks - we'll get back to you shortly." });
+      navigate("/thank-you");
+      window.scrollTo(0, 0);
     } catch (err) {
       const description = err instanceof Error ? err.message : "Something went wrong. Please try again later.";
       toast({ title: "Error", description });
@@ -99,6 +105,7 @@ export const ContactForm: React.FC = () => {
                 <Textarea id="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="How can we help?" />
               </div>
 
+              <p className="text-sm text-muted-foreground">We use the information you provide to respond to your enquiry. Read our <Link to="/privacy-policy" className="text-primary underline">Privacy Policy</Link>.</p>
               <div className="pt-2">
                 <Button type="submit" variant="hero" size="lg" className="w-full" disabled={loading}>
                   {loading ? "Sending..." : "Send Message"}

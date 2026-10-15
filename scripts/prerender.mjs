@@ -11,7 +11,7 @@ import fs from "fs";
 import http from "http";
 import path from "path";
 import { fileURLToPath } from "url";
-import { routes, SITE_URL } from "./routes.mjs";
+import { prerenderRoutes as routes, SITE_URL } from "./routes.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

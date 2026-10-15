@@ -1,7 +1,8 @@
 import { industrySolutionsBySlug } from "@/data/industrySolutions";
 import type { JsonLdSchema } from "@/lib/schema";
 import { breadcrumbSchema, faqPageSchema, productSchema } from "@/lib/schema";
-import { faqData } from "@/components/FAQ";
+import auditSeo from "@/data/auditSeo.json";
+const faqData = auditSeo["/"].faqs;
 
 export type PageSeoConfig = {
   title: string;
@@ -24,6 +25,22 @@ export const defaultPageSeo: PageSeoConfig = {
 
 export const pageSeoByPath: Record<string, PageSeoConfig> = {
   "/": defaultPageSeo,
+  "/privacy-policy": {
+    title: "Privacy Policy | Observeri Technologies",
+    description: "Learn how Observeri handles website enquiries, account information, cookies, and privacy choices, and how to contact us about your personal data.",
+    schemas: breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Privacy Policy" }]),
+  },
+  "/terms": {
+    title: "Terms of Service | Observeri Technologies",
+    description: "Read the terms for using the Observeri Technologies website, submitting enquiries, accessing accounts, and viewing product information.",
+    schemas: breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Terms of Service" }]),
+  },
+  "/thank-you": {
+    title: "Thank You for Your Enquiry | Observeri",
+    description: "Your message has been received. The Observeri team will review your enquiry and respond within one business day.",
+    robots: "noindex, follow",
+    schemas: breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Thank You" }]),
+  },
   "/team": {
     title: "Our Team & Founder | Observeri Technologies",
     schemas: breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Team", item: "/team" }]),
@@ -381,6 +398,18 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
     robots: "noindex, nofollow",
   },
 };
+
+// The audit copy is also used by the rendered H1, overview, and FAQ sections.
+for (const [path, approved] of Object.entries(auditSeo)) {
+  const seo = pageSeoByPath[path];
+  seo.title = approved.title;
+  seo.description = approved.description;
+  seo.keywords = approved.keyword;
+  const schemas = (Array.isArray(seo.schemas) ? seo.schemas : seo.schemas ? [seo.schemas] : [])
+    .filter(schema => schema["@type"] !== "FAQPage")
+    .map(schema => schema["@type"] === "SoftwareApplication" ? { ...schema, description: approved.description } : schema);
+  seo.schemas = [...schemas, faqPageSchema(approved.faqs)];
+}
 
 export const getPageSeoForPath = (pathname: string): PageSeoConfig => {
   pathname = pathname.replace(/\/+$/, "") || "/";

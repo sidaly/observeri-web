@@ -1,3 +1,4 @@
+import auditSeo from "@/data/auditSeo.json";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Lock, CheckCircle } from "lucide-react";
@@ -57,11 +58,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-          >
-            <span className="text-foreground">Master Compliance.</span>
-            <br />
-            <span className="text-gradient">Minimize Risk.</span>
-          </motion.h1>
+          >{auditSeo["/"].h1}</motion.h1>
 
           {/* Subheadline */}
           <motion.p 
@@ -69,11 +66,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            Observeri is a cybersecurity GRC platform and enterprise GRC solution: AI-powered governance with integrated
-            risk management software, cyber risk management platform telemetry, and IT risk management software workflows
-            that compress audit cycles—without another shelf-ware risk and compliance system.
-          </motion.p>
+          >{auditSeo["/"].body[0]}</motion.p>
 
           {/* CTA Buttons */}
           <motion.div 

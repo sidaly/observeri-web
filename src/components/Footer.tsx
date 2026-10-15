@@ -1,3 +1,4 @@
+import { CookieSettingsButton } from "./CookieConsent";
 import { RelatedProducts } from "./RelatedProducts";
 import { motion } from "framer-motion";
 import { Twitter, Linkedin, Youtube } from "lucide-react";
@@ -10,6 +11,8 @@ const navLinks = [
   { label: "Solutions", href: "/solutions" },
   { label: "Careers", href: "/career" },
   { label: "Team", href: "/team" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms of Service", href: "/terms" },
   { label: "Contact Us", href: "/#contact" },
 ];
 
@@ -40,6 +43,7 @@ export const Footer = () => {
                 {link.label}
               </motion.a>
             ))}
+            <CookieSettingsButton />
           </nav>
         </FadeUp>
 

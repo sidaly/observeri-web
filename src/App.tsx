@@ -4,7 +4,8 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Analytics } from "@vercel/analytics/react";
+import { CookieConsentProvider } from "@/components/CookieConsent";
+import { ConsentAnalytics } from "@/components/ConsentAnalytics";
 import Index from "./pages/Index";
 const About = lazy(() => import("./pages/About"));
 const Career = lazy(() => import("./pages/Career"));
@@ -35,6 +36,8 @@ const AwsMarketplaceAdmin = lazy(() => import("./pages/AwsMarketplaceAdmin"));
 const AwsMarketplaceSubscribe = lazy(() => import("./pages/AwsMarketplaceSubscribe"));
 import { PageSeo } from "./components/PageSeo";
 
+const Legal = lazy(() => import("./pages/Legal"));
+const ThankYou = lazy(() => import("./pages/ThankYou"));
 const Team = lazy(() => import("./pages/Team"));
 
 const queryClient = new QueryClient();
@@ -45,10 +48,14 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <CookieConsentProvider>
         <PageSeo />
         <Suspense fallback={<div role="status" className="min-h-screen bg-background p-12 text-foreground">Loading page...</div>}>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/privacy-policy" element={<Legal />} />
+          <Route path="/terms" element={<Legal />} />
+          <Route path="/thank-you" element={<ThankYou />} />
           <Route path="/team" element={<Team />} />
           <Route path="/about" element={<About />} />
           <Route path="/career" element={<Career />} />
@@ -80,8 +87,9 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
         </Suspense>
+        <ConsentAnalytics />
+        </CookieConsentProvider>
       </BrowserRouter>
-      <Analytics />
     </TooltipProvider>
   </QueryClientProvider>
 );

@@ -1,3 +1,6 @@
+import { ConsentVideo } from "@/components/ConsentVideo";
+import auditSeo from "@/data/auditSeo.json";
+import { AuditOverview, PageFaq } from "@/components/AuditContent";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   ArrowLeft,
@@ -123,8 +126,8 @@ const AiRiskOperationsCenter = () => {
                 <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-primary">
                   {arocHero.eyebrow}
                 </p>
-                <h1 className="text-4xl font-display font-bold md:text-5xl lg:text-6xl">{arocHero.headline}</h1>
-                <p className="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">{arocHero.subheadline}</p>
+                <h1 className="text-4xl font-display font-bold md:text-5xl lg:text-6xl">{auditSeo["/products/ai-risk-operations-center"].h1}</h1>
+                <p className="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">{auditSeo["/products/ai-risk-operations-center"].body[0]}</p>
 
                 <div className="mt-8 min-h-[52px]">
                   <AnimatePresence mode="wait">
@@ -194,6 +197,7 @@ const AiRiskOperationsCenter = () => {
           </div>
         </div>
       </section>
+      <AuditOverview path="/products/ai-risk-operations-center" />
 
       {/* Product video */}
       <section id="product-video" className="border-y border-border/30 bg-card/20 py-24">
@@ -212,15 +216,7 @@ const AiRiskOperationsCenter = () => {
           <ScaleUp delay={0.1} className="mt-12">
             <div className="overflow-hidden rounded-[2rem] border-gradient bg-gradient-card p-3 shadow-2xl shadow-background/30">
               <div className="relative aspect-video w-full overflow-hidden rounded-[1.75rem] bg-background/50">
-                <iframe
-                  src="https://www.youtube.com/embed/Jg7ilCidBu0"
-                  title="Observeri AI Risk Operations Center product overview"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                  loading="lazy"
-                  className="absolute inset-0 h-full w-full border-0"
-                />
+                <ConsentVideo />
               </div>
             </div>
           </ScaleUp>
@@ -555,6 +551,7 @@ const AiRiskOperationsCenter = () => {
         </div>
       </section>
 
+      <PageFaq path="/products/ai-risk-operations-center" />
       <Footer />
     </div>
   );
