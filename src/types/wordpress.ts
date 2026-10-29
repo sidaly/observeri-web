@@ -79,10 +79,15 @@ export interface WordPressPost {
 
 export interface BlogPostData {
   id: number;
+  slug: string;
   title: string;
   excerpt: string;
+  content: string;
   link: string;
   date: string;
+  modified: string;
   featured_image?: string;
   alt_text?: string;
+  image_width?: number;
+  image_height?: number;
 }

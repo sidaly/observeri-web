@@ -21,7 +21,7 @@ try {
   await page.setRequestInterception(true);
   page.on('request', req => req.url().startsWith(origin) || req.url().startsWith('data:') ? req.continue() : req.abort());
   await page.goto(origin + '/products/cyber-risk-management', {waitUntil: 'domcontentloaded', timeout: 45000});
-  for (const route of ['/products/cyber-risk-management', '/', '/blogs', '/products/compliance-management', '/team', '/missing/nested-page']) {
+  for (const route of ['/products/cyber-risk-management', '/', '/blog', '/products/compliance-management', '/team', '/missing/nested-page']) {
     console.log(`Checking ${route}`);
     await page.evaluate(route => { history.pushState({}, '', route); dispatchEvent(new PopStateEvent('popstate')); }, route);
     await page.waitForFunction(route => {

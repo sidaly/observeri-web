@@ -18,10 +18,7 @@ export function BlogPostCard({ post, delay = 0 }: BlogPostCardProps) {
   });
 
   return (
-    <motion.a
-      href={post.link}
-      target="_blank"
-      rel="noopener noreferrer"
+    <motion.div
       className="group flex h-full flex-col overflow-hidden rounded-lg border border-border/50 bg-card/50 backdrop-blur-sm transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -34,6 +31,8 @@ export function BlogPostCard({ post, delay = 0 }: BlogPostCardProps) {
           <img loading="lazy" decoding="async"
             src={post.featured_image}
             alt={post.alt_text || post.title}
+            width={post.image_width}
+            height={post.image_height}
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
@@ -49,7 +48,7 @@ export function BlogPostCard({ post, delay = 0 }: BlogPostCardProps) {
 
         {/* Title */}
         <h3 className="mb-3 line-clamp-3 text-lg font-semibold leading-tight text-foreground transition-colors duration-300 group-hover:text-primary">
-          {post.title}
+          <Link to={`/blog/${post.slug}`} dangerouslySetInnerHTML={{ __html: post.title }} />
         </h3>
 
         {/* Excerpt */}
@@ -58,11 +57,11 @@ export function BlogPostCard({ post, delay = 0 }: BlogPostCardProps) {
         </p>
 
         {/* CTA Button */}
-        <div className="flex items-center gap-2 text-sm font-medium text-primary">
+        <Link to={`/blog/${post.slug}`} className="flex items-center gap-2 text-sm font-medium text-primary">
           Read Article
           <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-        </div>
+        </Link>
       </div>
-    </motion.a>
+    </motion.div>
   );
 }

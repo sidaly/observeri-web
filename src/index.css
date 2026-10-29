@@ -46,6 +46,33 @@
   }
 }
 
+@layer components {
+  .wordpress-article > * + * {
+    @apply mt-6;
+  }
+
+  .wordpress-article h2,
+  .wordpress-article h3,
+  .wordpress-article h4 {
+    @apply mt-12 font-display font-semibold leading-tight text-foreground;
+  }
+
+  .wordpress-article h2 { @apply text-3xl; }
+  .wordpress-article h3 { @apply text-2xl; }
+  .wordpress-article h4 { @apply text-xl; }
+  .wordpress-article a { @apply text-primary underline underline-offset-4; }
+  .wordpress-article ul { @apply list-disc space-y-2 pl-6; }
+  .wordpress-article ol { @apply list-decimal space-y-2 pl-6; }
+  .wordpress-article blockquote { @apply border-l-4 border-primary pl-6 italic; }
+  .wordpress-article img { @apply h-auto max-w-full rounded-xl; }
+  .wordpress-article figure { @apply my-10; }
+  .wordpress-article figcaption { @apply mt-2 text-center text-sm text-muted-foreground; }
+  .wordpress-article table { @apply w-full border-collapse text-sm; }
+  .wordpress-article th,
+  .wordpress-article td { @apply border border-border p-3 text-left align-top; }
+  .wordpress-article iframe { @apply aspect-video h-auto w-full; }
+}
+
 @layer base {
   * {
     @apply border-border;

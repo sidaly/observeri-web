@@ -2,6 +2,9 @@ import { industrySolutionsBySlug } from "@/data/industrySolutions";
 import type { JsonLdSchema } from "@/lib/schema";
 import { breadcrumbSchema, faqPageSchema, productSchema } from "@/lib/schema";
 import auditSeo from "@/data/auditSeo.json";
+import blogPosts from "@/data/posts.json";
+import type { BlogPostData } from "@/types/wordpress";
+import { blogPostingSchema } from "@/lib/schema";
 const faqData = auditSeo["/"].faqs;
 
 export type PageSeoConfig = {
@@ -61,7 +64,7 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
     keywords: "Observeri news, GRC press, cybersecurity announcements",
     schemas: breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Newsroom" }]),
   },
-  "/blogs": {
+  "/blog": {
     title: "GRC & Cybersecurity Blog | Expert Observeri Insights",
     description:
       "Expert articles on cybersecurity GRC, AI risk management, compliance automation, vendor risk, FAIR quantification, and audit readiness.",
@@ -410,6 +413,19 @@ export const getPageSeoForPath = (pathname: string): PageSeoConfig => {
   const exact = pageSeoByPath[pathname];
   if (exact) {
     return exact;
+  }
+
+  const blogMatch = pathname.match(/^\/blog\/([^/]+)$/);
+  if (blogMatch) {
+    const post = (blogPosts as BlogPostData[]).find((candidate) => candidate.slug === blogMatch[1]);
+    if (post) {
+      return {
+        title: `${post.title.replace(/<[^>]*>/g, "")} | Observeri`,
+        description: post.excerpt.slice(0, 158),
+        ogImage: post.featured_image,
+        schemas: blogPostingSchema({ ...post, link: `/blog/${post.slug}` }),
+      };
+    }
   }
 
   const industryMatch = pathname.match(/^\/solutions\/([^/]+)$/);

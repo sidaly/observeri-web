@@ -11,7 +11,7 @@ const PRODUCT_MENU_TWO_COLUMN_THRESHOLD = 7;
 const useTwoColumnProductMenu = featuredProductPages.length >= PRODUCT_MENU_TWO_COLUMN_THRESHOLD;
 
 const navItems = [
-  { label: "Blogs", href: "/blogs" },
+  { label: "Blogs", href: "/blog" },
   { label: "About Us", href: "/about" },
   { label: "Partners", href: "/partners" },
   { label: "Consultancy Service", href: "/consultancy-service" },

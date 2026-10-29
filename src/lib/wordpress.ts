@@ -68,12 +68,17 @@ export async function fetchWordPressPosts(): Promise<BlogPostData[]> {
 
         return {
           id: post.id,
+          slug: post.slug,
           title: post.title.rendered,
           excerpt: cleanExcerpt(post.excerpt.rendered),
+          content: post.content.rendered,
           link: post.link,
           date: post.date,
+          modified: post.modified,
           featured_image: featuredMedia?.source_url,
           alt_text: featuredMedia?.alt_text || "",
+          image_width: featuredMedia?.media_details?.width,
+          image_height: featuredMedia?.media_details?.height,
         };
       });
 
@@ -134,12 +139,17 @@ export async function fetchWordPressPostsNode(): Promise<BlogPostData[]> {
 
         return {
           id: post.id,
+          slug: post.slug,
           title: post.title.rendered,
           excerpt: cleanExcerptNode(post.excerpt.rendered),
+          content: post.content.rendered,
           link: post.link,
           date: post.date,
+          modified: post.modified,
           featured_image: featuredMedia?.source_url,
           alt_text: featuredMedia?.alt_text || "",
+          image_width: featuredMedia?.media_details?.width,
+          image_height: featuredMedia?.media_details?.height,
         };
       });
 

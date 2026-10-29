@@ -42,7 +42,7 @@ Supported framework topics include SAMA, NESA, ISO 27001, NIST CSF, DORA, MiCA, 
 
 ## Insights and services
 
-- [Blog](https://www.observeri.com/blogs): Listing of articles about GRC, compliance, and cybersecurity; article links may lead to the external publication.
+- [Blog](https://www.observeri.com/blog): Observeri articles about GRC, compliance, and cybersecurity.
 - [Newsroom](https://www.observeri.com/newsroom): Company news and announcements.
 - [Consultancy](https://www.observeri.com/consultancy-service): Cybersecurity and GRC advisory services.
 - [Partners](https://www.observeri.com/partners): Observeri's partner program.

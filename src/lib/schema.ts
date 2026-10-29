@@ -77,7 +77,7 @@ export function blogPostingSchema(post: BlogPostData) {
     description: post.excerpt.replace(/<[^>]*>/g, "").slice(0, 160),
     url: post.link,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.modified,
     author: {
       "@type": "Organization",
       name: "Observeri Technologies",

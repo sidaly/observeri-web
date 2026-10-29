@@ -75,7 +75,7 @@ const Blogs = () => {
           <FadeUp delay={0.2}>
             <div className="mt-12 flex justify-center gap-4">
               <Button variant="outline" asChild>
-                <a href="https://observeri.com" target="_blank" rel="noopener noreferrer">Visit Observeri GRC<ArrowRight className="ml-2 h-4 w-4" /></a>
+                <Link to="/features">Explore Observeri GRC<ArrowRight className="ml-2 h-4 w-4" /></Link>
               </Button>
             </div>
           </FadeUp>

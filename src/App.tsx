@@ -17,6 +17,7 @@ const ConsultancyService = lazy(() => import("./pages/ConsultancyService"));
 const Partners = lazy(() => import("./pages/Partners"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const Blogs = lazy(() => import("./pages/Blogs"));
+const BlogPost = lazy(() => import("./pages/BlogPost"));
 const ThirdPartyRisk = lazy(() => import("./pages/ThirdPartyRisk"));
 const CyberRiskManagement = lazy(() => import("./pages/CyberRiskManagement"));
 const VulnerabilityOperations = lazy(() => import("./pages/VulnerabilityOperations"));
@@ -58,7 +59,8 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/career" element={<Career />} />
           <Route path="/newsroom" element={<Newsroom />} />
-          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blog" element={<Blogs />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/features" element={<FeaturesPage />} />
           <Route path="/products/third-party-risk" element={<ThirdPartyRisk />} />
           <Route path="/products/cyber-risk-management" element={<CyberRiskManagement />} />

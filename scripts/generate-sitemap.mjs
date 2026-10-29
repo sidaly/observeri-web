@@ -33,7 +33,7 @@ const ROUTE_SOURCE_FILES = {
   "/about": [path.join(PAGE_DIR, "About.tsx"), path.join(DATA_DIR, "pageSeo.ts")],
   "/career": [path.join(PAGE_DIR, "Career.tsx"), path.join(DATA_DIR, "pageSeo.ts")],
   "/newsroom": [path.join(PAGE_DIR, "Newsroom.tsx"), path.join(DATA_DIR, "pageSeo.ts")],
-  "/blogs": [path.join(PAGE_DIR, "Blogs.tsx"), path.join(DATA_DIR, "posts.json"), path.join(DATA_DIR, "pageSeo.ts")],
+  "/blog": [path.join(PAGE_DIR, "Blogs.tsx"), path.join(DATA_DIR, "posts.json"), path.join(DATA_DIR, "pageSeo.ts")],
   "/features": [path.join(PAGE_DIR, "FeaturesPage.tsx"), path.join(DATA_DIR, "products.ts"), path.join(DATA_DIR, "platformModules.ts"), path.join(DATA_DIR, "pageSeo.ts")],
   "/products/third-party-risk": [path.join(PAGE_DIR, "ThirdPartyRisk.tsx"), path.join(DATA_DIR, "thirdPartyRisk.ts"), path.join(DATA_DIR, "pageSeo.ts")],
   "/products/cyber-risk-management": [path.join(PAGE_DIR, "CyberRiskManagement.tsx"), path.join(DATA_DIR, "cyberRiskManagement.ts"), path.join(DATA_DIR, "pageSeo.ts")],
@@ -87,7 +87,7 @@ function getGitLastModified(filePaths) {
 
 function getLastModifiedForRoute(route) {
   // Special case: blogs page updates whenever the newest post is published.
-  if (route === "/blogs") {
+  if (route === "/blog") {
     const postDate = getLatestPostDate();
     if (postDate) return postDate;
   }

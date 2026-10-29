@@ -4,6 +4,13 @@
 
 export const SITE_URL = (process.env.SITE_URL || "https://www.observeri.com").replace(/\/$/, "");
 
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const posts = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "src", "data", "posts.json"), "utf8"));
+
 const industrySolutionSlugs = [
   "banking-financial-services",
   "healthcare-life-sciences",
@@ -21,7 +28,7 @@ const staticRoutes = [
   "/terms",
   "/career",
   "/newsroom",
-  "/blogs",
+  "/blog",
   "/features",
   "/products/third-party-risk",
   "/products/cyber-risk-management",
@@ -42,4 +49,5 @@ const staticRoutes = [
 export const routes = [
   ...staticRoutes,
   ...industrySolutionSlugs.map((slug) => `/solutions/${slug}`),
+  ...posts.map((post) => `/blog/${post.slug}`),
 ];
