@@ -4,7 +4,9 @@
 
 import type { WordPressPost, BlogPostData } from "@/types/wordpress";
 
-const WORDPRESS_API_URL = "https://grcsphere.net/wp-json/wp/v2/posts";
+// The custom domain is being retired as the public blog URL. The WordPress.com
+// site-ID endpoint remains available after domain forwarding is enabled.
+const WORDPRESS_API_URL = "https://public-api.wordpress.com/wp/v2/sites/253628346/posts";
 const POSTS_PER_PAGE = 100;
 
 /**

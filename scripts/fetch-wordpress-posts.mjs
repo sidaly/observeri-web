@@ -10,7 +10,9 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const WORDPRESS_API_URL = "https://grcsphere.net/wp-json/wp/v2/posts";
+// Use WordPress.com's permanent site-ID endpoint so content builds keep
+// working after grcsphere.net is configured as a forwarding domain.
+const WORDPRESS_API_URL = "https://public-api.wordpress.com/wp/v2/sites/253628346/posts";
 const POSTS_PER_PAGE = 100;
 const OUTPUT_FILE = path.join(__dirname, "..", "src", "data", "posts.json");
 
