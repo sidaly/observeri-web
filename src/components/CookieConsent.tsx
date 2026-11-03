@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const STORAGE_KEY = "observeri-cookie-consent";
-const VERSION = 1;
+const VERSION = 2; // Ask again after adding LinkedIn as a marketing provider.
 const MAX_AGE = 180 * 24 * 60 * 60 * 1000;
 type Choices = { analytics: boolean; marketing: boolean; media: boolean };
 type Consent = Choices & { version: number; savedAt: number };
@@ -28,7 +28,7 @@ function clearTrackingCookies() {
   const paths = ["/", ...pathParts.map((_, i) => "/" + pathParts.slice(0, i + 1).join("/"))];
   for (const cookie of document.cookie.split(";")) {
     const name = cookie.split("=")[0].trim();
-    if (!/^(_ga|_gid|_gat|_gcl|_gac)/.test(name)) continue;
+    if (!/^(_ga|_gid|_gat|_gcl|_gac|_li_|li_adsId|li_adsid|li_fat_id)/.test(name)) continue;
     for (const domain of domains) for (const path of paths) {
       document.cookie = `${name}=; Max-Age=0; Path=${path}${domain ? `; Domain=${domain}` : ""}`;
     }
@@ -100,7 +100,7 @@ export function CookieConsentProvider({ children }: { children: ReactNode }) {
                 <legend className="px-2 font-medium">Choose optional technologies</legend>
                 <p className="text-sm">Essential storage: always on. Saves your cookie preference and supports requested services.</p>
                 <label className="flex items-start gap-3 text-sm"><input className="mt-1 h-4 w-4" type="checkbox" checked={choices.analytics} onChange={e => setChoices({ ...choices, analytics: e.target.checked })} /><span><strong>Analytics</strong>: Google Analytics and Vercel Web Analytics help us understand visits and page usage.</span></label>
-                <label className="flex items-start gap-3 text-sm"><input className="mt-1 h-4 w-4" type="checkbox" checked={choices.marketing} onChange={e => setChoices({ ...choices, marketing: e.target.checked })} /><span><strong>Marketing</strong>: Google Ads measures advertising activity. Google Tag Manager loads only when both analytics and marketing are allowed.</span></label>
+                <label className="flex items-start gap-3 text-sm"><input className="mt-1 h-4 w-4" type="checkbox" checked={choices.marketing} onChange={e => setChoices({ ...choices, marketing: e.target.checked })} /><span><strong>Marketing</strong>: Google Ads and LinkedIn Insight Tag measure advertising activity. LinkedIn also supports audience insights and retargeting. Google Tag Manager loads only when both analytics and marketing are allowed.</span></label>
                 <label className="flex items-start gap-3 text-sm"><input className="mt-1 h-4 w-4" type="checkbox" checked={choices.media} onChange={e => setChoices({ ...choices, media: e.target.checked })} /><span><strong>Embedded media</strong>: YouTube hosts product videos and receives device and usage information when a video is loaded.</span></label>
               </fieldset>
             )}

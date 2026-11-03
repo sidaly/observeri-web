@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CookieConsentProvider } from "@/components/CookieConsent";
 import { ConsentAnalytics } from "@/components/ConsentAnalytics";
+import { LinkedInInsight } from "@/components/LinkedInInsight";
 import Index from "./pages/Index";
 const About = lazy(() => import("./pages/About"));
 const Career = lazy(() => import("./pages/Career"));
@@ -88,6 +89,7 @@ const App = () => (
         </Routes>
         </Suspense>
         <ConsentAnalytics />
+        <LinkedInInsight />
         </CookieConsentProvider>
       </BrowserRouter>
     </TooltipProvider>
