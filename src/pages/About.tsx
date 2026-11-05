@@ -1,28 +1,15 @@
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import {
   FadeUp,
-  ScaleUp,
   SlideInLeft,
   SlideInRight,
   StaggerContainer,
   StaggerItem,
 } from "@/components/ScrollAnimations";
-import {
-  ArrowRight,
-  Bot,
-  BrainCircuit,
-  Building2,
-  CalendarClock,
-  ChartNoAxesCombined,
-  Gauge,
-  ShieldCheck,
-  ShieldAlert,
-  Sparkles,
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { ArrowRight, Bot, BrainCircuit, ChartNoAxesCombined, ShieldCheck } from "lucide-react";
 import logoIcon from "@/assets/grc-sphere-icon.webp";
 
 const stats = [
@@ -91,33 +78,14 @@ const sectors = [
   "Technology & SaaS",
 ];
 
-const roadmap = [
-  {
-    phase: "Days 1 - 30",
-    title: "Foundation",
-    description:
-      "Asset discovery, ecosystem integrations, baseline assessments, and initial AI model calibration establish the operating picture.",
-    quickWin: "Executive risk dashboard live within 2 weeks.",
-  },
-  {
-    phase: "Days 31 - 60",
-    title: "Activation",
-    description:
-      "Predictive scoring, automated workflows, policy mapping, and role-based dashboards turn insight into action across teams.",
-    quickWin: "Automated remediation and executive reporting in production.",
-  },
-  {
-    phase: "Days 61 - 90",
-    title: "Optimization",
-    description:
-      "Scenario modeling, board cadence, budget alignment, and continuous tuning drive a durable risk program with measurable ROI.",
-    quickWin: "Board-ready monthly reporting and verified strategic outcomes.",
-  },
+const aboutParagraphs = [
+  "Observeri Technologies helps regulated organizations strengthen risk management and cyber resilience through an AI-powered GRC platform and specialist advisory services.",
+  "Our platform unifies cyber risk, IT risk, compliance, third-party risk, and AI governance in a single AI Risk Operations Center. It continuously scores assets, forecasts exposure, and expresses residual risk in financial terms that boards and leadership can act on. Unlike traditional GRC systems, Observeri is built to be predictive rather than retrospective — automating control mapping and evidence collection across major frameworks while prioritizing true threats over noise.",
+  "Alongside the platform, we provide expert consultancy to help organizations improve security strategy, architecture, incident readiness, GRC and security operations integration, red teaming, data privacy response, risk assessments, and cybersecurity maturity. Each engagement is focused on practical outcomes, delivering clear roadmaps that align security with business priorities and strengthen executive decision-making.",
+  "Together, our platform and advisory services give organizations a more measurable, proactive, and defensible approach to risk and compliance.",
 ];
 
 const About = () => {
-  const navigate = useNavigate();
-
   return (
     <div className="min-h-screen bg-background bg-gradient-main">
       <Navbar />
@@ -131,35 +99,27 @@ const About = () => {
         />
 
         <div className="container relative z-10 mx-auto px-6">
-          <div className="mx-auto max-w-5xl text-center">
-            <motion.p
-              className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-primary"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              About Observeri GRC
-            </motion.p>
+          <div className="mx-auto max-w-4xl">
             <motion.h1
-              className="mb-6 text-4xl font-display font-bold md:text-5xl lg:text-6xl"
+              className="mb-8 text-4xl font-display font-bold md:text-5xl lg:text-6xl"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Enterprise risk, combined
-              <br />
-              <span className="text-gradient">from every domain the business runs.</span>
+              About Observeri
             </motion.h1>
-            <motion.p
-              className="mx-auto max-w-3xl text-lg leading-8 text-muted-foreground"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              Observeri GRC covers enterprise risk as well as cybersecurity. Cyber, operational, technology,
-              financial, and ESG risk each keep their own measure, then combine into one enterprise risk the board
-              can act on. Compliance, audit, and third-party risk sit in the same record.
-            </motion.p>
+            <div className="space-y-5 text-lg leading-8 text-muted-foreground">
+              {aboutParagraphs.map((paragraph, index) => (
+                <motion.p
+                  key={paragraph}
+                  initial={{ opacity: 0, y: 24 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.55, delay: 0.15 + index * 0.08 }}
+                >
+                  {paragraph}
+                </motion.p>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -213,7 +173,7 @@ const About = () => {
               <div className="rounded-[2rem] border-gradient bg-gradient-card p-8 md:p-10">
                 <div className="flex items-center gap-4 border-b border-border/30 pb-6">
                   <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 p-2">
-                    <img decoding="async" src={logoIcon} alt="Observeri GRC" className="h-full w-full object-contain" />
+                    <img decoding="async" src={logoIcon} alt="Observeri" className="h-full w-full object-contain" />
                   </div>
                   <div>
                     <p className="text-sm uppercase tracking-[0.2em] text-primary">Platform Core</p>
@@ -247,6 +207,26 @@ const About = () => {
               </div>
             </SlideInRight>
           </div>
+        </div>
+      </section>
+
+      <section className="border-y border-border/30 py-24">
+        <div className="container mx-auto px-6">
+          <FadeUp>
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-primary">
+                Observeri Technologies
+              </p>
+              <h2 className="text-3xl font-display font-bold md:text-5xl">Meet The Team</h2>
+              <Link
+                to="/team"
+                className="mt-8 inline-flex items-center gap-2 text-lg font-medium text-primary underline underline-offset-4"
+              >
+                Meet our founder and team
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </FadeUp>
         </div>
       </section>
 
@@ -334,176 +314,6 @@ const About = () => {
         </div>
       </section>
 
-      <section className="py-24">
-        <div className="container mx-auto px-6">
-          <ScaleUp>
-            <div className="rounded-[2rem] border-gradient bg-gradient-card p-10 md:p-14">
-              <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr]">
-                <div>
-                  <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2">
-                    <ShieldAlert className="h-4 w-4 text-primary" />
-                    <span className="text-sm font-medium text-primary">Why It Matters</span>
-                  </div>
-                  <h2 className="text-3xl font-display font-bold md:text-5xl">
-                    The cost of doing nothing keeps compounding.
-                  </h2>
-                  <p className="mt-6 text-lg leading-8 text-muted-foreground">
-                    The executive ROI material is blunt about the stakes: every month of delay adds
-                    unmitigated exposure, while boards face rising scrutiny over cyber oversight,
-                    insurance premiums continue climbing, and operational disruption keeps getting more expensive.
-                  </p>
-                </div>
-
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="rounded-2xl border border-border/30 bg-background/30 p-5">
-                    <p className="text-sm text-muted-foreground">3-year exposure</p>
-                    <p className="mt-2 text-3xl font-display font-bold text-foreground">$23.6M</p>
-                    <p className="mt-3 text-sm leading-6 text-muted-foreground">
-                      Projected cumulative risk exposure in the status quo scenario highlighted in Observeri GRC.
-                    </p>
-                  </div>
-                  <div className="rounded-2xl border border-border/30 bg-background/30 p-5">
-                    <p className="text-sm text-muted-foreground">Monthly delay cost</p>
-                    <p className="mt-2 text-3xl font-display font-bold text-foreground">$2M+</p>
-                    <p className="mt-3 text-sm leading-6 text-muted-foreground">
-                      Unmitigated exposure accumulates while decisions are deferred.
-                    </p>
-                  </div>
-                  <div className="rounded-2xl border border-border/30 bg-background/30 p-5">
-                    <p className="text-sm text-muted-foreground">Insurance impact</p>
-                    <p className="mt-2 text-3xl font-display font-bold text-primary">15-20%</p>
-                    <p className="mt-3 text-sm leading-6 text-muted-foreground">
-                      Potential premium advantage for organizations that demonstrate mature risk controls.
-                    </p>
-                  </div>
-                  <div className="rounded-2xl border border-primary/20 bg-primary/10 p-5">
-                    <p className="text-sm text-primary">Executive stance</p>
-                    <p className="mt-2 text-2xl font-display font-bold text-foreground">Demonstrable due diligence</p>
-                    <p className="mt-3 text-sm leading-6 text-muted-foreground">
-                      Strong governance becomes both a defensive necessity and a strategic differentiator.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </ScaleUp>
-        </div>
-      </section>
-
-      <section className="relative overflow-hidden py-24">
-        <div className="absolute inset-0 bg-gradient-radial opacity-40" />
-        <div className="container relative z-10 mx-auto px-6">
-          <div className="mx-auto mb-16 max-w-3xl text-center">
-            <FadeUp>
-              <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-primary">
-                90-Day Rollout
-              </p>
-            </FadeUp>
-            <FadeUp delay={0.08}>
-              <h2 className="text-3xl font-display font-bold md:text-5xl">
-                Fast time-to-value without reshaping the stack.
-              </h2>
-            </FadeUp>
-            <FadeUp delay={0.16}>
-              <p className="mt-5 text-lg leading-8 text-muted-foreground">
-                The implementation model in Observeri GRC is designed for minimal disruption: SaaS delivery,
-                API-first integration, no added headcount, and just enough executive enablement to make
-                the system operational quickly.
-              </p>
-            </FadeUp>
-          </div>
-
-          <div className="grid gap-6 lg:grid-cols-3">
-            {roadmap.map((item, index) => (
-              <FadeUp key={item.phase} delay={index * 0.08}>
-                <div className="h-full rounded-3xl border-gradient bg-gradient-card p-8">
-                  <div className="mb-6 flex items-start justify-between gap-4">
-                    <div>
-                      <p className="text-sm uppercase tracking-[0.2em] text-primary">{item.phase}</p>
-                      <h3 className="mt-2 text-2xl font-display font-semibold">{item.title}</h3>
-                    </div>
-                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10">
-                      <CalendarClock className="h-5 w-5 text-primary" />
-                    </div>
-                  </div>
-                  <p className="text-sm leading-7 text-muted-foreground">{item.description}</p>
-                  <div className="mt-6 rounded-2xl border border-primary/20 bg-primary/10 p-4">
-                    <p className="text-xs uppercase tracking-[0.2em] text-primary">Quick Win</p>
-                    <p className="mt-2 text-sm leading-6 text-foreground">{item.quickWin}</p>
-                  </div>
-                </div>
-              </FadeUp>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-24">
-        <div className="container mx-auto px-6">
-          <FadeUp>
-            <div className="mx-auto max-w-4xl rounded-[2rem] border-gradient bg-gradient-card p-10 text-center md:p-14">
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2">
-                <Sparkles className="h-4 w-4 text-primary" />
-                <span className="text-sm font-medium text-primary">Next Step</span>
-              </div>
-
-              <h2 className="text-3xl font-display font-bold md:text-5xl">
-                Bring one combined enterprise risk into the operating model.
-              </h2>
-              <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">
-                Observeri GRC is built for organizations that want more than audit readiness. It is for
-                teams that need predictive intelligence, disciplined execution, and executive assurance
-                in one platform.
-              </p>
-
-              <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-                <Button
-                  variant="hero"
-                  size="lg"
-                  className="group"
-                  onClick={() => navigate("/?contactForm=true")}
-                >
-                  Book Executive Briefing
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Button>
-                <Button variant="outline" size="lg" onClick={() => navigate("/solutions")}>
-                  Explore Industry Solutions
-                </Button>
-              </div>
-
-              <div className="mt-10 grid gap-4 text-left md:grid-cols-3">
-                <div className="rounded-2xl border border-border/30 bg-background/30 p-5">
-                  <Gauge className="h-5 w-5 text-primary" />
-                  <p className="mt-3 font-semibold text-foreground">Executive visibility</p>
-                  <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                    Board-ready dashboards that combine each domain into one enterprise risk.
-                  </p>
-                </div>
-                <div className="rounded-2xl border border-border/30 bg-background/30 p-5">
-                  <Building2 className="h-5 w-5 text-primary" />
-                  <p className="mt-3 font-semibold text-foreground">Minimal disruption</p>
-                  <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                    SaaS deployment, API-first integration, and no infrastructure overhaul required.
-                  </p>
-                </div>
-                <div className="rounded-2xl border border-border/30 bg-background/30 p-5">
-                  <ShieldCheck className="h-5 w-5 text-primary" />
-                  <p className="mt-3 font-semibold text-foreground">Measured outcomes</p>
-                  <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                    A GRC program tied to resilience, oversight, and real business value.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </FadeUp>
-        </div>
-      </section>
-
-      <section className="container mx-auto px-6 py-16">
-        <h2 className="text-3xl font-display font-bold">Our company</h2>
-        <p className="mt-5 max-w-3xl leading-7 text-muted-foreground">Observeri Technologies was founded in 2025 and is headquartered in Dubai, United Arab Emirates.</p>
-        <a href="/team" className="mt-5 inline-block text-primary underline">Meet our founder and team</a>
-      </section>
       <Footer />
     </div>
   );
