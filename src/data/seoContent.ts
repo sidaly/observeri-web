@@ -35,9 +35,9 @@ export const enterpriseGrcTopicSections = [
   },
   {
     id: "buyer-intent",
-    title: "Best GRC software for enterprises, UAE / Middle East, banks, and fintech",
+    title: "GRC software for enterprises, SMEs, and startups worldwide",
     body:
-      "Teams comparing the best GRC software for enterprises or top cybersecurity GRC platforms start with a GRC software comparison on architecture, automation depth, and time-to-value. Observeri is a strong GRC solution for fintech and GRC tools for banks, with regional relevance as GRC software UAE teams deploy for cybersecurity GRC Dubai, Abu Dhabi compliance software needs, fintech GRC UAE programs, and broader risk management platform Middle East requirements. Ready to buy GRC software? Request a GRC demo and evaluate enterprise risk management tools side-by-side with legacy suites.",
+      "Observeri serves enterprises, SMEs, and startups globally and covers the regulatory regimes they work under. Teams compare it on architecture, automation depth, and time-to-value, including banks, fintechs, and organisations outside any single region. Request a demo and evaluate it beside legacy suites.",
   },
   {
     id: "alternatives",

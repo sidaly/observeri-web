@@ -173,8 +173,8 @@ const DataPrivacyProtection = () => {
                 transition={{ duration: 0.3 }}
               >
                 <img decoding="async"
-                  src={dppRopaShowcase.image}
-                  alt="Observeri Register of Processing Activities — data flow diagram for Customer KYC data"
+                  src="/data-privacy-dashboard.webp"
+                  alt="Observeri Data Privacy and Protection dashboard with processing activities, DPIA status, and compliance posture"
                   className="w-full rounded-[1.75rem] object-contain"
                 />
               </motion.div>
@@ -218,7 +218,7 @@ const DataPrivacyProtection = () => {
             >
               <img loading="lazy" decoding="async"
                 src={dppRopaShowcase.image}
-                alt="Data flow diagram showing Customer KYC data from sources through processing and storage to recipients"
+                alt="Register of Processing Activities with anonymized records for customer onboarding, employee records, vendor administration, and service notifications"
                 className="w-full rounded-[1.75rem] object-contain"
               />
             </motion.div>
@@ -596,7 +596,7 @@ const DataPrivacyProtection = () => {
                 <div className="rounded-[2rem] border border-primary/20 bg-primary/10 p-8">
                   <p className="text-sm uppercase tracking-[0.2em] text-primary">Regulatory alignment</p>
                   <p className="mt-4 text-sm leading-7 text-muted-foreground">
-                    Data Privacy & Protection supports GDPR, UAE PDPL, HIPAA, and regional data protection frameworks—
+                    Data Privacy & Protection supports GDPR, UAE PDPL, HIPAA, and the other regulatory regimes an organisation works under—
                     connecting discovery and classification evidence to Compliance Management and Exposure Management
                     for end-to-end privacy programme governance.
                   </p>

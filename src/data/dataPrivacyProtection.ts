@@ -67,7 +67,7 @@ export const dppRopaShowcase = {
   title: "Register of Processing Activities",
   description:
     "Central repository of personal data processing activities for compliance and transparency—switch between a structured data register and interactive data flow diagrams for every processing activity.",
-  image: "/data_privacy_protection.webp",
+  image: "/data-privacy-ropa.webp",
   stats: [
     { label: "Total Activities", icon: Database },
     { label: "Active", icon: ClipboardList },
@@ -289,7 +289,7 @@ export const dppBenefits: DppBenefit[] = [
   {
     title: "Privacy compliance you can demonstrate",
     description:
-      "Discovery, classification, and exposure evidence support GDPR, PDPL, HIPAA, and UAE data protection programmes—with audit-ready records of what data exists and how it is protected.",
+      "Discovery, classification, and exposure evidence support GDPR, PDPL, HIPAA, and the other regulatory regimes an organisation works under—with audit-ready records of what data exists and how it is protected.",
     icon: ShieldCheck,
   },
   {

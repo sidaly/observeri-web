@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { ComplianceDashboard } from "@/components/ComplianceDashboard";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import {
@@ -165,17 +166,7 @@ const ComplianceManagement = () => {
             </SlideInLeft>
 
             <SlideInRight>
-              <motion.div
-                className="relative overflow-hidden rounded-[2rem] border-gradient bg-gradient-card p-2"
-                whileHover={{ scale: 1.01 }}
-                transition={{ duration: 0.3 }}
-              >
-                <img decoding="async"
-                  src="/compliance_management.webp"
-                  alt="Observeri Compliance Management module"
-                  className="w-full rounded-[1.75rem] object-contain"
-                />
-              </motion.div>
+              <ComplianceDashboard />
 
               <div className="mt-6 grid grid-cols-3 gap-3">
                 {cmHero.outcomes.map((outcome, index) => (

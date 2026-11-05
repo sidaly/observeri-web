@@ -9,6 +9,20 @@ const marketplaceDevApi = (): Plugin => ({
     process.env.MARKETPLACE_DEV_MODE ||= "true";
     server.middlewares.use(async (req, res, next) => {
       const url = req.url || "";
+      if (url.startsWith("/api/demo-booking")) {
+        try {
+          const mod = await server.ssrLoadModule("/api/demo-booking.ts");
+          await mod.default(req, res);
+        } catch (error) {
+          console.error(error);
+          if (!res.writableEnded) {
+            res.statusCode = 500;
+            res.setHeader("Content-Type", "application/json");
+            res.end(JSON.stringify({ error: "Demo booking API failed in development." }));
+          }
+        }
+        return;
+      }
       if (!url.startsWith("/api/aws-marketplace/")) {
         next();
         return;

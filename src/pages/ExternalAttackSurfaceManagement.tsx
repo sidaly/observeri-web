@@ -8,8 +8,9 @@ import {
   ChevronRight,
   Globe,
 } from "lucide-react";
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { EasmDashboard, EasmWorkflowAnimation } from "@/components/EasmVisuals";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import {
@@ -22,12 +23,6 @@ import {
 } from "@/components/ScrollAnimations";
 import { Button } from "@/components/ui/button";
 import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  type CarouselApi,
-} from "@/components/ui/carousel";
-import {
   easmBenefits,
   easmCapabilities,
   easmCapabilityList,
@@ -35,7 +30,6 @@ import {
   easmHero,
   easmOrgOutcomes,
   easmProblem,
-  easmSlides,
   easmStats,
   easmValueProp,
   easmWorkflow,
@@ -86,114 +80,6 @@ const WorkflowPanel = ({ step }: { step: EasmWorkflowStep }) => (
     </div>
   </motion.div>
 );
-
-const EasmSlideshow = () => {
-  const [api, setApi] = useState<CarouselApi>();
-  const [current, setCurrent] = useState(0);
-
-  useEffect(() => {
-    if (!api) return;
-    const onSelect = () => setCurrent(api.selectedScrollSnap());
-    onSelect();
-    api.on("select", onSelect);
-    return () => {
-      api.off("select", onSelect);
-    };
-  }, [api]);
-
-  useEffect(() => {
-    if (!api) return;
-    const id = window.setInterval(() => {
-      if (api.canScrollNext()) {
-        api.scrollNext();
-      } else {
-        api.scrollTo(0);
-      }
-    }, 5500);
-    return () => window.clearInterval(id);
-  }, [api]);
-
-  const scrollPrev = useCallback(() => api?.scrollPrev(), [api]);
-  const scrollNext = useCallback(() => api?.scrollNext(), [api]);
-
-  return (
-    <div className="mt-10">
-      <div className="mb-5 flex flex-wrap items-center justify-between gap-4">
-        <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
-          {easmSlides[current]?.label ?? "Product preview"}
-        </p>
-        <div className="flex items-center gap-2">
-          {easmSlides.map((slide, index) => (
-            <button
-              key={slide.src}
-              type="button"
-              aria-label={`Go to ${slide.label}`}
-              onClick={() => api?.scrollTo(index)}
-              className={`h-2 rounded-full transition-all ${
-                index === current ? "w-8 bg-primary" : "w-2 bg-muted-foreground/40 hover:bg-muted-foreground/70"
-              }`}
-            />
-          ))}
-        </div>
-      </div>
-
-      <div className="relative">
-        <Carousel setApi={setApi} opts={{ loop: true }} className="w-full">
-          <CarouselContent className="-ml-0">
-            {easmSlides.map((slide) => (
-              <CarouselItem key={slide.src} className="pl-0">
-                <div className="relative overflow-hidden rounded-2xl border-gradient glow">
-                  <div className="flex items-center gap-2 border-b border-border/50 bg-card/80 px-4 py-3 backdrop-blur-sm">
-                    <div className="flex gap-2">
-                      <div className="h-3 w-3 rounded-full bg-red-500/80" />
-                      <div className="h-3 w-3 rounded-full bg-yellow-500/80" />
-                      <div className="h-3 w-3 rounded-full bg-green-500/80" />
-                    </div>
-                    <div className="flex flex-1 justify-center">
-                      <div className="rounded-md bg-muted/50 px-4 py-1 text-xs text-muted-foreground">
-                        app.observeri.com/easm
-                      </div>
-                    </div>
-                  </div>
-                  <img decoding="async"
-                    src={slide.src}
-                    alt={slide.alt}
-                    className="aspect-[16/10] w-full bg-[#0b0e14] object-contain object-top"
-                  />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-        </Carousel>
-
-        <Button
-          type="button"
-          variant="outline"
-          size="icon"
-          className="absolute left-3 top-1/2 z-10 h-10 w-10 -translate-y-1/2 rounded-full border-border/60 bg-background/80 backdrop-blur-sm"
-          onClick={scrollPrev}
-          aria-label="Previous slide"
-        >
-          <ArrowLeft className="h-4 w-4" />
-        </Button>
-        <Button
-          type="button"
-          variant="outline"
-          size="icon"
-          className="absolute right-3 top-1/2 z-10 h-10 w-10 -translate-y-1/2 rounded-full border-border/60 bg-background/80 backdrop-blur-sm"
-          onClick={scrollNext}
-          aria-label="Next slide"
-        >
-          <ArrowRight className="h-4 w-4" />
-        </Button>
-      </div>
-
-      <p className="mt-4 text-center text-xs text-muted-foreground">
-        Hostnames and identifying asset labels are anonymized in these previews.
-      </p>
-    </div>
-  );
-};
 
 const ExternalAttackSurfaceManagement = () => {
   const [activeStep, setActiveStep] = useState(0);
@@ -273,24 +159,14 @@ const ExternalAttackSurfaceManagement = () => {
                     </Link>
                   </Button>
                   <Button asChild variant="outline" size="lg">
-                    <a href="#product-preview">View product preview</a>
+                    <a href="#product-preview">View the workflow</a>
                   </Button>
                 </div>
               </div>
             </SlideInLeft>
 
             <SlideInRight>
-              <motion.div
-                className="relative overflow-hidden rounded-[2rem] border-gradient bg-gradient-card p-2"
-                whileHover={{ scale: 1.01 }}
-                transition={{ duration: 0.3 }}
-              >
-                <img loading="lazy" decoding="async"
-                  src="/easm/slide-1.webp"
-                  alt="Observeri External Attack Surface Management module overview"
-                  className="w-full rounded-[1.75rem] object-contain"
-                />
-              </motion.div>
+              <EasmDashboard />
 
               <div className="mt-6 grid grid-cols-3 gap-3">
                 {easmHero.outcomes.map((outcome, index) => (
@@ -317,14 +193,15 @@ const ExternalAttackSurfaceManagement = () => {
           <FadeUp>
             <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-primary">Product preview</p>
             <h2 className="max-w-3xl text-3xl font-display font-bold md:text-5xl">
-              See External Attack Surface Management in action
+              One workflow, from the host to the result
             </h2>
             <p className="mt-5 max-w-3xl text-lg leading-8 text-muted-foreground">
-              A short tour of hosts, ports, intelligence, shadow IT, attack paths, web pentest, smart contracts, and
-              cloud posture—hostname text is blurred to protect customer anonymity.
+              Watch the external record move through hosts, vulnerabilities, penetration testing, shadow IT, attack
+              simulation, APIs, third parties, the dark web, social mentions, blockchain, and the AI ethical hacker.
+              Figures in the view are a sample.
             </p>
           </FadeUp>
-          <EasmSlideshow />
+          <EasmWorkflowAnimation />
         </div>
       </section>
 

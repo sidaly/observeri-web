@@ -11,6 +11,7 @@ import {
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Footer } from "@/components/Footer";
+import { GovernanceDashboard } from "@/components/GovernanceDashboard";
 import { Navbar } from "@/components/Navbar";
 import {
   FadeUp,
@@ -166,17 +167,7 @@ const SecurityGovernance = () => {
             </SlideInLeft>
 
             <SlideInRight>
-              <motion.div
-                className="relative overflow-hidden rounded-[2rem] border-gradient bg-gradient-card p-2"
-                whileHover={{ scale: 1.01 }}
-                transition={{ duration: 0.3 }}
-              >
-                <img decoding="async"
-                  src="/governance_management.webp"
-                  alt="Observeri Security Governance module"
-                  className="w-full rounded-[1.75rem] object-contain"
-                />
-              </motion.div>
+              <GovernanceDashboard />
 
               <div className="mt-6 grid grid-cols-3 gap-3">
                 {govHero.outcomes.map((outcome, index) => (

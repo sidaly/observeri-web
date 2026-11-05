@@ -119,5 +119,5 @@ export function CookieConsentProvider({ children }: { children: ReactNode }) {
 
 export function CookieSettingsButton() {
   const { openSettings } = useCookieConsent();
-  return <button type="button" onClick={openSettings} className="text-sm text-slate-300 underline underline-offset-4 hover:text-white">Cookie settings</button>;
+  return <button type="button" onClick={openSettings} className="text-sm text-muted-foreground underline underline-offset-4 hover:text-primary">Cookie settings</button>;
 }

@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { Twitter, Linkedin, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
 import { FadeUp } from "./ScrollAnimations";
-import logoIcon from "@/assets/grc-sphere-icon.webp";
 
 const navLinks = [
   { label: "About", href: "/about" },
@@ -27,16 +26,16 @@ export const Footer = () => {
   return (
     <>
     <RelatedProducts />
-    <footer className="bg-slate-950 border-t border-slate-800">
+    <footer className="border-t border-border bg-background">
       <div className="container mx-auto px-6 py-16">
         {/* Navigation Links */}
-        <FadeUp className="mb-12 pb-8 border-b border-slate-800">
+        <FadeUp className="mb-12 border-b border-border pb-8">
           <nav className="flex flex-wrap justify-center gap-6 md:gap-8">
             {navLinks.map((link) => (
               <motion.a
                 key={link.label}
                 href={link.href}
-                className="text-sm text-slate-300 hover:text-white transition-colors"
+                className="text-sm text-muted-foreground transition-colors hover:text-primary"
                 whileHover={{ x: 2 }}
                 transition={{ duration: 0.2 }}
               >
@@ -55,13 +54,18 @@ export const Footer = () => {
               to="/" 
               className="flex items-center gap-3 mb-6 hover:opacity-80 transition-opacity"
             >
-              <img loading="lazy" decoding="async" src={logoIcon} alt="Observeri Technologies" className="w-10 h-10" />
-              <span className="text-xl font-bold text-white font-display">Observeri Technologies</span>
+              <img
+                loading="lazy"
+                decoding="async"
+                src="/observeri-logo.png"
+                alt="Observeri Technologies"
+                className="h-14 w-auto"
+              />
             </Link>
-            <p className="text-sm text-slate-400 leading-relaxed max-w-md mb-8">
-              Observeri Technologies delivers a cybersecurity GRC platform and enterprise GRC solution—governance risk and
-              compliance software with AI risk management software, risk quantification software, audit workflow automation,
-              third party risk management software, and UAE / Middle East programs for regulated enterprises.
+            <p className="mb-8 max-w-md text-sm leading-relaxed text-muted-foreground">
+              Observeri GRC covers enterprise risk as well as cybersecurity. Cyber, operational, technology, financial,
+              and ESG risk sit with compliance, audit, and third-party risk in one record. Observeri serves enterprises,
+              SMEs, and startups worldwide, and covers the regulatory regimes they work under.
             </p>
             
             {/* Social Icons */}
@@ -70,7 +74,7 @@ export const Footer = () => {
                 <motion.a
                   key={social.label}
                   href={social.href}
-                  className="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center text-slate-400 hover:text-white hover:border-slate-500 transition-all duration-300"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-muted-foreground transition-all duration-300 hover:border-primary hover:text-primary"
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   aria-label={social.label}
@@ -87,12 +91,11 @@ export const Footer = () => {
           <FadeUp delay={0.1}>
             <div className="flex flex-col justify-between h-full">
               <div>
-                <h4 className="font-semibold text-white mb-6">Get in Touch</h4>
-                <address className="mb-4 text-sm not-italic text-slate-300">Observeri Technologies<br />Dubai, United Arab Emirates</address>
-                <p className="mb-4 text-sm text-slate-400">Founded in 2025</p>
+                <h4 className="mb-6 font-semibold text-foreground">Get in Touch</h4>
+                <address className="mb-4 text-sm not-italic text-muted-foreground">Observeri Technologies<br />Dubai, United Arab Emirates</address>
                 <a 
                   href="mailto:connect@observeri.com"
-                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                  className="text-sm text-muted-foreground transition-colors hover:text-primary"
                 >
                   connect@observeri.com
                 </a>
@@ -103,8 +106,8 @@ export const Footer = () => {
 
         {/* Bottom Bar */}
         <FadeUp delay={0.2}>
-          <div className="pt-8 border-t border-slate-800">
-            <p className="text-xs text-slate-500">
+          <div className="border-t border-border pt-8">
+            <p className="text-xs text-muted-foreground">
               © {new Date().getFullYear()} Observeri Technologies. All rights reserved.
             </p>
           </div>

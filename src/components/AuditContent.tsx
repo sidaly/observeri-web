@@ -7,7 +7,7 @@ export function AuditOverview({ path }: { path: AuditPath }) {
   return (
     <section className="border-b border-border/30 py-16">
       <div className="container mx-auto max-w-5xl px-6">
-        <h2 className="text-2xl font-display font-bold md:text-3xl">{page.keyword} for regulated enterprises</h2>
+        <h2 className="text-2xl font-display font-bold md:text-3xl">{page.keyword} for enterprises, SMEs, and startups</h2>
         {page.body.slice(1).map((paragraph) => (
           <p key={paragraph} className="mt-6 text-lg leading-8 text-muted-foreground">{paragraph}</p>
         ))}

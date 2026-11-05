@@ -36,7 +36,7 @@ const Solutions = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Observeri GRC for regulated industries with very different risk realities.
+              Observeri GRC for enterprises, SMEs, and startups worldwide.
             </motion.h1>
             <motion.p
               className="mx-auto max-w-3xl text-lg text-muted-foreground md:text-xl"
@@ -44,11 +44,9 @@ const Solutions = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Industry pages connect GRC software for banks, healthcare compliance software, industrial cybersecurity GRC,
-              public sector GRC platform work, and fintech compliance platform rollouts to the same AI governance core.
-              Regional teams often discover Observeri through GRC software UAE, cybersecurity GRC Dubai, Abu Dhabi compliance
-              software, fintech GRC UAE, and broader risk management platform Middle East searches—then validate against a
-              global GRC software comparison checklist.
+              Observeri serves enterprises, SMEs, and startups globally and covers the regulatory regimes they work
+              under. Industry pages connect banks, healthcare, industry, the public sector, and technology to that same
+              platform.
             </motion.p>
           </div>
         </div>
@@ -81,14 +79,12 @@ const Solutions = () => {
             <FadeUp delay={0.08}>
              
               <h2 className="text-3xl font-display font-bold md:text-5xl">
-                Observeri GRC for regulated industries with very different risk realities.
+                Observeri GRC for enterprises, SMEs, and startups worldwide.
               </h2>
               <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-                Industry pages connect GRC software for banks, healthcare compliance software, industrial cybersecurity GRC,
-                public sector GRC platform work, and fintech compliance platform rollouts to the same AI governance core.
-                Regional teams often discover Observeri through GRC software UAE, cybersecurity GRC Dubai, Abu Dhabi compliance
-                software, fintech GRC UAE, and broader risk management platform Middle East searches—then validate against a
-                global GRC software comparison checklist.
+                Observeri serves enterprises, SMEs, and startups globally and covers the regulatory regimes they work
+                under. Industry pages connect banks, healthcare, industry, the public sector, and technology to that same
+                platform.
               </p>
             </FadeUp>
           </div>

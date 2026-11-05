@@ -43,7 +43,7 @@ const pillars = [
     icon: ChartNoAxesCombined,
     title: "Translate Risk Into Business Language",
     description:
-      "We turn cyber posture into board-ready metrics, quantified scenarios, and decision support that executives can actually act on.",
+      "Cyber, operational, technology, financial, and ESG risk each keep their measure, then combine into one enterprise risk executives can act on.",
   },
   {
     icon: Bot,
@@ -146,9 +146,9 @@ const About = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Strategic cyber risk management
+              Enterprise risk, combined
               <br />
-              <span className="text-gradient">built for executive decision-making.</span>
+              <span className="text-gradient">from every domain the business runs.</span>
             </motion.h1>
             <motion.p
               className="mx-auto max-w-3xl text-lg leading-8 text-muted-foreground"
@@ -156,11 +156,9 @@ const About = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Observeri GRC is an AI GRC platform and cybersecurity risk management software layer for leadership teams.
-              It combines governance risk and compliance software depth with cyber risk dashboard software clarity—so
-              executives see an integrated risk management software picture, not a pile of tickets. Teams evaluating an
-              enterprise GRC solution or operational risk management platform use Observeri to unify security compliance
-              management software cadence with quantified cyber exposure.
+              Observeri GRC covers enterprise risk as well as cybersecurity. Cyber, operational, technology,
+              financial, and ESG risk each keep their own measure, then combine into one enterprise risk the board
+              can act on. Compliance, audit, and third-party risk sit in the same record.
             </motion.p>
           </div>
         </div>
@@ -199,9 +197,9 @@ const About = () => {
                     continuously.
                   </p>
                   <p>
-                    Observeri GRC was shaped around that need. We bring together asset visibility, threat
-                    intelligence, predictive scoring, workflow automation, and board-ready reporting in
-                    a single operating model.
+                    Observeri GRC was shaped around that need. Cyber risk stays in view, and so do
+                    operational, technology, financial, and ESG risk. Those domains combine into one
+                    enterprise risk, with the reporting the board uses to decide.
                   </p>
                   <p>
                     The result is a GRC platform designed not just for audit preparation, but for
@@ -450,7 +448,7 @@ const About = () => {
               </div>
 
               <h2 className="text-3xl font-display font-bold md:text-5xl">
-                Bring strategic cyber risk management into the operating model.
+                Bring one combined enterprise risk into the operating model.
               </h2>
               <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">
                 Observeri GRC is built for organizations that want more than audit readiness. It is for
@@ -478,7 +476,7 @@ const About = () => {
                   <Gauge className="h-5 w-5 text-primary" />
                   <p className="mt-3 font-semibold text-foreground">Executive visibility</p>
                   <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                    Board-ready dashboards that frame cyber posture as enterprise risk.
+                    Board-ready dashboards that combine each domain into one enterprise risk.
                   </p>
                 </div>
                 <div className="rounded-2xl border border-border/30 bg-background/30 p-5">

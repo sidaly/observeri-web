@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { CyberRiskDashboard } from "@/components/CyberRiskDashboard";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import {
@@ -164,17 +165,7 @@ const CyberRiskManagement = () => {
             </SlideInLeft>
 
             <SlideInRight>
-              <motion.div
-                className="relative overflow-hidden rounded-[2rem] border-gradient bg-gradient-card p-2"
-                whileHover={{ scale: 1.01 }}
-                transition={{ duration: 0.3 }}
-              >
-                <img decoding="async"
-                  src="/predictive_risk_intelligence.webp"
-                  alt="Observeri Cyber Risk Management dashboard"
-                  className="w-full rounded-[1.75rem] object-contain"
-                />
-              </motion.div>
+              <CyberRiskDashboard />
 
               <div className="mt-6 grid grid-cols-3 gap-3">
                 {crmHero.outcomes.map((outcome, index) => (

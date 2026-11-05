@@ -2,11 +2,11 @@
   "/": {
     "keyword": "AI GRC platform",
     "title": "Observeri — AI-Powered GRC Platform | Cyber Risk Quantification",
-    "description": "Observeri turns cyber, technology, and operational risk data into real-time financial intelligence. AI GRC platform for regulated enterprises across UAE, GCC, and beyond.",
-    "h1": "AI-Powered GRC Platform for Regulated Enterprises",
+    "description": "Observeri serves enterprises, SMEs, and startups worldwide. Cyber, technology, and operational risk combine into one view across regulatory regimes.",
+    "h1": "AI-Powered GRC for Enterprises, SMEs, and Startups",
     "body": [
-      "Observeri is an AI-powered cybersecurity GRC platform and enterprise GRC solution built for regulated organisations that need more than checkbox compliance. Our governance risk and compliance software unifies cyber risk management, IT risk management software workflows, and integrated risk management into a single AI Risk Operations Center — continuously scoring every asset, predicting risk exposure 30–90 days forward, and expressing residual risk as expected annual loss your board and CFO can act on.",
-      "Unlike legacy GRC platforms, Observeri is predictive, not retrospective. Our AI GRC platform for regulated enterprises in banking, energy, healthcare, government, and ports maps 3,000+ controls to SAMA, NESA, ISO 27001, NIST CSF, DORA, MiCA, and the EU AI Act — with deployment options including SaaS, KSA sovereign cloud, and hybrid on-premises. Replace your RSA Archer, ServiceNow IRM, or MetricStream implementation with a platform that compresses audit cycles without shelf-ware."
+      "Observeri is an AI-powered cybersecurity GRC platform and enterprise GRC solution built for enterprises, SMEs, and startups worldwide that need more than checkbox compliance. Our governance risk and compliance software unifies cyber risk management, IT risk management software workflows, and integrated risk management into a single AI Risk Operations Center — continuously scoring every asset, predicting risk exposure 30–90 days forward, and expressing residual risk as expected annual loss your board and CFO can act on.",
+      "Unlike legacy GRC platforms, Observeri is predictive, not retrospective. Our AI GRC platform for enterprises, SMEs, and startups in banking, energy, healthcare, government, and ports maps 3,000+ controls to SAMA, NESA, ISO 27001, NIST CSF, DORA, MiCA, and the EU AI Act — with deployment options including SaaS, KSA sovereign cloud, and hybrid on-premises. Replace your RSA Archer, ServiceNow IRM, or MetricStream implementation with a platform that compresses audit cycles without shelf-ware."
     ],
     "faqs": [
       {
@@ -19,11 +19,27 @@
       },
       {
         "question": "Does Observeri support SAMA and NESA compliance?",
-        "answer": "Yes. Observeri maps controls to SAMA Cybersecurity Framework and NESA requirements alongside global frameworks including ISO 27001, NIST CSF, DORA, and MiCA. The platform is available in KSA sovereign cloud and hybrid deployment configurations for GCC-regulated organisations."
+        "answer": "Yes. Observeri maps controls to SAMA Cybersecurity Framework and NESA requirements alongside global frameworks including ISO 27001, NIST CSF, DORA, and MiCA. The same coverage is available to enterprises, SMEs, and startups worldwide, including KSA sovereign cloud and hybrid deployment where data residency applies."
       },
       {
         "question": "What deployment options does Observeri offer?",
-        "answer": "Observeri supports SaaS, KSA sovereign cloud, and hybrid or on-premises (OVA) deployment, making it suitable for regulated enterprises across the UAE, Saudi Arabia, and the wider GCC that have data residency or sovereignty requirements."
+        "answer": "Observeri supports SaaS, KSA sovereign cloud, and hybrid or on-premises (OVA) deployment, making it suitable for enterprises, SMEs, and startups worldwide, including organisations with data residency or sovereignty requirements."
+      },
+      {
+        "question": "How do cyber, operational, and financial risk sit together?",
+        "answer": "Each domain keeps its own measure. Cyber risk uses expected annual loss, operational risk uses capital and loss events, and financial risk uses limits and regulatory capital. Together they augment one enterprise index."
+      },
+      {
+        "question": "What happens when control effectiveness changes?",
+        "answer": "The updated rating is written back to the risk, the compliance record, and the incident the control maps to."
+      },
+      {
+        "question": "How does Observeri treat AI?",
+        "answer": "Public and private models are inventoried and assessed, with a classification aid for the EU AI Act. Prompts and file uploads can be monitored, audited, or blocked."
+      },
+      {
+        "question": "What does internal audit include?",
+        "answer": "The charter, the annual plan, the risk register, control assessment, reporting, capacity, and follow-up until the action closes."
       }
     ]
   },
@@ -51,6 +67,78 @@
       }
     ]
   },
+  "/products/enterprise-risk": {
+    "keyword": "Enterprise risk management",
+    "title": "Enterprise Risk Index, Appetite, and War Rooms | Observeri",
+    "description": "Roll every risk domain into one global index, with taxonomy, appetite, KRIs, limits, breach response, board packs, and live war rooms.",
+    "h1": "Enterprise Risk — One Index Across Every Domain",
+    "body": [
+      "Observeri Enterprise Risk lets the organisation define the taxonomy, appetite, matrix, limits, enterprise KRIs, and workflows. Every domain augments one global risk index. Each threshold carries the response designed for that breach, and a critical risk opens a real-time war room.",
+      "Cyber, financial, reputational, operational, compliance, AI, geopolitical, supply chain, and ESG and technology keep their own position. Board-ready packs take the index, the heatmap, and the patterns that cross those domains."
+    ],
+    "faqs": [
+      {
+        "question": "What is the global risk index?",
+        "answer": "The global risk index is the combined position of every risk domain. Each domain keeps its own score and direction, and those domains augment the single enterprise index."
+      },
+      {
+        "question": "What can the enterprise define?",
+        "answer": "The enterprise defines the risk taxonomy, risk appetite, risk matrix, risk limits, enterprise KRIs, and workflows. Each threshold also holds the response designed for that breach."
+      },
+      {
+        "question": "What is a war room?",
+        "answer": "A war room is a real-time view opened on a critical risk. It stays on that risk, with the domains, indicators, and actions moving it, until the risk is no longer critical."
+      }
+    ]
+  },
+  "/products/financial-risk": {
+    "keyword": "Financial risk management",
+    "title": "Financial Risk Limits and Capital Impact | Observeri",
+    "description": "Monitor capital, market, and liquidity risks against organisation-defined limits, with early warning, breach escalation, and regulatory capital impact.",
+    "h1": "Financial Risk — Limits, Breaches, and Regulatory Capital",
+    "body": [
+      "Observeri Financial Risk keeps capital, market, liquidity, and credit risks on one register. Each risk is tested against the limits the organisation defines, from within limit through early warning to breach, and the regulatory capital impact stays on that record.",
+      "A limit shows its threshold, reading, and utilisation, and it is tested on its taxonomy node and on every node above it. When a warning or a breach opens, the escalation path is already named."
+    ],
+    "faqs": [
+      {
+        "question": "Which financial risks are on the register?",
+        "answer": "The register covers capital, market, liquidity, and credit risks, scored on one taxonomy and the organisation's appetite."
+      },
+      {
+        "question": "How are risks monitored against limits?",
+        "answer": "Each limit has a threshold the organisation sets, a current reading, and a utilisation. Status moves among within limit, early warning, hard breach, and severe. A risk is tested against its own limit and every limit above it."
+      },
+      {
+        "question": "Where does regulatory capital impact appear?",
+        "answer": "The regulatory capital impact sits on the same limit as the reading. A warning or a breach does not wait for a separate capital pack to explain the consequence."
+      }
+    ]
+  },
+  "/products/operational-risk": {
+    "keyword": "Operational risk management",
+    "title": "Operational Risk Management and Capital | Observeri",
+    "description": "Run operational risk end to end: RCSA, live KRIs on each risk, loss events, operational capital, and back-testing under Pillar 1 and Pillar 2.",
+    "h1": "Operational Risk — Assess, Indicate, Quantify, and Back-Test",
+    "body": [
+      "Observeri Operational Risk runs the assessment end to end: RCSA, key risk indicators mapped to each risk, loss events, and operational capital. Quantification follows a Pillar 1 minimum-capital view and a Pillar 2 internal view, then back-tests both against the losses that occurred.",
+      "Each risk keeps its business unit, inherent and residual scores, and appetite position. A KRI breach and a new loss event show on that risk, and capital monitoring moves with them instead of waiting for the next workshop."
+    ],
+    "faqs": [
+      {
+        "question": "What does the operational risk assessment include?",
+        "answer": "The assessment records the risk, the business unit, inherent and residual scores, appetite position, and the treatment. RCSA is how the owning unit assesses the risk and its controls, and that result updates the same record."
+      },
+      {
+        "question": "How are KRIs mapped to a risk?",
+        "answer": "Each key risk indicator is attached to the operational risk it describes. When the indicator crosses a threshold, the breach is shown on that risk rather than on a separate dashboard."
+      },
+      {
+        "question": "How do Pillar 1, Pillar 2, and back-testing fit together?",
+        "answer": "Pillar 1 is the minimum operational-risk capital view. Pillar 2 is the firm's own capital view against its risk profile and appetite, and it can sit above the Pillar 1 minimum. Back-testing compares those figures with recorded loss events."
+      }
+    ]
+  },
   "/products/cyber-risk-management": {
     "keyword": "Cyber risk management software",
     "title": "Cyber Risk Management Software | AI Quantification & Predictive Scoring",
@@ -75,6 +163,146 @@
       }
     ]
   },
+  "/products/ai-governance": {
+    "keyword": "AI governance",
+    "title": "AI Governance for Public and Private Models | Observeri",
+    "description": "Inventory public and private AI models and govern each system through the seven ISO/IEC 22989:2022 life cycle stages, from inception to retirement.",
+    "h1": "AI Governance — Inventory Every Model and Run Its Life Cycle",
+    "body": [
+      "Observeri AI Governance keeps one inventory of public and private AI models and moves each system through the ISO/IEC 22989:2022 life cycle: inception, design and development, verification and validation, deployment, operation and monitoring, re-evaluation, and retirement.",
+      "Owners, purpose, data, and hosting stay on the model record. When a system keeps learning in production, continuous validation runs inside operation and monitoring. A model does not change stage without evidence, and retirement includes access removal and data disposal."
+    ],
+    "faqs": [
+      {
+        "question": "Which models belong in the AI inventory?",
+        "answer": "The inventory covers public models, including foundation models and vendor APIs, and private models, including fine-tunes and internal deployments. Each record stores purpose, owner, data, hosting, and the current life cycle stage."
+      },
+      {
+        "question": "What are the seven ISO/IEC 22989:2022 life cycle stages?",
+        "answer": "Observeri governs models through inception, design and development, verification and validation, deployment, operation and monitoring, re-evaluation, and retirement. ISO/IEC 22989:2022 also names continuous validation for systems that keep learning; that work runs inside operation and monitoring."
+      },
+      {
+        "question": "How does retirement work?",
+        "answer": "Retirement decommissions or replaces the model, removes access, and records disposal of training data, prompts, and uploaded files so a closed model cannot still be used."
+      }
+    ]
+  },
+  "/products/ai-data-monitoring": {
+    "keyword": "AI data monitoring",
+    "title": "AI Data Monitoring for Prompts and Uploads | Observeri",
+    "description": "Monitor and audit AI prompts on sanctioned tools, block sensitive prompts and file uploads, and keep protected information inside the organization.",
+    "h1": "AI Data Monitoring — See, Audit, and Block Prompts and Uploads",
+    "body": [
+      "Observeri AI Data Monitoring watches prompts and file uploads on sanctioned AI tools. Sensitive prompts are audited and blocked before they reach a model outside the organization, so secrets, personal data, and other protected information stay inside.",
+      "The audit trail records who prompted, which model was targeted, and which policy matched. Findings are stored without making a second copy of the sensitive value, and blocks are available to AI governance for review."
+    ],
+    "faqs": [
+      {
+        "question": "What does prompt monitoring cover?",
+        "answer": "Prompt monitoring covers sanctioned public and private AI tools. Each event records the user, the tool, the model, and whether a policy matched the prompt or an attached file."
+      },
+      {
+        "question": "Can prompts and file uploads be blocked?",
+        "answer": "Yes. Prompts and file uploads that contain secrets, personal data, or other sensitive content are blocked before they leave the organization. The person sees the block, and the event is kept for audit."
+      },
+      {
+        "question": "Does the audit log store the sensitive data?",
+        "answer": "The audit record stores the actor, time, destination model, and the policy that matched. It records the finding without keeping another copy of the protected value."
+      }
+    ]
+  },
+  "/products/ai-risk": {
+    "keyword": "AI risk management",
+    "title": "AI Model Risk Management for the EU AI Act | Observeri",
+    "description": "Inventory public and private AI models, run STRIDE assessments, apply suggested controls, and treat risk with automatic EU AI Act classification.",
+    "h1": "AI Risk Management — Inventory, Assess, and Treat Every Model",
+    "body": [
+      "Observeri AI Risk keeps a live inventory of public and private AI models, then runs an end-to-end assessment: STRIDE threat models, AI-suggested controls, and a recorded risk treatment. Each model is classified automatically against the EU AI Act so owners know the obligations before a model reaches production.",
+      "Security, risk, and compliance teams work from one register instead of scattered model lists. Public foundation models and vendor APIs sit beside private fine-tunes and internal deployments, with purpose, data, owners, and residual risk kept current as the estate changes."
+    ],
+    "faqs": [
+      {
+        "question": "What does the AI model inventory cover?",
+        "answer": "The inventory covers public models, such as foundation models and vendor APIs, and private models, such as fine-tunes and internal deployments. Each record stores purpose, owner, data sources, hosting, and the current EU AI Act classification."
+      },
+      {
+        "question": "How does STRIDE apply to AI models?",
+        "answer": "Observeri applies STRIDE — spoofing, tampering, repudiation, information disclosure, denial of service, and elevation of privilege — across the model, its training and prompt data, integrations, and the people who operate it."
+      },
+      {
+        "question": "How are models classified under the EU AI Act?",
+        "answer": "Observeri classifies each model from its intended purpose and use context into the EU AI Act tiers: prohibited, high-risk, limited-risk transparency obligations, or minimal risk. Classification updates when purpose or deployment changes. It supports compliance work and is not a legal determination."
+      }
+    ]
+  },
+  "/products/audit-management": {
+    "keyword": "Internal audit management",
+    "title": "Audit Management Software for Internal Audit | Observeri",
+    "description": "Cover the audit charter, engagement planning, the risk register, control assessment, reporting, resource capacity, and follow-up in one audit workspace.",
+    "h1": "Internal Audit Management Software",
+    "body": [
+      "Connect the charter, the annual plan, fieldwork, control testing, reporting, and follow-up so assurance advises the business and the action stays attached.",
+      "Observeri keeps engagements on one record from planning through reporting. Findings stay open in the follow-up tracker until the action closes, and hours and budget sit on the same plan as the work."
+    ],
+    "faqs": [
+      {
+        "question": "What is Observeri internal audit management?",
+        "answer": "It is the internal audit workspace for the charter, annual plan, engagements, audit risk register, control assessment, reporting, resource and capacity planning, and the follow-up tracker."
+      },
+      {
+        "question": "What does the audit charter cover?",
+        "answer": "The charter records the purpose of internal audit, its authority, its independence, and its scope. Engagements inherit that mandate instead of restating it in a separate document."
+      },
+      {
+        "question": "How does risk information flow into the audit plan?",
+        "answer": "The annual plan and each engagement are linked to the audit risks that justify them. When a risk changes, the engagement that addresses it stays visible on the same record."
+      },
+      {
+        "question": "How are audit hours and capacity tracked?",
+        "answer": "Resource and capacity planning shows planned hours, hours used, and budget utilization for the year and for each engagement, before the work is already overdue."
+      },
+      {
+        "question": "How does control testing work inside an engagement?",
+        "answer": "Auditors test design and operating effectiveness on the engagement, record exceptions, and rate effectiveness next to the finding, the rating, and the owner."
+      },
+      {
+        "question": "What does audit reporting include?",
+        "answer": "Reporting records each finding with a risk level and an owner, and assembles the report that management and the audit committee receive from the same engagement."
+      },
+      {
+        "question": "What happens after a finding is reported?",
+        "answer": "The finding stays on the follow-up tracker with its owner, due date, and closure evidence. Reporting does not end the engagement; the action remains open until it is closed."
+      }
+    ]
+  },
+  "/products/budget-management": {
+    "keyword": "Budget management",
+    "title": "Budget Management for Risk-Led Investment | Observeri",
+    "description": "Compare the cost of impact with the cost of mitigation so every investment dollar is driven by risk and compliance, and the board can decide what to fund.",
+    "h1": "Budget Management — Compare Cost of Impact with Cost of Mitigation",
+    "body": [
+      "Every dollar of investment is driven by a risk or a compliance obligation. The board sees the cost of impact beside the cost of mitigation, then funds, defers, or accepts on that comparison.",
+      "The cost of impact is the loss, or the exposure from a missed obligation, if nothing is spent. The cost of mitigation is what the control, project, or programme costs. The decision stays on the same record as the residual impact."
+    ],
+    "faqs": [
+      {
+        "question": "What drives an investment decision?",
+        "answer": "Each dollar is attached to a risk or a compliance obligation. The board compares the cost of impact with the cost of mitigation before it funds, defers, or accepts the investment."
+      },
+      {
+        "question": "What is the cost of impact?",
+        "answer": "The cost of impact is the expected loss, or the exposure from a missed compliance obligation, if the investment is not made."
+      },
+      {
+        "question": "What is the cost of mitigation?",
+        "answer": "The cost of mitigation is what the control, project, or programme costs to reduce that impact."
+      },
+      {
+        "question": "What does the board record?",
+        "answer": "The board records fund, defer, or accept. When the dollar is not spent, the residual impact stays on the same record as the decision."
+      }
+    ]
+  },
   "/products/security-governance": {
     "keyword": "Security governance platform",
     "title": "Security Governance Platform | ISO 27001, NIST CSF & Control Mapping",
@@ -82,7 +310,7 @@
     "h1": "Security Governance Platform — Govern Security with Evidence, Not Estimates",
     "body": [
       "Observeri Security Governance unifies KRI/KPI monitoring, policy management, AI budgeting, change management, and dedicated project management — giving boards and CISOs one workspace to steer the security programme with defensible evidence.",
-      "As a cybersecurity governance software platform, Observeri pre-maps 3,000+ controls to ISO 27001, NIST CSF, SAMA, NESA, SOC 2, and other frameworks, with automated control assessment that tests design and operating effectiveness continuously. GRC control mapping is automated — eliminating the manual spreadsheet work that slows down traditional governance cycles. Security governance for regulated industries in the UAE and GCC benefits from regional framework coverage alongside global standards."
+      "As a cybersecurity governance software platform, Observeri pre-maps 3,000+ controls to ISO 27001, NIST CSF, SAMA, NESA, SOC 2, and other frameworks, with automated control assessment that tests design and operating effectiveness continuously. GRC control mapping is automated — eliminating the manual spreadsheet work that slows down traditional governance cycles. Observeri serves enterprises, SMEs, and startups worldwide, and covers the regulatory regimes they work under, from regional standards to global ones."
     ],
     "faqs": [
       {
@@ -105,8 +333,8 @@
     "description": "Observeri EASM continuously discovers, scans, and prioritises every public-facing asset — domains, cloud services, shadow IT, dark-web signals — so security teams close exposure before attackers find it.",
     "h1": "External Attack Surface Management — Know Every Edge of Your Exposure Before Attackers Do",
     "body": [
-      "Observeri EASM (Observer Eye) continuously discovers, scans, and prioritises every public-facing asset across your digital footprint — domains, subdomains, cloud services, open ports, shadow IT, and dark-web signals — so GRC and security teams close exposure with evidence, not guesswork.",
-      "For most enterprises, the known perimeter is a myth. Shadow IT, dormant subdomains, and unsanctioned SaaS expand faster than manual inventories can track. Observeri EASM integrated with GRC platform workflows means every discovered asset feeds directly into the same risk register, control mapping, and remediation workflow — unlike standalone EASM tools that exist in a separate scanner silo. Dark web monitoring enterprise coverage extends visibility beyond the perimeter, with exploit-ranked vulnerability management ensuring remediation effort follows real-world exploitability rather than CVSS scores alone."
+      "Observeri EASM discovers internet-facing hosts and the vulnerabilities on them, then runs penetration testing, shadow IT review, and attack simulation. It also finds external APIs and third parties, monitors the dark web and public social channels, reviews blockchain assets, and uses an AI ethical hacker to show which of your hosts are breachable.",
+      "For most enterprises, the known perimeter is a myth. Shadow IT, dormant subdomains, and unsanctioned SaaS expand faster than manual inventories can track. Observeri EASM integrated with GRC platform workflows means every discovered asset feeds directly into the same risk register, control mapping, and remediation workflow — unlike standalone EASM tools that exist in a separate scanner silo. Dark web monitoring, social mentions, external APIs, third parties, and blockchain findings sit on that same record."
     ],
     "faqs": [
       {
@@ -119,7 +347,15 @@
       },
       {
         "question": "Does Observeri EASM include dark web monitoring?",
-        "answer": "Yes. Observeri EASM includes dark web monitoring enterprise coverage, surfacing mentions of your organisation, leaked credentials, and data exposure signals from dark web sources alongside internet-facing asset discovery."
+        "answer": "Yes. Dark web monitoring surfaces mentions of the organisation, its domains, and exposed data. The finding records the signal. It does not keep a second copy of the secret."
+      },
+      {
+        "question": "What does the AI ethical hacker show?",
+        "answer": "It tests the organisation's own internet-facing hosts and records which ones it can show are breachable. The result is a finding on the host for the team to close. The demonstration does not publish the method."
+      },
+      {
+        "question": "What else does external discovery cover?",
+        "answer": "Besides hosts and vulnerabilities, discovery covers external APIs, third parties on the footprint, public social mentions, and blockchain assets linked to those hosts."
       }
     ]
   },
@@ -130,7 +366,7 @@
     "h1": "Information Asset Management — Every Asset Scored, Every Control Measured",
     "body": [
       "Observeri Information Asset Management ingests assets through API, ETL, or manual entry — then pulls live AI risk scores and control effectiveness data from the AI Risk Operations Center. Teams explore a unified exposure graph, drill into CIA triad impact, and prioritise remediation on the assets that carry the greatest business risk.",
-      "As an information asset management software platform built for regulated enterprises, Observeri maintains a live information asset register that feeds directly into ISO 27001 control mapping, risk assessments, and audit workflows. Asset-based risk quantification means every remediation decision is backed by financial exposure data — not subjective criticality ratings. Technology asset classification UAE and GCC enterprises need is built in, with deployment-ready integrations for common asset sources including cloud platforms, CMDB tools, and vulnerability scanners."
+      "As an information asset management software platform built for enterprises, SMEs, and startups worldwide, Observeri maintains a live information asset register that feeds directly into ISO 27001 control mapping, risk assessments, and audit workflows. Asset-based risk quantification means every remediation decision is backed by financial exposure data — not subjective criticality ratings. Technology asset classification for enterprises, SMEs, and startups worldwide is built in, with deployment-ready integrations for common asset sources including cloud platforms, CMDB tools, and vulnerability scanners."
     ],
     "faqs": [
       {
@@ -150,11 +386,11 @@
   "/products/data-privacy-protection": {
     "keyword": "Data privacy management software",
     "title": "Data Privacy & AI Data Loss Prevention | AI DLP Platform for Enterprises",
-    "description": "Observeri detects, classifies, and scores PII and sensitive data exposure across every connected source. AI DLP platform with real-time data leakage detection for regulated enterprises in UAE and GCC.",
+    "description": "Observeri detects, classifies, and scores sensitive data across every connected source. AI data loss prevention for enterprises, SMEs, and startups worldwide.",
     "h1": "Data Privacy & Protection — Find Sensitive Data. Classify It. Score the Exposure.",
     "body": [
       "Observeri Data Privacy & Protection delivers PII detection and classification, sensitive data discovery, secret and credential scanning, NER-based identification, data exposure scoring, and unified classification across every connected source — so privacy teams know what data exists, where it lives, and how exposed it is.",
-      "As an AI data loss prevention platform, Observeri monitors AI model data governance in real time, detecting data leakage from open and self-hosted AI models before it becomes a breach. For enterprises operating under UAE PDPL, Saudi PDPL, EU AI Act, ISO 42001, and NIST AI RMF requirements, Observeri's AI DLP for enterprises combines traditional data privacy management with AI-specific governance — closing the gap that legacy DLP tools leave open when employees use LLMs with sensitive data."
+      "As an AI data loss prevention platform, Observeri monitors AI model data governance in real time, detecting data leakage from open and self-hosted AI models before it becomes a breach. For enterprises, SMEs, and startups working under UAE PDPL, Saudi PDPL, the EU AI Act, ISO 42001, NIST AI RMF, and the other regimes they follow, Observeri's AI DLP combines traditional data privacy management with AI-specific governance — closing the gap that legacy DLP tools leave open when employees use LLMs with sensitive data."
     ],
     "faqs": [
       {
@@ -168,6 +404,102 @@
       {
         "question": "How does Observeri detect AI model data leakage?",
         "answer": "Observeri monitors data flows to and from AI models in real time using NER (Named Entity Recognition) and classification models that identify sensitive data types — flagging and optionally blocking interactions that risk exposing PII, credentials, or confidential business data."
+      }
+    ]
+  },
+  "/products/data-loss-prevention": {
+    "keyword": "Data loss prevention",
+    "title": "Data Loss Prevention and Shadow Channels | Observeri",
+    "description": "Observeri DLP approves email, cloud drive, and AI tools, catches shadow mediums, and turns a blocked or audited violation into a risk incident.",
+    "h1": "Data Loss Prevention — Approved Channels, Caught Shadow Mediums",
+    "body": [
+      "Observeri Data Loss Prevention starts with the channels the organisation approves: email service providers, cloud drive providers, and AI models. When someone uses a medium outside that list, the system catches the shadow use.",
+      "Teams define the infotypes that matter and the policies that act on them. A policy can block, audit keywords, or audit files, and it sends the violation. From that violation, the team opens a risk incident."
+    ],
+    "faqs": [
+      {
+        "question": "Which channels does the organisation approve first?",
+        "answer": "The organisation lists the email service providers, cloud drive providers, and AI models that are allowed. Policies and shadow detection are measured against that list."
+      },
+      {
+        "question": "What happens when someone uses a shadow medium?",
+        "answer": "A shadow medium is an email service, cloud drive, or AI model outside the approved list. When someone uses it, the system catches that use, including a tool that had gone dormant."
+      },
+      {
+        "question": "How does a violation become a risk incident?",
+        "answer": "Infotypes and policies decide whether a match is blocked, audited, or warned. The violation is sent with the tool, the time, and the outcome, and the team can convert that violation into a risk incident."
+      }
+    ]
+  },
+  "/products/centralised-controls-management": {
+    "keyword": "Centralised controls management",
+    "title": "Centralised Controls Management and Testing | Observeri",
+    "description": "Observeri keeps 3,000+ controls, approves applicability, tests with evidence, rates effectiveness, and updates mapped risk, compliance, and incidents.",
+    "h1": "Centralised Controls — Library, Testing, and Live Effectiveness",
+    "body": [
+      "Observeri Centralised Controls Management holds a library of more than 3,000 controls. The organisation approves which controls apply, and users test those controls through a workflow, upload the evidence, and rate control effectiveness.",
+      "When effectiveness is updated, every risk, compliance item, and incident the control maps to updates with it. The mapped records read the current rating instead of a copy from the last review."
+    ],
+    "faqs": [
+      {
+        "question": "How does the organisation choose which controls apply?",
+        "answer": "The controls library is an inventory of more than 3,000 controls. The organisation approves applicability on each control, and only an applicable control enters the testing workflow."
+      },
+      {
+        "question": "How is a control tested and rated?",
+        "answer": "Users perform the test through a workflow, upload the evidence to that test, and rate the control effectiveness. The rating becomes the current score on the control."
+      },
+      {
+        "question": "What updates when control effectiveness changes?",
+        "answer": "Every risk, compliance item, and incident the control maps to updates automatically with the new effectiveness. Those records do not keep the previous rating."
+      }
+    ]
+  },
+  "/products/automated-compliance": {
+    "keyword": "Automated compliance",
+    "title": "Automated Compliance for On-Prem and Cloud | Observeri",
+    "description": "Observeri on-prem agent for Windows and Linux, virtual connector for Azure, GCP, AWS, and Oracle Cloud, scheduled checks, and a real-time risk view.",
+    "h1": "Automated Compliance — On-Prem, Cloud, and a Live Risk View",
+    "body": [
+      "Observeri Automated Compliance runs from an on-prem agent on Windows and Linux, and from a virtual connector on Azure, GCP, AWS, and Oracle Cloud. The organisation schedules the assessment so posture is checked on a cadence.",
+      "Each run updates the posture of the on-prem and cloud stack. The result is a real-time risk view of the environments the organisation actually runs."
+    ],
+    "faqs": [
+      {
+        "question": "Where does the on-prem agent run?",
+        "answer": "The on-prem agent runs automated compliance on Windows and Linux environments inside the organisation's own network."
+      },
+      {
+        "question": "Which clouds does the virtual connector cover?",
+        "answer": "The virtual connector runs compliance on Microsoft Azure, Google Cloud, Amazon Web Services, and Oracle Cloud, on the same assessment as the on-prem agent."
+      },
+      {
+        "question": "How does the organisation get a real-time risk view?",
+        "answer": "Users schedule the assessment for the on-prem stack, the cloud stack, or both. As each check finishes, the risk view of that posture updates."
+      }
+    ]
+  },
+  "/products/business-continuity-management": {
+    "keyword": "Business continuity management",
+    "title": "Business Continuity, BIA, and Crisis Rooms | Observeri",
+    "description": "Observeri keeps a BIA register, ties DR and BCP plans to it, runs a crisis war room for live decisions, and simulates the whole BCP and DR exercise.",
+    "h1": "Business Continuity — BIA, Plans, War Room, and Exercises",
+    "body": [
+      "Observeri Business Continuity Management is where the organisation creates and maintains the business impact analysis register, and keeps disaster recovery and business continuity plans tied to that register.",
+      "Crisis management runs in a war room, with actions and decisions taken in real time. Teams conduct BCP and DR exercises, and they can simulate the whole exercise from the first impact through the last decision."
+    ],
+    "faqs": [
+      {
+        "question": "What does the BIA register hold?",
+        "answer": "The register is the business impact analysis: the processes, what they depend on, and the impact if they stop. Users create it and keep it current. DR and BCP plans are tied to the entries in it."
+      },
+      {
+        "question": "How does the war room work in a crisis?",
+        "answer": "Crisis management opens a war room on the event. Actions and decisions are taken there in real time, and they stay on the record of that crisis."
+      },
+      {
+        "question": "Can an exercise simulate the whole event?",
+        "answer": "Yes. Teams conduct BCP and DR exercises against the plans, and they can simulate the whole exercise, from the impact through the plan, the war room, and the decisions."
       }
     ]
   },
@@ -238,7 +570,7 @@
         "answer": "EASM (External Attack Surface Management) focuses on discovering and monitoring internet-facing assets. CTEM is broader — it encompasses the full exposure reduction programme, including internal assets, vulnerability validation, and the organisational processes that turn findings into fixed risk. Observeri integrates both."
       },
       {
-        "question": "Why is exposure management important for regulated enterprises?",
+        "question": "Why is exposure management important?",
         "answer": "Regulators increasingly expect organisations to demonstrate continuous, evidence-based risk reduction — not just annual assessments. A CTEM platform provides the structured programme, audit trail, and quantified exposure metrics needed to satisfy SAMA, NESA, DORA, and ISO 27001 requirements."
       }
     ]
@@ -250,7 +582,7 @@
     "h1": "Compliance Management — From Regulation to Evidence. Compliance That Runs Itself.",
     "body": [
       "Observeri Compliance Management lets teams maintain regulations and standards, auto-build compliance registers from uploaded documentation, run AI self-assessments with confidence-scored results, track regulatory submissions, manage incidents and breaches, and compare policies against requirements with AI remediation guidance.",
-      "As a multi-framework compliance software platform, Observeri maps controls and evidence across SAMA, NESA, ISO 27001, NIST CSF, DORA, MiCA, EU AI Act, SOC 2, and regional frameworks simultaneously — eliminating the duplication of maintaining separate compliance registers per standard. For GCC enterprises replacing spreadsheet compliance tracking, Observeri's automated regulatory compliance platform compresses compliance cycles from weeks to days, with compliance drift monitoring that alerts teams to control gaps before the next audit."
+      "As a multi-framework compliance software platform, Observeri maps controls and evidence across SAMA, NESA, ISO 27001, NIST CSF, DORA, MiCA, EU AI Act, SOC 2, and regional frameworks simultaneously — eliminating the duplication of maintaining separate compliance registers per standard. For enterprises, SMEs, and startups worldwide replacing spreadsheet compliance tracking, Observeri's automated regulatory compliance platform compresses compliance cycles from weeks to days, with compliance drift monitoring that alerts teams to control gaps before the next audit. It covers the regulatory regimes they work under."
     ],
     "faqs": [
       {

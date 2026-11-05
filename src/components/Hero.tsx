@@ -6,7 +6,7 @@ import logoIcon from "@/assets/grc-sphere-icon.webp";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-white pt-24 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-radial" />
       <motion.div 
@@ -66,7 +66,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-          >{auditSeo["/"].body[0]}</motion.p>
+          >Cyber, operational, and financial risk, with audit, AI, and data, in one system for the board and the regulator.</motion.p>
 
           {/* CTA Buttons */}
           <motion.div 

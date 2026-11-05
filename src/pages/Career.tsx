@@ -336,16 +336,6 @@ const Career = () => {
                     </motion.div>
                   ))}
                 </div>
-
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Button variant="hero" className="group">
-                    View Culture Guide
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </motion.div>
               </div>
             </SlideInRight>
           </div>
@@ -387,22 +377,16 @@ const Career = () => {
                 </p>
               </FadeUp>
 
-              <motion.div 
-                className="flex flex-col sm:flex-row items-center justify-center gap-4"
+              <motion.div
+                className="flex items-center justify-center"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
               >
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button variant="hero" size="lg" className="group">
-                    Apply Now
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </motion.div>
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button variant="outline" size="lg">
-                    Contact Recruiting
+                  <Button asChild variant="outline" size="lg">
+                    <a href="mailto:connect@observeri.com">Contact Recruiting</a>
                   </Button>
                 </motion.div>
               </motion.div>

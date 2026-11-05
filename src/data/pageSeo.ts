@@ -39,14 +39,15 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
     schemas: breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Terms of Service" }]),
   },
   "/team": {
-    title: "Our Team & Founder | Observeri Technologies",
+    title: "Observeri Team | Built by Risk and Compliance SMEs",
     schemas: breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Team", item: "/team" }]),
-    description: "Meet Observeri Technologies founder Ali Naqvi. Founded in 2025 in Dubai, UAE, Observeri builds AI-powered governance, risk, and compliance software.",
+    description:
+      "The Observeri platform was built by risk and compliance specialists with 50+ years combined. Meet Chris Tout, Syed Ali Naqvi, and Sarah Lawrence.",
   },
   "/about": {
-    title: "About Observeri | AI-Powered Cybersecurity GRC Company",
+    title: "About Observeri | One Combined Enterprise Risk View",
     description:
-      "Observeri builds AI-powered cybersecurity GRC software that unifies risk, compliance, and security operations for regulated enterprises.",
+      "Observeri GRC covers enterprise risk as well as cybersecurity. Cyber, operational, technology, financial, and ESG risk combine into one enterprise risk.",
     keywords: "Observeri Technologies, about Observeri, cybersecurity GRC company, UAE GRC platform, AI risk management",
     schemas: breadcrumbSchema([{ name: "Home", item: "/" }, { name: "About" }]),
   },
@@ -97,6 +98,60 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
       breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Products", item: "/features" }, { name: "Third Party Risk" }]),
     ],
   },
+  "/products/enterprise-risk": {
+    title: "Enterprise Risk Index, Appetite, and War Rooms | Observeri",
+    description:
+      "Roll every risk domain into one global index, with taxonomy, appetite, KRIs, limits, breach response, board packs, and live war rooms.",
+    keywords:
+      "enterprise risk management, global risk index, risk taxonomy, risk appetite, enterprise KRI, risk matrix, risk limits, board risk pack, risk war room",
+    ogImage: "/enterprise-risk.webp",
+    schemas: [
+      productSchema(
+        "Observeri Enterprise Risk",
+        "Roll every risk domain into one global index, with taxonomy, appetite, KRIs, limits, breach response, board packs, and live war rooms.",
+        "/enterprise-risk.webp",
+        "/products/enterprise-risk",
+        "SecurityApplication",
+      ),
+      breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Products", item: "/features" }, { name: "Enterprise Risk" }]),
+    ],
+  },
+  "/products/financial-risk": {
+    title: "Financial Risk Limits and Capital Impact | Observeri",
+    description:
+      "Monitor capital, market, and liquidity risks against organisation-defined limits, with early warning, breach escalation, and regulatory capital impact.",
+    keywords:
+      "financial risk management, capital risk, market risk, liquidity risk, risk limits, regulatory capital impact, limit breach escalation",
+    ogImage: "/financial-risk.webp",
+    schemas: [
+      productSchema(
+        "Observeri Financial Risk",
+        "Monitor capital, market, and liquidity risks against organisation-defined limits, with early warning, breach escalation, and regulatory capital impact.",
+        "/financial-risk.webp",
+        "/products/financial-risk",
+        "SecurityApplication",
+      ),
+      breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Products", item: "/features" }, { name: "Financial Risk" }]),
+    ],
+  },
+  "/products/operational-risk": {
+    title: "Operational Risk Management and Capital | Observeri",
+    description:
+      "Run operational risk end to end: RCSA, live KRIs on each risk, loss events, operational capital, and back-testing under Pillar 1 and Pillar 2.",
+    keywords:
+      "operational risk management, RCSA, key risk indicators, operational risk capital, Pillar 1, Pillar 2, operational loss events, back-testing",
+    ogImage: "/operational-risk.webp",
+    schemas: [
+      productSchema(
+        "Observeri Operational Risk",
+        "Run operational risk end to end: RCSA, live KRIs on each risk, loss events, operational capital, and back-testing under Pillar 1 and Pillar 2.",
+        "/operational-risk.webp",
+        "/products/operational-risk",
+        "SecurityApplication",
+      ),
+      breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Products", item: "/features" }, { name: "Operational Risk" }]),
+    ],
+  },
   "/products/cyber-risk-management": {
     title: "Cyber Risk Management Software | FAIR Scoring | Observeri",
     description:
@@ -113,6 +168,78 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
         "SecurityApplication",
       ),
       breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Products", item: "/features" }, { name: "Cyber Risk Management" }]),
+    ],
+  },
+  "/products/ai-governance": {
+    title: "AI Model Governance and ISO 22989 Lifecycle | Observeri",
+    description:
+      "Inventory public and private AI models and govern each system through the seven ISO/IEC 22989:2022 life cycle stages, from inception to retirement.",
+    keywords:
+      "AI governance, AI model inventory, public and private AI models, ISO/IEC 22989 life cycle, AI lifecycle management, AI model retirement",
+    ogImage: "/ai-risk-trust-attestation.webp",
+    schemas: [
+      productSchema(
+        "Observeri AI Governance",
+        "Inventory public and private AI models and govern each system through the seven ISO/IEC 22989:2022 life cycle stages, from inception to retirement.",
+        "/ai-risk-trust-attestation.webp",
+        "/products/ai-governance",
+        "SecurityApplication",
+      ),
+      breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Products", item: "/features" }, { name: "AI Governance" }]),
+    ],
+  },
+  "/products/ai-data-monitoring": {
+    title: "AI Data Monitoring for Prompts and Uploads | Observeri",
+    description:
+      "Monitor and audit AI prompts on sanctioned tools, block sensitive prompts and file uploads, and keep protected information inside the organization.",
+    keywords:
+      "AI data monitoring, prompt monitoring, prompt audit, block AI prompts, AI file upload control, AI data loss prevention",
+    ogImage: "/ai-data-monitoring.webp",
+    schemas: [
+      productSchema(
+        "Observeri AI Data Monitoring",
+        "Monitor and audit AI prompts on sanctioned tools, block sensitive prompts and file uploads, and keep protected information inside the organization.",
+        "/ai-data-monitoring.webp",
+        "/products/ai-data-monitoring",
+        "SecurityApplication",
+      ),
+      breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Products", item: "/features" }, { name: "AI Data Monitoring" }]),
+    ],
+  },
+  "/products/ai-risk": {
+    title: "AI Model Risk Management for the EU AI Act | Observeri",
+    description:
+      "Inventory public and private AI models, run STRIDE assessments, apply suggested controls, and treat risk with automatic EU AI Act classification.",
+    keywords:
+      "AI risk management, EU AI Act classification, AI model inventory, STRIDE threat model, AI suggested controls, AI risk treatment, public and private AI models",
+    ogImage: "/ai-risk-dashboard.webp",
+    schemas: [
+      productSchema(
+        "Observeri AI Risk",
+        "Inventory public and private AI models, run STRIDE assessments, apply suggested controls, and treat risk with automatic EU AI Act classification.",
+        "/ai-risk-dashboard.webp",
+        "/products/ai-risk",
+        "SecurityApplication",
+      ),
+      breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Products", item: "/features" }, { name: "AI Risk" }]),
+    ],
+  },
+  "/products/audit-management": {
+    title: "Audit Management Software for Internal Audit | Observeri",
+    description:
+      "Cover the audit charter, engagement planning, the risk register, control assessment, reporting, resource capacity, and follow-up in one audit workspace.",
+    keywords:
+      "internal audit management, audit charter, audit planning, audit engagement, audit risk register, audit controls assessment, audit reporting, audit capacity planning, audit follow-up",
+    ogImage: "/audit-management.webp",
+    schemas: [
+      productSchema(
+        "Observeri Audit Management",
+        "Cover the audit charter, engagement planning, the risk register, control assessment, reporting, resource capacity, and follow-up in one audit workspace.",
+        "/audit-management.webp",
+        "/products/audit-management",
+        "SecurityApplication",
+      ),
+      breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Products", item: "/features" }, { name: "Audit Management" }]),
     ],
   },
   "/products/vulnerability-operations": {
@@ -167,6 +294,24 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
         "SecurityApplication",
       ),
       breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Products", item: "/features" }, { name: "Security Governance" }]),
+    ],
+  },
+  "/products/budget-management": {
+    title: "Budget Management for Risk-Led Investment | Observeri",
+    description:
+      "Compare the cost of impact with the cost of mitigation so every investment dollar is driven by risk and compliance, and the board can decide what to fund.",
+    keywords:
+      "budget management, risk-led investment, cost of impact, cost of mitigation, board investment decision, compliance budget",
+    ogImage: "/budget-management.webp",
+    schemas: [
+      productSchema(
+        "Observeri Budget Management",
+        "Compare the cost of impact with the cost of mitigation so every investment dollar is driven by risk and compliance, and the board can decide what to fund.",
+        "/budget-management.webp",
+        "/products/budget-management",
+        "SecurityApplication",
+      ),
+      breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Products", item: "/features" }, { name: "Budget Management" }]),
     ],
   },
   "/products/exposure-management": {
@@ -265,16 +410,88 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
       "Observeri Data Privacy & Protection detects PII, discovers sensitive data and secrets, and scores exposure with NER-based classification.",
     keywords:
       "data privacy software, PII detection, sensitive data discovery, secret scanning, credential scanning, NER data identification, data exposure scoring, data classification, GDPR data discovery, PDPL compliance",
-    ogImage: "/data_privacy_protection.webp",
+    ogImage: "/data-privacy-dashboard.webp",
     schemas: [
       productSchema(
         "Observeri Data Privacy & Protection",
         "Observeri Data Privacy & Protection detects PII, discovers sensitive data and secrets, and scores exposure with NER-based classification.",
-        "/data_privacy_protection.webp",
+        "/data-privacy-dashboard.webp",
         "/products/data-privacy-protection",
         "SecurityApplication",
       ),
       breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Products", item: "/features" }, { name: "Data Privacy & Protection" }]),
+    ],
+  },
+  "/products/data-loss-prevention": {
+    title: "Data Loss Prevention and Shadow Channels | Observeri",
+    description:
+      "Observeri DLP approves email, cloud drive, and AI tools, catches shadow mediums, and turns a blocked or audited violation into a risk incident.",
+    keywords:
+      "data loss prevention, shadow mediums, approved email providers, cloud drive DLP, AI model controls, infotype policies, violation to risk incident",
+    ogImage: "/data-loss-prevention.webp",
+    schemas: [
+      productSchema(
+        "Observeri Data Loss Prevention",
+        "Observeri DLP approves email, cloud drive, and AI tools, catches shadow mediums, and turns a blocked or audited violation into a risk incident.",
+        "/data-loss-prevention.webp",
+        "/products/data-loss-prevention",
+        "SecurityApplication",
+      ),
+      breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Products", item: "/features" }, { name: "Data Loss Prevention" }]),
+    ],
+  },
+  "/products/centralised-controls-management": {
+    title: "Centralised Controls Management and Testing | Observeri",
+    description:
+      "Observeri keeps 3,000+ controls, approves applicability, tests with evidence, rates effectiveness, and updates mapped risk, compliance, and incidents.",
+    keywords:
+      "centralised controls management, control library, control applicability, control testing workflow, control evidence, control effectiveness, mapped risk compliance incidents",
+    ogImage: "/centralised-controls.webp",
+    schemas: [
+      productSchema(
+        "Observeri Centralised Controls Management",
+        "Observeri keeps 3,000+ controls, approves applicability, tests with evidence, rates effectiveness, and updates mapped risk, compliance, and incidents.",
+        "/centralised-controls.webp",
+        "/products/centralised-controls-management",
+        "SecurityApplication",
+      ),
+      breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Products", item: "/features" }, { name: "Centralised Controls Management" }]),
+    ],
+  },
+  "/products/automated-compliance": {
+    title: "Automated Compliance for On-Prem and Cloud | Observeri",
+    description:
+      "Observeri on-prem agent for Windows and Linux, virtual connector for Azure, GCP, AWS, and Oracle Cloud, scheduled checks, and a real-time risk view.",
+    keywords:
+      "automated compliance, on-prem compliance agent, Windows Linux compliance, virtual connector, Azure GCP AWS Oracle Cloud, posture management, real-time risk view",
+    ogImage: "/automated-compliance.webp",
+    schemas: [
+      productSchema(
+        "Observeri Automated Compliance",
+        "Observeri on-prem agent for Windows and Linux, virtual connector for Azure, GCP, AWS, and Oracle Cloud, scheduled checks, and a real-time risk view.",
+        "/automated-compliance.webp",
+        "/products/automated-compliance",
+        "SecurityApplication",
+      ),
+      breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Products", item: "/features" }, { name: "Automated Compliance" }]),
+    ],
+  },
+  "/products/business-continuity-management": {
+    title: "Business Continuity, BIA, and Crisis Rooms | Observeri",
+    description:
+      "Observeri keeps a BIA register, ties DR and BCP plans to it, runs a crisis war room for live decisions, and simulates the whole BCP and DR exercise.",
+    keywords:
+      "business continuity management, BIA register, disaster recovery plan, BCP plan, crisis management, war room, BCP exercise, DR exercise simulation",
+    ogImage: "/business-continuity.webp",
+    schemas: [
+      productSchema(
+        "Observeri Business Continuity Management",
+        "Observeri keeps a BIA register, ties DR and BCP plans to it, runs a crisis war room for live decisions, and simulates the whole BCP and DR exercise.",
+        "/business-continuity.webp",
+        "/products/business-continuity-management",
+        "SecurityApplication",
+      ),
+      breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Products", item: "/features" }, { name: "Business Continuity Management" }]),
     ],
   },
   "/consultancy-service": {
@@ -292,7 +509,7 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
     schemas: breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Partners" }]),
   },
   "/solutions": {
-    title: "Industry GRC Solutions | Observeri for Regulated Sectors",
+    title: "Industry GRC Solutions | Enterprises, SMEs, and Startups",
     description:
       "Industry-specific GRC solutions for banking, fintech, healthcare, government, energy, and technology—tailored compliance, risk, and security workflows.",
     keywords: "industry GRC solutions, banking GRC, fintech compliance, healthcare GRC, energy cybersecurity",

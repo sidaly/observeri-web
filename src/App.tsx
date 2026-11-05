@@ -21,13 +21,25 @@ const Blogs = lazy(() => import("./pages/Blogs"));
 const BlogPost = lazy(() => import("./pages/BlogPost"));
 const ThirdPartyRisk = lazy(() => import("./pages/ThirdPartyRisk"));
 const CyberRiskManagement = lazy(() => import("./pages/CyberRiskManagement"));
+const OperationalRisk = lazy(() => import("./pages/OperationalRisk"));
+const FinancialRisk = lazy(() => import("./pages/FinancialRisk"));
+const EnterpriseRisk = lazy(() => import("./pages/EnterpriseRisk"));
+const AiGovernance = lazy(() => import("./pages/AiGovernance"));
+const AiRisk = lazy(() => import("./pages/AiRisk"));
+const AiDataMonitoring = lazy(() => import("./pages/AiDataMonitoring"));
 const VulnerabilityOperations = lazy(() => import("./pages/VulnerabilityOperations"));
 const AiRiskOperationsCenter = lazy(() => import("./pages/AiRiskOperationsCenter"));
 const SecurityGovernance = lazy(() => import("./pages/SecurityGovernance"));
+const BudgetManagement = lazy(() => import("./pages/BudgetManagement"));
 const ExposureManagement = lazy(() => import("./pages/ExposureManagement"));
 const ExternalAttackSurfaceManagement = lazy(() => import("./pages/ExternalAttackSurfaceManagement"));
 const DataPrivacyProtection = lazy(() => import("./pages/DataPrivacyProtection"));
+const DataLossPrevention = lazy(() => import("./pages/DataLossPrevention"));
 const ComplianceManagement = lazy(() => import("./pages/ComplianceManagement"));
+const CentralisedControls = lazy(() => import("./pages/CentralisedControls"));
+const AutomatedCompliance = lazy(() => import("./pages/AutomatedCompliance"));
+const BusinessContinuity = lazy(() => import("./pages/BusinessContinuity"));
+const AuditManagement = lazy(() => import("./pages/AuditManagement"));
 const InformationAssetManagement = lazy(() => import("./pages/InformationAssetManagement"));
 const HumanRiskManagement = lazy(() => import("./pages/HumanRiskManagement"));
 const AwsMarketplaceRegister = lazy(() => import("./pages/AwsMarketplaceRegister"));
@@ -37,6 +49,7 @@ const AwsMarketplaceLogin = lazy(() => import("./pages/AwsMarketplaceLogin"));
 const AwsMarketplaceAdmin = lazy(() => import("./pages/AwsMarketplaceAdmin"));
 const AwsMarketplaceSubscribe = lazy(() => import("./pages/AwsMarketplaceSubscribe"));
 import { PageSeo } from "./components/PageSeo";
+import { SiteChat } from "./components/SiteChat";
 
 const Legal = lazy(() => import("./pages/Legal"));
 const Team = lazy(() => import("./pages/Team"));
@@ -65,15 +78,27 @@ const App = () => (
           <Route path="/features" element={<FeaturesPage />} />
           <Route path="/products/third-party-risk" element={<ThirdPartyRisk />} />
           <Route path="/products/cyber-risk-management" element={<CyberRiskManagement />} />
+          <Route path="/products/operational-risk" element={<OperationalRisk />} />
+          <Route path="/products/financial-risk" element={<FinancialRisk />} />
+          <Route path="/products/enterprise-risk" element={<EnterpriseRisk />} />
+          <Route path="/products/ai-governance" element={<AiGovernance />} />
+          <Route path="/products/ai-risk" element={<AiRisk />} />
+          <Route path="/products/ai-data-monitoring" element={<AiDataMonitoring />} />
           <Route path="/products/vulnerability-operations" element={<VulnerabilityOperations />} />
           <Route path="/products/ai-risk-operations-center" element={<AiRiskOperationsCenter />} />
           <Route path="/products/security-governance" element={<SecurityGovernance />} />
+          <Route path="/products/budget-management" element={<BudgetManagement />} />
           <Route path="/products/exposure-management" element={<ExposureManagement />} />
           <Route path="/products/external-attack-surface-management" element={<ExternalAttackSurfaceManagement />} />
           <Route path="/products/compliance-management" element={<ComplianceManagement />} />
+          <Route path="/products/centralised-controls-management" element={<CentralisedControls />} />
+          <Route path="/products/automated-compliance" element={<AutomatedCompliance />} />
+          <Route path="/products/business-continuity-management" element={<BusinessContinuity />} />
+          <Route path="/products/audit-management" element={<AuditManagement />} />
           <Route path="/products/information-asset-management" element={<InformationAssetManagement />} />
           <Route path="/products/human-risk-management" element={<HumanRiskManagement />} />
           <Route path="/products/data-privacy-protection" element={<DataPrivacyProtection />} />
+          <Route path="/products/data-loss-prevention" element={<DataLossPrevention />} />
           <Route path="/consultancy-service" element={<ConsultancyService />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/solutions" element={<Solutions />} />
@@ -90,6 +115,7 @@ const App = () => (
         </Suspense>
         <ConsentAnalytics />
         <LinkedInInsight />
+        <SiteChat />
         </CookieConsentProvider>
       </BrowserRouter>
     </TooltipProvider>

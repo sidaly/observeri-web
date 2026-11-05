@@ -6,43 +6,38 @@
 
 @layer base {
   :root {
-    --background: 230 25% 6%;
-    --foreground: 220 20% 95%;
-
-    --card: 230 25% 10%;
-    --card-foreground: 220 20% 95%;
-
-    --popover: 230 25% 8%;
-    --popover-foreground: 220 20% 95%;
-
-    --primary: 245 60% 60%;
-    --primary-foreground: 220 20% 98%;
-
-    --secondary: 230 25% 15%;
-    --secondary-foreground: 220 20% 90%;
-
-    --muted: 230 20% 18%;
-    --muted-foreground: 220 15% 55%;
-
-    --accent: 245 80% 65%;
-    --accent-foreground: 220 20% 98%;
-
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 230 20% 18%;
-    --input: 230 20% 15%;
-    --ring: 245 60% 60%;
-
+    /* White canvas. Accents from the Observeri mark:
+       red #d42516, blue #0b78d4, green #148454, orange #e36b00, navy #102448. */
+    --background: 0 0% 100%;
+    --foreground: 223 78% 18%;
+    --card: 0 0% 100%;
+    --card-foreground: 223 78% 18%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 223 78% 18%;
+    --primary: 142 59% 32%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 203 70% 96%;
+    --secondary-foreground: 223 78% 22%;
+    --muted: 210 24% 96%;
+    --muted-foreground: 223 18% 36%;
+    --accent: 203 81% 40%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 18 94% 48%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 20% 88%;
+    --input: 210 20% 92%;
+    --ring: 142 59% 32%;
     --radius: 0.75rem;
-
-    /* Custom tokens */
-    --glow-primary: 245 80% 60%;
-    --gradient-start: 230 30% 8%;
-    --gradient-end: 250 40% 12%;
-    --surface-elevated: 230 25% 12%;
-    --text-gradient-from: 245 80% 70%;
-    --text-gradient-to: 280 70% 65%;
+    --glow-primary: 142 59% 38%;
+    --gradient-start: 0 0% 100%;
+    --gradient-end: 0 0% 100%;
+    --surface-elevated: 210 24% 98%;
+    --text-gradient-from: 142 59% 30%;
+    --text-gradient-to: 203 81% 38%;
+    --heading-red: #d42516;
+    --heading-blue: #0b78d4;
+    --heading-green: #148454;
+    --heading-orange: #e36b00;
   }
 }
 
@@ -108,7 +103,7 @@
   }
 
   .bg-gradient-radial {
-    background: radial-gradient(ellipse 80% 50% at 50% -20%, hsl(var(--primary) / 0.15), transparent);
+    background: transparent;
   }
 
   .bg-gradient-card {
@@ -131,8 +126,27 @@
 
   .glass {
     @apply backdrop-blur-xl;
-    background: hsl(var(--card) / 0.6);
+    background: hsl(0 0% 100% / 0.86);
+    box-shadow: 0 1px 0 hsl(210 20% 90%);
   }
+
+  .blur-3xl {
+    display: none;
+  }
+
+  h1 {
+    color: var(--heading-blue);
+  }
+
+  section:nth-child(4n + 1) :is(h1, h2) { color: var(--heading-red); }
+  section:nth-child(4n + 2) :is(h1, h2) { color: var(--heading-blue); }
+  section:nth-child(4n + 3) :is(h1, h2) { color: var(--heading-green); }
+  section:nth-child(4n + 4) :is(h1, h2) { color: var(--heading-orange); }
+
+  .text-rose-300 { color: #e24e12; }
+  .text-emerald-300 { color: #1f7a40; }
+  .bg-rose-500\/10 { background: hsl(18 94% 53% / 0.12); }
+  .bg-emerald-500\/10 { background: hsl(142 59% 38% / 0.12); }
 
   .animate-float {
     animation: float 6s ease-in-out infinite;
