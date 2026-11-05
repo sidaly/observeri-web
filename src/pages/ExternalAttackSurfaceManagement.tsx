@@ -10,7 +10,8 @@ import {
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { EasmDashboard, EasmWorkflowAnimation } from "@/components/EasmVisuals";
+import { EasmWorkflowAnimation } from "@/components/EasmVisuals";
+import { ExposureWorldMap } from "@/components/ExposureWorldMap";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import {
@@ -166,7 +167,13 @@ const ExternalAttackSurfaceManagement = () => {
             </SlideInLeft>
 
             <SlideInRight>
-              <EasmDashboard />
+              <motion.div
+                className="relative overflow-hidden rounded-[2rem] border-gradient bg-gradient-card p-2"
+                whileHover={{ scale: 1.01 }}
+                transition={{ duration: 0.3 }}
+              >
+                <ExposureWorldMap />
+              </motion.div>
 
               <div className="mt-6 grid grid-cols-3 gap-3">
                 {easmHero.outcomes.map((outcome, index) => (
@@ -510,9 +517,8 @@ const ExternalAttackSurfaceManagement = () => {
                       <ArrowRight className="transition-transform group-hover:translate-x-1" />
                     </Link>
                   </Button>
-                  <Button asChild variant="outline" size="lg">
-                    <Link to="/products/exposure-management">Explore Exposure Management</Link>
-                  </Button>
+                  
+
                 </div>
               </div>
             </div>

@@ -20,6 +20,7 @@ import {
   StaggerContainer,
   StaggerItem,
 } from "@/components/ScrollAnimations";
+import { ExposureWorldMap } from "@/components/ExposureWorldMap";
 import { Button } from "@/components/ui/button";
 import {
   expBenefits,
@@ -170,11 +171,7 @@ const ExposureManagement = () => {
                 whileHover={{ scale: 1.01 }}
                 transition={{ duration: 0.3 }}
               >
-                <img decoding="async"
-                  src="/threats.webp"
-                  alt="Observeri Exposure Management module"
-                  className="w-full rounded-[1.75rem] object-contain"
-                />
+                <ExposureWorldMap />
               </motion.div>
 
               <div className="mt-6 grid grid-cols-3 gap-3">
