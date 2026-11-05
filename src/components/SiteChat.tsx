@@ -19,7 +19,7 @@ type DemoDetails = {
   lastName: string;
 };
 
-const WELCOME = "Welcome To Observeri, How may i help you today?";
+const WELCOME = "Welcome to Observeri - My Name is Misha, How may i help you today!";
 const SUPPORT =
   "If you're having trouble accessing a Observeri application. Please contact at help@observeri.on.spiceworks.com.";
 const ASK_EMAIL =
@@ -51,7 +51,7 @@ export const SiteChat = () => {
   const listRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const nextId = useRef(1);
-  const greeted = useRef(false);
+  const announced = useRef(false);
   const [open, setOpen] = useState(false);
   const [step, setStep] = useState<Step>("menu");
   const [draft, setDraft] = useState("");
@@ -73,18 +73,46 @@ export const SiteChat = () => {
     if (open && (step === "email" || step === "first" || step === "last")) inputRef.current?.focus();
   }, [open, step]);
 
-  const playWelcome = () => {
-    if (greeted.current) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const synth = window.speechSynthesis;
-    if (!synth) return;
-    greeted.current = true;
-    synth.cancel();
-    const utterance = new SpeechSynthesisUtterance(WELCOME);
-    utterance.lang = "en-US";
-    utterance.rate = 1;
-    synth.speak(utterance);
+  const playTick = () => {
+    const AudioContextCtor =
+      window.AudioContext ||
+      (window as Window & { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+    if (!AudioContextCtor) return;
+    const context = new AudioContextCtor();
+    const tone = () => {
+      const now = context.currentTime;
+      const oscillator = context.createOscillator();
+      const gain = context.createGain();
+      oscillator.type = "sine";
+      oscillator.frequency.setValueAtTime(988, now);
+      gain.gain.setValueAtTime(0.0001, now);
+      gain.gain.exponentialRampToValueAtTime(0.05, now + 0.008);
+      gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.07);
+      oscillator.connect(gain);
+      gain.connect(context.destination);
+      oscillator.start(now);
+      oscillator.stop(now + 0.08);
+      oscillator.onended = () => context.close();
+    };
+    if (context.state === "running") {
+      tone();
+      return;
+    }
+    context.resume().then(() => {
+      if (context.state === "running") tone();
+      else context.close();
+    }).catch(() => context.close());
   };
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      if (announced.current) return;
+      announced.current = true;
+      setOpen(true);
+      playTick();
+    }, 700);
+    return () => window.clearTimeout(timer);
+  }, []);
 
   const showMenu = () => {
     setStep("menu");
@@ -183,7 +211,7 @@ export const SiteChat = () => {
       {open && (
         <section
           aria-labelledby={titleId}
-          className={`mb-3 flex w-[min(24rem,calc(100vw-2rem))] flex-col overflow-hidden rounded-3xl border border-border bg-background shadow-2xl ${lifted ? "h-[min(26rem,calc(100dvh-14rem))]" : "h-[min(34rem,calc(100dvh-7rem))]"}`}
+          className={`mb-3 flex w-[min(18.5rem,calc(100vw-2rem))] flex-col overflow-hidden rounded-2xl border border-border bg-background shadow-2xl ${lifted ? "max-h-[min(18rem,calc(100dvh-14rem))]" : "max-h-[min(22rem,calc(100dvh-7rem))]"}`}
         >
           <header className="flex items-center justify-between gap-3 border-b border-border px-4 py-3">
             <div>
@@ -202,7 +230,7 @@ export const SiteChat = () => {
             </button>
           </header>
 
-          <div ref={listRef} className="flex-1 space-y-3 overflow-y-auto px-4 py-4" aria-live="polite">
+          <div ref={listRef} className="min-h-0 flex-auto space-y-3 overflow-y-auto px-3 py-3" aria-live="polite">
             {messages.map((message) => (
               <div key={message.id} className={message.role === "user" ? "flex justify-end" : "flex justify-start"}>
                 <p
@@ -301,7 +329,8 @@ export const SiteChat = () => {
         onClick={() =>
           setOpen((current) => {
             const next = !current;
-            if (next) playWelcome();
+            announced.current = true;
+            if (next) playTick();
             return next;
           })
         }
