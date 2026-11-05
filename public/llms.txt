@@ -13,7 +13,7 @@ Supported framework topics include SAMA, NESA, ISO 27001, NIST CSF, DORA, MiCA, 
 - [Home](https://www.observeri.com/): Overview of Observeri's AI-powered GRC platform.
 - [Platform modules](https://www.observeri.com/features): Catalog of the platform's modules and capabilities.
 - [About Observeri](https://www.observeri.com/about): Company background and approach to governance, risk, and compliance.
-- [Team](https://www.observeri.com/team): Chris Tout, Syed Ali Naqvi, and Sarah Lawrence. The platform was built by risk and compliance specialists with 50+ years combined.
+- [Team](https://www.observeri.com/team): Michael, Syed Ali Naqvi, Sarah Lawrence, and Anis. The platform was built by specialists in risk, compliance, country leadership, and product.
 - [Contact](https://www.observeri.com/#contact): Product enquiries and demo requests.
 
 ## Products

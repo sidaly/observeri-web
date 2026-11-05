@@ -51,9 +51,9 @@ export const tprmHero = {
 
 export const tprmProblem = {
   eyebrow: "Why it matters",
-  title: "Periodic reviews can't track constant vendor change",
+  title: "Third-party risk matters because their exposure becomes yours",
   description:
-    "Vendor exposure changes constantly: new tools get adopted, access expands, and suppliers change their security posture. If you only review on a schedule, risk accumulates quietly until it shows up as an urgent scramble—or a breach.",
+    "Vendors hold customer data, run payments, and host the services the business depends on. A weak host, an unseen sub-processor, or a review that went stale is an exposure the organisation inherits. That is why third-party risk sits with the other risk domains: it is how an outside failure becomes an internal incident. Observeri keeps it current. Vendor hosts are monitored in real time through External Attack Surface Management, and the fourth parties behind those hosts are identified.",
   painPoints: [
     "Shadow vendors discovered only during audits or incidents",
     "Questionnaires that go stale the moment they're submitted",
@@ -185,8 +185,9 @@ export const tprmCapabilities = [
   "Questionnaire-based and automated vendor security assessments",
   "AI-assisted risk scoring with FAIR-aligned exposure quantification",
   "Continuous monitoring with posture change alerts and reassessment triggers",
+  "Real-time monitoring of vendor hosts through the External Attack Surface Management module",
+  "Fourth-party identification from the hosts and services those vendors depend on",
   "Gap remediation workflows with SLA tracking and verified evidence closure",
-  "Fourth-party and sub-processor dependency mapping",
   "Audit-ready vendor dossiers linked to compliance frameworks (SOC 2, ISO 27001, GDPR, DORA)",
 ];
 

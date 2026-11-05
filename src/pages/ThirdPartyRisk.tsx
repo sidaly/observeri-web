@@ -12,6 +12,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
+import { ThirdPartyRiskDashboard } from "@/components/ThirdPartyRiskDashboard";
 import {
   FadeUp,
   ScaleUp,
@@ -138,22 +139,7 @@ const ThirdPartyRisk = () => {
             </SlideInLeft>
 
             <SlideInRight>
-              <motion.div
-                className="relative overflow-hidden rounded-[2rem] border-gradient bg-gradient-card p-2"
-                whileHover={{ scale: 1.01 }}
-                transition={{ duration: 0.3 }}
-              >
-                <img decoding="async"
-                  src="/third_party_risk.webp"
-                  alt="Observeri Third Party Risk dashboard showing risk trend, risk factors, exposure by category, and at-risk vendor health scores"
-                  className="w-full rounded-[1.75rem] object-contain"
-                />
-                <motion.div
-                  className="pointer-events-none absolute inset-0 rounded-[1.75rem] bg-gradient-to-t from-background/40 to-transparent"
-                  animate={{ opacity: [0.4, 0.6, 0.4] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                />
-              </motion.div>
+              <ThirdPartyRiskDashboard />
 
               <div className="mt-6 grid grid-cols-3 gap-3">
                 {tprmHero.outcomes.map((outcome, index) => (
@@ -405,6 +391,13 @@ const ThirdPartyRisk = () => {
                 <h2 className="mt-4 text-3xl font-display font-bold md:text-4xl">
                   Everything you need for enterprise-grade TPRM.
                 </h2>
+                <p className="mt-4 text-sm leading-7 text-muted-foreground">
+                  Third-party risk is monitored through{" "}
+                  <Link to="/products/external-attack-surface-management" className="font-medium text-primary underline underline-offset-2">
+                    External Attack Surface Management
+                  </Link>
+                  . Vendor hosts are watched in real time, and the fourth parties those vendors depend on are identified in the same record.
+                </p>
                 <ul className="mt-8 space-y-4">
                   {tprmCapabilities.map((capability, index) => (
                     <motion.li

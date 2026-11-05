@@ -4,20 +4,20 @@ import { useState, type KeyboardEvent, type PointerEvent } from "react";
 
 const people = [
   {
-    name: "Chris Tout",
+    name: "Michael",
     role: "Chief Executive Officer",
     strip: "CEO",
     years: "20+ years",
-    image: "/exec-ceo.webp",
+    image: "/team-ceo.jpg",
     tint: "#7eb6ff",
     bio: "More than 20 years leading regulated businesses, from the operating plan through to the board. He sets Observeri's direction around the decision the customer has to make.",
   },
   {
     name: "Syed Ali Naqvi",
-    role: "Risk Management",
-    strip: "Risk",
+    role: "Country Manager",
+    strip: "Country",
     years: "17+ years",
-    image: "/exec-cro.webp",
+    image: "/team-country.jpg",
     tint: "#fc3018",
     bio: "A seasoned risk management professional with more than 17 years at Revolut, HBL Bank, and KPMG, across more than 14 regulatory regimes. He assesses each risk domain against the customer journey.",
   },
@@ -26,9 +26,18 @@ const people = [
     role: "Revenue Officer",
     strip: "Revenue",
     years: "10+ years",
-    image: "/exec-cfo.webp",
+    image: "/team-revenue.jpg",
     tint: "#0c90f0",
     bio: "More than 10 years in enterprise sales and marketing. She takes Observeri to the buyers who own risk and compliance, and she runs the revenue that follows.",
+  },
+  {
+    name: "Anis",
+    role: "Product Management",
+    strip: "Product",
+    years: "20+ years",
+    image: "/team-product.jpg",
+    tint: "#e36b00",
+    bio: "More than 20 years developing products around fraud, enterprise risk, and compliance. Anis shapes those products around the decisions risk and compliance teams have to make.",
   },
 ];
 

@@ -287,6 +287,7 @@ export const productMenuGroups: ProductMenuGroup[] = [
       { label: "Cyber Risk", href: "/products/cyber-risk-management" },
       { label: "Operational Risk", href: "/products/operational-risk" },
       { label: "Financial Risk", href: "/products/financial-risk" },
+      { label: "Third Party Risk", href: "/products/third-party-risk" },
       { label: "Enterprise Risk", href: "/products/enterprise-risk" },
     ],
   },

@@ -42,7 +42,7 @@ export const pageSeoByPath: Record<string, PageSeoConfig> = {
     title: "Observeri Team | Built by Risk and Compliance SMEs",
     schemas: breadcrumbSchema([{ name: "Home", item: "/" }, { name: "Team", item: "/team" }]),
     description:
-      "The Observeri platform was built by risk and compliance specialists with 50+ years combined. Meet Chris Tout, Syed Ali Naqvi, and Sarah Lawrence.",
+      "Meet Michael, Syed Ali Naqvi, Sarah Lawrence, and Anis. Observeri was built by specialists in risk, compliance, country leadership, and product.",
   },
   "/about": {
     title: "About Observeri | One Combined Enterprise Risk View",
