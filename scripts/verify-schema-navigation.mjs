@@ -2,7 +2,29 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import http from 'node:http';
 import path from 'node:path';
-import puppeteer from 'puppeteer';
+
+async function launchBrowser() {
+  if (process.platform === 'linux') {
+    const [{ default: chromium }, { default: puppeteer }] = await Promise.all([
+      import('@sparticuz/chromium'),
+      import('puppeteer-core'),
+    ]);
+    chromium.setGraphicsMode = false;
+    return puppeteer.launch({
+      args: chromium.args,
+      executablePath: await chromium.executablePath(),
+      headless: true,
+    });
+  }
+
+  const { default: puppeteer } = await import('puppeteer');
+  return puppeteer.launch({
+    headless: true,
+    timeout: 60000,
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    ...(process.env.PUPPETEER_EXECUTABLE_PATH ? { executablePath: process.env.PUPPETEER_EXECUTABLE_PATH } : {}),
+  });
+}
 
 const server = http.createServer((req, res) => {
   let file = path.join('dist', new URL(req.url, 'http://localhost').pathname);
@@ -14,7 +36,7 @@ const server = http.createServer((req, res) => {
 await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 let browser;
 try {
-  browser = await puppeteer.launch({headless: true, timeout: 60000, args: ["--no-sandbox", "--disable-setuid-sandbox"], ...(process.env.PUPPETEER_EXECUTABLE_PATH ? {executablePath: process.env.PUPPETEER_EXECUTABLE_PATH} : {})});
+  browser = await launchBrowser();
   console.log('Browser launched.');
   const page = await browser.newPage();
   const origin = `http://127.0.0.1:${server.address().port}`;
