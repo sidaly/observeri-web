@@ -4,7 +4,6 @@ import { breadcrumbSchema, faqPageSchema, productSchema } from "@/lib/schema";
 import auditSeo from "@/data/auditSeo.json";
 import blogPosts from "@/data/posts.json";
 import type { BlogPostData } from "@/types/wordpress";
-import { blogPostingSchema } from "@/lib/schema";
 const faqData = auditSeo["/"].faqs;
 
 export type PageSeoConfig = {
@@ -636,11 +635,16 @@ export const getPageSeoForPath = (pathname: string): PageSeoConfig => {
   if (blogMatch) {
     const post = (blogPosts as BlogPostData[]).find((candidate) => candidate.slug === blogMatch[1]);
     if (post) {
+      const title = post.title.replace(/<[^>]*>/g, "");
       return {
-        title: `${post.title.replace(/<[^>]*>/g, "")} | Observeri`,
+        title: `${title} | Observeri`,
         description: post.excerpt.slice(0, 158),
         ogImage: post.featured_image,
-        schemas: blogPostingSchema({ ...post, link: `/blog/${post.slug}` }),
+        schemas: breadcrumbSchema([
+          { name: "Home", item: "/" },
+          { name: "Blog", item: "/blog" },
+          { name: title },
+        ]),
       };
     }
   }
