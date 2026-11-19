@@ -285,6 +285,7 @@ export const productMenuGroups: ProductMenuGroup[] = [
     label: "Risk",
     items: [
       { label: "Cyber Risk", href: "/products/cyber-risk-management" },
+      { label: "Human Risk Management", href: "/products/human-risk-management" },
       { label: "Operational Risk", href: "/products/operational-risk" },
       { label: "Financial Risk", href: "/products/financial-risk" },
       { label: "Third Party Risk", href: "/products/third-party-risk" },
@@ -313,6 +314,7 @@ export const productMenuGroups: ProductMenuGroup[] = [
   {
     label: "Exposure Management",
     items: [
+      { label: "Exposure Management", href: "/products/exposure-management" },
       { label: "External Attack Surface Management", href: "/products/external-attack-surface-management" },
       { label: "Vulnerability Operations", href: "/products/vulnerability-operations" },
       { label: "Business Continuity Management", href: "/products/business-continuity-management" },

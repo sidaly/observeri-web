@@ -30,18 +30,25 @@ const clusters: Record<string, string[]> = {
 
 export function RelatedProducts() {
   const { pathname } = useLocation();
-  if (pathname === "/") return null;
+  const isHomepage = pathname === "/";
   const slug = pathname.replace(/\/+$/, "").split("/").pop() || "";
   const slugs = clusters[slug];
-  if (!slugs) return null;
-  const products = productPages.filter((product) => slugs.includes(product.slug));
+  if (!isHomepage && !slugs) return null;
+  const products = isHomepage
+    ? productPages.filter((product) => product.featured)
+    : productPages.filter((product) => slugs?.includes(product.slug));
   return (
     <section className="border-t border-border/30 py-16" aria-labelledby="related-products-heading">
       <div className="container mx-auto px-6">
         <h2 id="related-products-heading" className="mb-8 text-3xl font-display font-bold">
-          Related products
+          {isHomepage ? "Explore the Observeri platform" : "Related products"}
         </h2>
-        <div className="grid gap-5 md:grid-cols-3">
+        {isHomepage ? (
+          <p className="mb-8 max-w-3xl text-base leading-7 text-muted-foreground">
+            Connect risk, compliance, audit, exposure, data, and AI governance in one decision platform.
+          </p>
+        ) : null}
+        <div className={`grid gap-5 ${isHomepage ? "sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" : "md:grid-cols-3"}`}>
           {products.map((product) => (
             <Link key={product.slug} to={product.href} className="rounded-2xl border border-border/50 bg-card/50 p-6 transition-colors hover:border-primary">
               <h3 className="text-lg font-semibold text-primary">{product.label}</h3>

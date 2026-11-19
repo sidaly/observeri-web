@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run fetch-blogs && vite build && node scripts/prerender.mjs && node scripts/generate-sitemap.mjs",
-    "build:dev": "npm run fetch-blogs && vite build --mode development && node scripts/prerender.mjs && node scripts/generate-sitemap.mjs",
+    "build": "npm run fetch-blogs && vite build && node scripts/prerender.mjs && node scripts/generate-sitemap.mjs && npm run verify:seo",
+    "build:dev": "npm run fetch-blogs && vite build --mode development && node scripts/prerender.mjs && node scripts/generate-sitemap.mjs && npm run verify:seo",
+    "verify:seo": "node scripts/verify-seo.mjs && node scripts/verify-schema.mjs && node scripts/verify-schema-navigation.mjs",
     "lint": "eslint .",
     "generate-downloads": "node scripts/generate-downloads.mjs",
     "fetch-blogs": "node scripts/fetch-wordpress-posts.mjs",
