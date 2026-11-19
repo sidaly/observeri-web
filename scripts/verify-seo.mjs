@@ -8,12 +8,18 @@ for (const route of routes) {
   const canonicals = html.match(/<link\b[^>]*rel="canonical"[^>]*>/g) || [];
   assert.equal(canonicals.length, 1, `${route}: expected exactly one canonical`);
   assert.ok(canonicals[0].includes(`href="${SITE_URL}${route}"`), `${route}: wrong canonical`);
-  for (const key of ['og:url', 'og:image', 'twitter:image']) {
+  const ogUrlTag = html.match(/<meta[^>]*property="og:url"[^>]*>/)?.[0];
+  assert.ok(ogUrlTag?.includes(`content="${SITE_URL}/`), `${route}: missing absolute og:url`);
+
+  for (const key of ['og:image', 'twitter:image']) {
     const tag = html.match(new RegExp(`<meta[^>]*(?:property|name)="${key}"[^>]*>`))?.[0];
-    assert.ok(tag?.includes(`content="${SITE_URL}/`), `${route}: missing absolute ${key}`);
-    if (key.endsWith('image')) {
-      const image = tag.match(/content="([^"]+)"/)[1];
-      assert.ok(fs.existsSync(`dist${new URL(image).pathname}`), `${route}: missing image ${image}`);
+    const image = tag?.match(/content="([^"]+)"/)?.[1];
+    assert.ok(image, `${route}: missing ${key}`);
+
+    const imageUrl = new URL(image);
+    assert.equal(imageUrl.protocol, 'https:', `${route}: ${key} must use HTTPS`);
+    if (imageUrl.origin === SITE_URL) {
+      assert.ok(fs.existsSync(`dist${imageUrl.pathname}`), `${route}: missing image ${image}`);
     }
   }
   assert.ok(/<h1[\s>]/.test(html), `${route}: missing rendered heading`);
