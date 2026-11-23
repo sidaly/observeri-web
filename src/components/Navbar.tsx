@@ -63,7 +63,11 @@ export const Navbar = () => {
       }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
       className={`fixed left-0 right-0 top-0 z-50 transition-all duration-300 ${
-        isScrolled ? "glass border-b border-border/50 shadow-lg shadow-background/20" : "bg-transparent"
+        isOpen
+          ? "border-b border-border/50 bg-background shadow-lg shadow-background/20"
+          : isScrolled
+            ? "glass border-b border-border/50 shadow-lg shadow-background/20"
+            : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-6">
