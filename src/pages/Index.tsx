@@ -7,6 +7,7 @@ import { OperationalEfficiency } from "@/components/OperationalEfficiency";
 import { RiskCommandDashboard } from "@/components/RiskCommandDashboard";
 import { FAQ } from "@/components/FAQ";
 import ContactForm from "@/components/ContactForm";
+import { RelatedProducts } from "@/components/RelatedProducts";
 
 const Index = () => {
   const [searchParams] = useSearchParams();
@@ -35,6 +36,7 @@ const Index = () => {
       <ExecutiveAccordionGallery />
       <OperationalEfficiency />
       <RiskCommandDashboard />
+      <RelatedProducts />
       <FAQ />
       <ContactForm />
       <Footer />

@@ -2,7 +2,7 @@ import { CookieSettingsButton } from "./CookieConsent";
 import { RelatedProducts } from "./RelatedProducts";
 import { motion } from "framer-motion";
 import { Twitter, Linkedin, Youtube } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FadeUp } from "./ScrollAnimations";
 
 const navLinks = [
@@ -23,9 +23,11 @@ const socialLinks = [
 ];
 
 export const Footer = () => {
+  const { pathname } = useLocation();
+
   return (
     <>
-    <RelatedProducts />
+    {pathname !== "/" ? <RelatedProducts /> : null}
     <footer className="border-t border-border bg-background">
       <div className="container mx-auto px-6 py-16">
         {/* Navigation Links */}
