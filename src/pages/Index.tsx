@@ -8,6 +8,9 @@ import { RiskCommandDashboard } from "@/components/RiskCommandDashboard";
 import { FAQ } from "@/components/FAQ";
 import ContactForm from "@/components/ContactForm";
 import { RelatedProducts } from "@/components/RelatedProducts";
+import { RegulatoryTrustStrip } from "@/components/RegulatoryTrustStrip";
+import { LegacyGrcComparison } from "@/components/LegacyGrcComparison";
+import { RiskIntelligenceUseCases } from "@/components/RiskIntelligenceUseCases";
 
 const Index = () => {
   const [searchParams] = useSearchParams();
@@ -33,9 +36,12 @@ const Index = () => {
           Quantify cyber risk, automate compliance, and give decision makers a live financial view of exposure.
         </p>
       </header>
+      <RegulatoryTrustStrip />
       <ExecutiveAccordionGallery />
+      <LegacyGrcComparison />
       <OperationalEfficiency />
       <RiskCommandDashboard />
+      <RiskIntelligenceUseCases />
       <RelatedProducts />
       <FAQ />
       <ContactForm />
